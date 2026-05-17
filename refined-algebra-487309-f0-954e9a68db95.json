@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "refined-algebra-487309-f0",
+  "private_key_id": "954e9a68db951ff2d36c03716e5d1f0dfb2ab09f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDsTH5y7jBhews9\nA9lVq94iMzv9TFUVh17jAUTsGu/9nkyBJNXgJQJXTbb9NlzZ3k2FtyteJAvT8BEB\nD9D2YDvuZZ66Yx/NGzgc7327/8aOUasLeokCkCZknNNTb1rFWbIPK1e8y/brm5Cs\nTSLc2cIyKKeHG0gRNn/NFDawG0q7MxkkqspYvzhwJjOcfB0IaJBoDwAZhxJgBv4f\nzWiMs6cUJeGsu7kXbLzT6OTPZHDdjGgSi6foyoWfLd7W36Ut165avNulXzQ+6+Nh\neFT/FhP+pLRZH/2RmHmomVgpNBAk6rENpviRSYd0y5o6P3j6AM8lFnNQRiExjgXR\n9XT4e76HAgMBAAECggEAF9IjnSpt2NCH8tVZ1M0dTjf5VYZFvYSGsukEgwNkK3Oz\nJVcKnddH7nfNzqZATfufDQUeFhYZgHq0UXXADFY/NGqCHyqxoKzxxy5Nb+T6UIvj\nFlElUWDUE1MhP/P7I+dFj/SVRQRla/L5bqUysoOGlCU3s42zLNO1pn2MgHb/3Zxj\ngNqhwJOyEKe07gUD8CyKs7j+cxQHGVuJ/rsnle1rn6E3SD0BNzczT0WOSifUnG57\ndCHYoIBi5AE1xPUwcgHjETspKCtjxnL8ci8CZ6m5lqKlNrLxgidmcJ07tvmnpomZ\ng1nhz4rQWrqQJHJNfuiC0z8TkuMzbxt0BkmHAeDEoQKBgQD47CjRStP2YNAi3aek\nP+nuZb4CDinwf/kyiWBP13BncyKcmuStFrykkvTooTIgmlioVyNDVC2qhp02DF2K\n6f6G/Bjl+DM+hupWoIOs4N89mThWUDZfTOgoScddn2AYbIZe4BpeW1xNc4M3QnwQ\nEtkfRTsyAjbg78Hm2JrRWBZyRQKBgQDzBHMy8ybum3x+kejNudrYw4Dnq7AFnMmE\n7N5pUK8DZgfOi6eqWOpg2b6bN2oBJzwfhV4VB1+AW2ppAQ4crDl3o7vJvEnTCC+6\nve219snuTZjA3pfF2lO2EJyzBqYxrlIHlqjENfRBzF47ozJCXZjEIvJ/lqUKihFv\n+A3QmR6gWwKBgQDqTpmpUA8vFjg06YHYiNTxM1Hka2Ks4Dk4iblfzkIfDnBhCyf/\niaxuGWpw4vLlX4PeiY9G3CDUKDwpWQBgNxwAAaKKLdRGogZJHnRzsYRRXj16eayE\njkblTXVdOhzhQJ5HBhmsAcFjojy8MlfHZYZ8+dTboNv5ZZWWbwNj1M/kJQKBgE47\nvoJGeOATui5c9p9UF7n0pkjuoooMAWwDfU5WJSFo9VZu6xkR6tInBw+c9UlNwjM7\nkiAe8YW26DjJmCtu3kk/srKtJO8FEaiCgEY2HqfS3zwn7KBLOuu/yVJw74vK3KmI\nvOf9npaYHjYAwatPymBKB9s/Of58mER9jKT8xjlFAoGALDpn0Y0BycdYF0D/STnz\n5qfy5bk8RauOaNE2v+LeM0x6xjDnzEA9O8OZa+cFcvBeVzqwfR/1vz2IeLTlFxRf\nNVABhC+FdKDknFXbfq0bVEA+ejOOZGifizbGQXaZEAVDSfgJFgN6TLmrKi9Tqqds\n6LZiVx8RGxAzsBLyCjMSUf0=\n-----END PRIVATE KEY-----\n",
+  "client_email": "drive-sync@refined-algebra-487309-f0.iam.gserviceaccount.com",
+  "client_id": "117188667930726615259",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/drive-sync%40refined-algebra-487309-f0.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

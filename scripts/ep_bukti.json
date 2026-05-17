@@ -1,0 +1,2827 @@
+{
+  "AKP 1|EP b": [
+    "D",
+    "W"
+  ],
+  "AKP 1|EP c": [
+    "D",
+    "W"
+  ],
+  "AKP 1|EP d": [
+    "W"
+  ],
+  "AKP 1.1|EP a": [
+    "D",
+    "W"
+  ],
+  "AKP 1.1|EP b": [
+    "D",
+    "O",
+    "W"
+  ],
+  "AKP 1.1|EP c": [
+    "D",
+    "W"
+  ],
+  "AKP 1.3|EP a": [
+    "D",
+    "W"
+  ],
+  "AKP 1.3|EP b": [
+    "D",
+    "W"
+  ],
+  "AKP 3|EP e": [
+    "D",
+    "W"
+  ],
+  "AKP 3|EP f": [
+    "D",
+    "W"
+  ],
+  "AKP 3.1|EP a": [
+    "R",
+    "W"
+  ],
+  "AKP 3.1|EP b": [
+    "R"
+  ],
+  "AKP 5|EP c": [
+    "D",
+    "W"
+  ],
+  "AKP 5|EP d": [
+    "D",
+    "W"
+  ],
+  "AKP 5.1|EP c": [
+    "D",
+    "W"
+  ],
+  "AKP 5.2|EP d": [
+    "D",
+    "W"
+  ],
+  "AKP 5.2|EP e": [
+    "D"
+  ],
+  "AKP 5.2|EP c": [
+    "D",
+    "W"
+  ],
+  "AKP 5.4|EP b": [
+    "D",
+    "W"
+  ],
+  "AKP 5.4|EP c": [
+    "D",
+    "W"
+  ],
+  "AKP 5.4|EP d": [
+    "D"
+  ],
+  "AKP 5.5|EP a": [
+    "R"
+  ],
+  "AKP 5.5|EP b": [
+    "D",
+    "W"
+  ],
+  "AKP 5.5|EP c": [
+    "D",
+    "O",
+    "W"
+  ],
+  "AKP 5.5|EP d": [
+    "R",
+    "D",
+    "W"
+  ],
+  "AKP 5.5|EP e": [
+    "D",
+    "W"
+  ],
+  "AKP 6|EP a": [
+    "D",
+    "W"
+  ],
+  "AKP 6|EP b": [
+    "D",
+    "W"
+  ],
+  "AKP 6|EP c": [
+    "D",
+    "W"
+  ],
+  "AKP 6|EP d": [
+    "R"
+  ],
+  "HPK 1|EP a": [
+    "R",
+    "D"
+  ],
+  "HPK 1|EP b": [
+    "D",
+    "W"
+  ],
+  "HPK 1|EP c": [
+    "D",
+    "W"
+  ],
+  "HPK 1|EP d": [
+    "D",
+    "W"
+  ],
+  "HPK 1.1|EP a": [
+    "D",
+    "O",
+    "W"
+  ],
+  "HPK 1.1|EP b": [
+    "D",
+    "W"
+  ],
+  "HPK 1.1|EP c": [
+    "D",
+    "W"
+  ],
+  "HPK 1.2|EP a": [
+    "O",
+    "W"
+  ],
+  "HPK 1.2|EP b": [
+    "D",
+    "W"
+  ],
+  "HPK 1.2|EP c": [
+    "D",
+    "W"
+  ],
+  "HPK 1.3|EP a": [
+    "D",
+    "O",
+    "W"
+  ],
+  "HPK 1.3|EP b": [
+    "D",
+    "W"
+  ],
+  "HPK 1.3|EP c": [
+    "D",
+    "W"
+  ],
+  "HPK 1.3|EP d": [
+    "D",
+    "W"
+  ],
+  "HPK 1.4|EP b": [
+    "D",
+    "O",
+    "W"
+  ],
+  "HPK 1.5|EP a": [
+    "R",
+    "D",
+    "O",
+    "W"
+  ],
+  "HPK 1.5|EP c": [
+    "D",
+    "O",
+    "W"
+  ],
+  "HPK 2|EP d": [
+    "D",
+    "W"
+  ],
+  "HPK 2|EP e": [
+    "D",
+    "W"
+  ],
+  "HPK 2.1|EP a": [
+    "R",
+    "D",
+    "W"
+  ],
+  "HPK 2.1|EP b": [
+    "D",
+    "W"
+  ],
+  "HPK 2.2|EP a": [
+    "D",
+    "W"
+  ],
+  "HPK 2.2|EP b": [
+    "D",
+    "W"
+  ],
+  "HPK 3|EP a": [
+    "D",
+    "W"
+  ],
+  "HPK 3|EP b": [
+    "D",
+    "W"
+  ],
+  "HPK 3|EP c": [
+    "D",
+    "W"
+  ],
+  "HPK 4|EP a": [
+    "R",
+    "O",
+    "W"
+  ],
+  "HPK 4|EP b": [
+    "D",
+    "W"
+  ],
+  "HPK 4|EP c": [
+    "D",
+    "W"
+  ],
+  "HPK 4.1|EP a": [
+    "D"
+  ],
+  "HPK 4.1|EP b": [
+    "D",
+    "W"
+  ],
+  "HPK 4.1|EP c": [
+    "R"
+  ],
+  "HPK 4.2|EP a": [
+    "D",
+    "W"
+  ],
+  "HPK 4.2|EP b": [
+    "D",
+    "W"
+  ],
+  "KE 1|EP b": [
+    "D"
+  ],
+  "KE 1|EP c": [
+    "D"
+  ],
+  "KE 1|EP d": [
+    "D"
+  ],
+  "KE 2|EP a": [
+    "D"
+  ],
+  "KE 2|EP b": [
+    "D"
+  ],
+  "KE 2|EP c": [
+    "D"
+  ],
+  "KE 2|EP d": [
+    "D"
+  ],
+  "KE 4|EP a": [
+    "D",
+    "W"
+  ],
+  "KE 4|EP b": [
+    "D",
+    "W"
+  ],
+  "KE 4|EP c": [
+    "D",
+    "W"
+  ],
+  "KE 5|EP c": [
+    "D",
+    "W"
+  ],
+  "KE 5|EP d": [
+    "D"
+  ],
+  "KE 5|EP e": [
+    "D"
+  ],
+  "KE 6|EP a": [
+    "D"
+  ],
+  "KE 6|EP c": [
+    "D"
+  ],
+  "KPS 3|EP a": [
+    "R"
+  ],
+  "KPS 5|EP a": [
+    "R",
+    "D"
+  ],
+  "KPS 5|EP b": [
+    "D"
+  ],
+  "KPS 5|EP c": [
+    "D"
+  ],
+  "KPS 7|EP b": [
+    "D",
+    "W"
+  ],
+  "KPS 7|EP c": [
+    "D",
+    "W"
+  ],
+  "KPS 7|EP d": [
+    "D",
+    "W"
+  ],
+  "KPS 9|EP e": [
+    "D",
+    "W"
+  ],
+  "KPS 9|EP f": [
+    "D",
+    "O"
+  ],
+  "KPS 9|EP g": [
+    "D",
+    "W"
+  ],
+  "KPS 10|EP e": [
+    "D"
+  ],
+  "KPS 10|EP f": [
+    "D",
+    "W"
+  ],
+  "KPS 10|EP a": [
+    "R"
+  ],
+  "KPS 10|EP b": [
+    "D",
+    "W"
+  ],
+  "KPS 10|EP c": [
+    "D"
+  ],
+  "KPS 12|EP e": [
+    "D"
+  ],
+  "KPS 12|EP f": [
+    "D"
+  ],
+  "KPS 12|EP g": [
+    "D"
+  ],
+  "KPS 16|EP a": [
+    "R",
+    "D"
+  ],
+  "KPS 16|EP c": [
+    "D"
+  ],
+  "KPS 16|EP d": [
+    "D"
+  ],
+  "KPS 18|EP a": [
+    "R"
+  ],
+  "KPS 18|EP b": [
+    "R"
+  ],
+  "KPS 19|EP a": [
+    "R"
+  ],
+  "KPS 19|EP b": [
+    "D"
+  ],
+  "KPS 19|EP c": [
+    "D"
+  ],
+  "KPS 19|EP d": [
+    "D"
+  ],
+  "MFK 2|EP c": [
+    "D",
+    "W"
+  ],
+  "MFK 6|EP c": [
+    "R",
+    "O"
+  ],
+  "MFK 6|EP d": [
+    "D"
+  ],
+  "MFK 8.2|EP e": [
+    "D",
+    "O"
+  ],
+  "MRMIK 1|EP d": [
+    "D",
+    "W"
+  ],
+  "MRMIK 1|EP e": [
+    "D"
+  ],
+  "MRMIK 5|EP c": [
+    "D"
+  ],
+  "MRMIK 5|EP d": [
+    "D"
+  ],
+  "MRMIK 6|EP a": [
+    "O",
+    "W"
+  ],
+  "MRMIK 6|EP b": [
+    "D",
+    "O"
+  ],
+  "MRMIK 6|EP c": [
+    "D"
+  ],
+  "MRMIK 7|EP a": [
+    "D",
+    "O"
+  ],
+  "MRMIK 7|EP b": [
+    "D",
+    "O"
+  ],
+  "MRMIK 8|EP b": [
+    "D",
+    "O"
+  ],
+  "MRMIK 8|EP d": [
+    "D",
+    "W"
+  ],
+  "MRMIK 9|EP a": [
+    "R",
+    "O"
+  ],
+  "MRMIK 9|EP b": [
+    "D"
+  ],
+  "MRMIK 11|EP a": [
+    "R"
+  ],
+  "MRMIK 11|EP b": [
+    "D"
+  ],
+  "MRMIK 12|EP b": [
+    "D"
+  ],
+  "MRMIK 12|EP d": [
+    "D"
+  ],
+  "MRMIK 13|EP e": [
+    "D",
+    "W"
+  ],
+  "MRMIK 13.1|EP b": [
+    "D",
+    "W"
+  ],
+  "MRMIK 13.1|EP c": [
+    "D"
+  ],
+  "PAB 1|EP c": [
+    "D",
+    "O",
+    "W"
+  ],
+  "PAB 2|EP a": [
+    "D",
+    "W"
+  ],
+  "PAB 2|EP b": [
+    "D"
+  ],
+  "PAB 2|EP c": [
+    "D"
+  ],
+  "PAB 3|EP a": [
+    "D",
+    "W"
+  ],
+  "PAB 3|EP b": [
+    "D",
+    "O"
+  ],
+  "PAB 3|EP c": [
+    "D"
+  ],
+  "PAB 5|EP a": [
+    "D",
+    "W"
+  ],
+  "PAB 5|EP b": [
+    "D",
+    "W"
+  ],
+  "PAB 6|EP a": [
+    "D",
+    "W"
+  ],
+  "PAB 6|EP b": [
+    "D",
+    "W"
+  ],
+  "PAB 7|EP a": [
+    "D",
+    "W"
+  ],
+  "PAB 7|EP b": [
+    "D",
+    "W"
+  ],
+  "PAB 7.1|EP a": [
+    "D",
+    "W"
+  ],
+  "PAB 7.1|EP b": [
+    "D",
+    "W"
+  ],
+  "PAB 7.2|EP a": [
+    "D"
+  ],
+  "PAB 7.2|EP b": [
+    "D"
+  ],
+  "PAB 7.3|EP a": [
+    "D"
+  ],
+  "PAB 7.3|EP b": [
+    "D"
+  ],
+  "PAB 7.3|EP c": [
+    "D",
+    "W"
+  ],
+  "PAP 2.1|EP b": [
+    "R",
+    "O"
+  ],
+  "PAP 2.1|EP c": [
+    "D",
+    "W"
+  ],
+  "PAP 2.4|EP e": [
+    "D",
+    "W"
+  ],
+  "PAP 2.7|EP a": [
+    "D",
+    "W"
+  ],
+  "PAP 2.7|EP c": [
+    "D",
+    "W"
+  ],
+  "PAP 3|EP d": [
+    "D",
+    "W"
+  ],
+  "PAP 4|EP b": [
+    "D",
+    "W"
+  ],
+  "PAP 4|EP c": [
+    "D",
+    "W"
+  ],
+  "PAP 4|EP d": [
+    "D",
+    "W",
+    "S"
+  ],
+  "PKPO 2|EP a": [
+    "O",
+    "W"
+  ],
+  "PKPO 2|EP b": [
+    "O",
+    "D",
+    "W"
+  ],
+  "PKPO 2|EP c": [
+    "D",
+    "W"
+  ],
+  "PKPO 2|EP d": [
+    "O"
+  ],
+  "PKPO 2|EP e": [
+    "D",
+    "W"
+  ],
+  "PKPO 3.1|EP a": [
+    "O"
+  ],
+  "PKPO 3.1|EP b": [
+    "O"
+  ],
+  "PKPO 3.2|EP a": [
+    "O"
+  ],
+  "PKPO 3.2|EP b": [
+    "D",
+    "W"
+  ],
+  "PKPO 3.2|EP c": [
+    "D",
+    "W"
+  ],
+  "PKPO 3.2|EP d": [
+    "D",
+    "W"
+  ],
+  "PKPO 5|EP a": [
+    "D",
+    "O",
+    "W"
+  ],
+  "PKPO 5|EP b": [
+    "D",
+    "O"
+  ],
+  "PKPO 5|EP e": [
+    "D",
+    "O",
+    "W"
+  ],
+  "PKPO 5|EP g": [
+    "O"
+  ],
+  "PKPO 6|EP a": [
+    "R",
+    "D",
+    "W"
+  ],
+  "PKPO 6|EP b": [
+    "S"
+  ],
+  "PKPO 6|EP c": [
+    "D",
+    "S"
+  ],
+  "PKPO 6|EP d": [
+    "D",
+    "W"
+  ],
+  "PKPO 6.1|EP a": [
+    "D",
+    "W"
+  ],
+  "PKPO 6.1|EP b": [
+    "D",
+    "W"
+  ],
+  "PKPO 6.1|EP c": [
+    "D",
+    "W"
+  ],
+  "PKPO 7.1|EP a": [
+    "R"
+  ],
+  "PKPO 7.1|EP b": [
+    "D",
+    "W"
+  ],
+  "PMKP 2|EP a": [
+    "D",
+    "W"
+  ],
+  "PMKP 2|EP b": [
+    "D",
+    "W"
+  ],
+  "PMKP 2|EP c": [
+    "D",
+    "W"
+  ],
+  "PMKP 4|EP e": [
+    "D"
+  ],
+  "PMKP 4|EP f": [
+    "D",
+    "W"
+  ],
+  "PMKP 4|EP g": [
+    "D",
+    "W"
+  ],
+  "PMKP 5|EP a": [
+    "D",
+    "W"
+  ],
+  "PMKP 5|EP b": [
+    "D"
+  ],
+  "PMKP 6|EP a": [
+    "D",
+    "W"
+  ],
+  "PMKP 6|EP b": [
+    "D",
+    "W"
+  ],
+  "PMKP 6|EP c": [
+    "D",
+    "W"
+  ],
+  "PMKP 6|EP d": [
+    "D"
+  ],
+  "PMKP 8|EP d": [
+    "R"
+  ],
+  "PMKP 8|EP e": [
+    "D",
+    "W"
+  ],
+  "PMKP 9|EP a": [
+    "D",
+    "W"
+  ],
+  "PMKP 9|EP b": [
+    "D",
+    "W"
+  ],
+  "PMKP 9|EP c": [
+    "D",
+    "W"
+  ],
+  "PMKP 10|EP a": [
+    "D",
+    "W"
+  ],
+  "PMKP 10|EP b": [
+    "R"
+  ],
+  "PMKP 11|EP a": [
+    "D",
+    "W"
+  ],
+  "PMKP 11|EP b": [
+    "D"
+  ],
+  "PMKP 11|EP d": [
+    "D",
+    "W"
+  ],
+  "PMKP 11|EP e": [
+    "R"
+  ],
+  "PMKP 11|EP f": [
+    "D",
+    "W"
+  ],
+  "PP 1|EP a": [
+    "R"
+  ],
+  "PP 1|EP c": [
+    "D"
+  ],
+  "PP 1|EP d": [
+    "D"
+  ],
+  "PP 1|EP e": [
+    "D"
+  ],
+  "PP 1|EP f": [
+    "D"
+  ],
+  "PP 1.1|EP a": [
+    "D"
+  ],
+  "PP 1.1|EP c": [
+    "D"
+  ],
+  "PP 3.2|EP b": [
+    "D"
+  ],
+  "PP 3.3|EP a": [
+    "R",
+    "D"
+  ],
+  "PP 3.4|EP a": [
+    "D",
+    "O"
+  ],
+  "PP 3.6|EP a": [
+    "R",
+    "D"
+  ],
+  "PP 3.9|EP a": [
+    "R",
+    "D"
+  ],
+  "PP 3.9|EP b": [
+    "R",
+    "D"
+  ],
+  "PP 3.9|EP c": [
+    "D"
+  ],
+  "PP 4|EP a": [
+    "R"
+  ],
+  "PP 4|EP b": [
+    "R",
+    "D"
+  ],
+  "PP 4.2|EP b": [
+    "D"
+  ],
+  "PPI 1.1|EP b": [
+    "D",
+    "W"
+  ],
+  "PPI 1.1|EP c": [
+    "D",
+    "W"
+  ],
+  "PPI 1.1|EP d": [
+    "D",
+    "O",
+    "W"
+  ],
+  "PPI 1|EP a": [
+    "R"
+  ],
+  "PPI 1|EP b": [
+    "R"
+  ],
+  "PPI 4|EP d": [
+    "D",
+    "O",
+    "W"
+  ],
+  "PPI 4|EP e": [
+    "D",
+    "W"
+  ],
+  "PPI 5|EP a": [
+    "R"
+  ],
+  "PPI 5|EP b": [
+    "D",
+    "O",
+    "W"
+  ],
+  "PPI 5|EP c": [
+    "D",
+    "W"
+  ],
+  "PPI 6|EP b": [
+    "D",
+    "O",
+    "W"
+  ],
+  "PPI 6|EP c": [
+    "D",
+    "W"
+  ],
+  "PPI 7|EP b": [
+    "D",
+    "W"
+  ],
+  "PPI 7|EP c": [
+    "D",
+    "W"
+  ],
+  "PPI 7.2|EP d": [
+    "D",
+    "W"
+  ],
+  "PPI 7.2|EP e": [
+    "D",
+    "W"
+  ],
+  "PPI 10|EP a": [
+    "O",
+    "W"
+  ],
+  "PPI 10|EP b": [
+    "O",
+    "W"
+  ],
+  "PPI 10|EP c": [
+    "O",
+    "W"
+  ],
+  "PPI 11|EP a": [
+    "O",
+    "S"
+  ],
+  "PPI 11|EP b": [
+    "O",
+    "W"
+  ],
+  "PPI 11|EP c": [
+    "D",
+    "W"
+  ],
+  "PPI 11|EP d": [
+    "D",
+    "W"
+  ],
+  "PPI 12|EP b": [
+    "D",
+    "W"
+  ],
+  "PPI 12|EP c": [
+    "D",
+    "W"
+  ],
+  "PPK 3|EP a": [
+    "D",
+    "W"
+  ],
+  "PPK 3|EP b": [
+    "D"
+  ],
+  "PPK 3|EP c": [
+    "D",
+    "O"
+  ],
+  "PPK 4|EP b": [
+    "D",
+    "W"
+  ],
+  "PPK 4|EP c": [
+    "D"
+  ],
+  "PPK 5|EP b": [
+    "D",
+    "O",
+    "W"
+  ],
+  "PPK 5|EP c": [
+    "D"
+  ],
+  "PPK 5|EP d": [
+    "D"
+  ],
+  "PPK 6|EP c": [
+    "D"
+  ],
+  "PPK 6|EP d": [
+    "D",
+    "W"
+  ],
+  "PPK 6|EP e": [
+    "D"
+  ],
+  "PPK 6|EP f": [
+    "D",
+    "W"
+  ],
+  "PROGNAS 4|EP a": [
+    "R"
+  ],
+  "SKP 3|EP a": [
+    "R"
+  ],
+  "SKP 3|EP b": [
+    "O",
+    "W"
+  ],
+  "SKP 3|EP e": [
+    "R",
+    "D",
+    "W"
+  ],
+  "SKP 5|EP b": [
+    "D",
+    "W"
+  ],
+  "SKP 6|EP a": [
+    "D",
+    "O",
+    "W"
+  ],
+  "SKP 6|EP b": [
+    "D",
+    "O",
+    "W"
+  ],
+  "SKP 6|EP c": [
+    "D",
+    "W"
+  ],
+  "TKRS 1|EP b": [
+    "R"
+  ],
+  "TKRS 1|EP c": [
+    "D",
+    "W"
+  ],
+  "TKRS 1|EP d": [
+    "R"
+  ],
+  "TKRS 2|EP a": [
+    "R"
+  ],
+  "TKRS 2|EP b": [
+    "D",
+    "W"
+  ],
+  "TKRS 2|EP c": [
+    "D",
+    "W"
+  ],
+  "TKRS 3.1|EP a": [
+    "D",
+    "W"
+  ],
+  "TKRS 3.1|EP b": [
+    "D",
+    "W"
+  ],
+  "TKRS 3.1|EP c": [
+    "D",
+    "W"
+  ],
+  "TKRS 6|EP a": [
+    "R"
+  ],
+  "TKRS 6|EP b": [
+    "D",
+    "W"
+  ],
+  "TKRS 6|EP c": [
+    "D",
+    "W"
+  ],
+  "TKRS 6|EP d": [
+    "R"
+  ],
+  "TKRS 6|EP e": [
+    "R"
+  ],
+  "TKRS 6|EP f": [
+    "D",
+    "W"
+  ],
+  "TKRS 7|EP a": [
+    "D",
+    "W"
+  ],
+  "TKRS 7|EP b": [
+    "D",
+    "W"
+  ],
+  "TKRS 7|EP c": [
+    "D",
+    "W"
+  ],
+  "TKRS 7|EP d": [
+    "D",
+    "W"
+  ],
+  "TKRS 7|EP e": [
+    "D",
+    "W"
+  ],
+  "TKRS 7|EP f": [
+    "D",
+    "W"
+  ],
+  "TKRS 8|EP a": [
+    "R"
+  ],
+  "TKRS 8|EP b": [
+    "D",
+    "W"
+  ],
+  "TKRS 8|EP c": [
+    "R"
+  ],
+  "TKRS 9|EP b": [
+    "R"
+  ],
+  "TKRS 9|EP c": [
+    "R"
+  ],
+  "TKRS 10|EP a": [
+    "D",
+    "W"
+  ],
+  "TKRS 10|EP b": [
+    "D",
+    "W"
+  ],
+  "TKRS 10|EP c": [
+    "D",
+    "W"
+  ],
+  "TKRS 10|EP d": [
+    "D"
+  ],
+  "TKRS 11|EP a": [
+    "D"
+  ],
+  "TKRS 11|EP b": [
+    "D"
+  ],
+  "TKRS 11|EP c": [
+    "D"
+  ],
+  "TKRS 15|EP a": [
+    "R",
+    "D",
+    "W"
+  ],
+  "TKRS 15|EP b": [
+    "R"
+  ],
+  "TKRS 15|EP c": [
+    "R",
+    "D"
+  ],
+  "TKRS 15|EP d": [
+    "D",
+    "W"
+  ],
+  "TKRS 15|EP e": [
+    "D"
+  ],
+  "TKRS 15|EP f": [
+    "D",
+    "W"
+  ],
+  "TKRS 15|EP g": [
+    "R",
+    "D",
+    "W"
+  ],
+  "TKRS 1|EP a": [
+    "R"
+  ],
+  "TKRS 3|EP a": [
+    "R"
+  ],
+  "TKRS 3|EP b": [
+    "W"
+  ],
+  "TKRS 3|EP c": [
+    "D",
+    "W"
+  ],
+  "TKRS 3|EP d": [
+    "D"
+  ],
+  "TKRS 4|EP a": [
+    "R",
+    "D",
+    "W"
+  ],
+  "TKRS 4|EP b": [
+    "R",
+    "D",
+    "W"
+  ],
+  "TKRS 4|EP c": [
+    "D",
+    "W"
+  ],
+  "TKRS 4|EP d": [
+    "R"
+  ],
+  "TKRS 5|EP a": [
+    "D"
+  ],
+  "TKRS 5|EP f": [
+    "W"
+  ],
+  "TKRS 5|EP b": [
+    "D"
+  ],
+  "TKRS 5|EP c": [
+    "D",
+    "W"
+  ],
+  "TKRS 7.1|EP a": [
+    "R"
+  ],
+  "TKRS 7.1|EP b": [
+    "R"
+  ],
+  "TKRS 7.1|EP c": [
+    "D",
+    "W"
+  ],
+  "TKRS 7.1|EP d": [
+    "D",
+    "W"
+  ],
+  "TKRS 9|EP a": [
+    "R"
+  ],
+  "TKRS 9|EP d": [
+    "D",
+    "W"
+  ],
+  "TKRS 9|EP e": [
+    "D",
+    "W"
+  ],
+  "TKRS 12|EP a": [
+    "R"
+  ],
+  "TKRS 12|EP b": [
+    "R"
+  ],
+  "TKRS 12|EP c": [
+    "R"
+  ],
+  "TKRS 12|EP d": [
+    "D",
+    "W"
+  ],
+  "TKRS 13|EP a": [
+    "R",
+    "D"
+  ],
+  "TKRS 13|EP b": [
+    "D",
+    "W"
+  ],
+  "TKRS 13|EP c": [
+    "D",
+    "O"
+  ],
+  "TKRS 13|EP d": [
+    "D",
+    "O",
+    "W"
+  ],
+  "TKRS 13|EP e": [
+    "D"
+  ],
+  "TKRS 13|EP f": [
+    "D",
+    "W"
+  ],
+  "TKRS 14|EP a": [
+    "R"
+  ],
+  "TKRS 14|EP b": [
+    "D"
+  ],
+  "KPS 1|EP a": [
+    "R"
+  ],
+  "KPS 1|EP b": [
+    "R",
+    "D"
+  ],
+  "KPS 1|EP c": [
+    "D"
+  ],
+  "KPS 1|EP d": [
+    "D"
+  ],
+  "KPS 1|EP e": [
+    "D"
+  ],
+  "KPS 1|EP f": [
+    "D"
+  ],
+  "KPS 2|EP a": [
+    "D"
+  ],
+  "KPS 2|EP b": [
+    "D",
+    "W"
+  ],
+  "KPS 3|EP b": [
+    "D"
+  ],
+  "KPS 4|EP a": [
+    "R",
+    "D"
+  ],
+  "KPS 4|EP b": [
+    "D"
+  ],
+  "KPS 4|EP c": [
+    "D"
+  ],
+  "KPS 6|EP a": [
+    "D"
+  ],
+  "KPS 6|EP b": [
+    "D"
+  ],
+  "KPS 7|EP a": [
+    "R"
+  ],
+  "KPS 8|EP a": [
+    "D"
+  ],
+  "KPS 8|EP b": [
+    "R"
+  ],
+  "KPS 8|EP c": [
+    "D",
+    "W"
+  ],
+  "KPS 8|EP d": [
+    "D",
+    "O"
+  ],
+  "KPS 8.1|EP a": [
+    "R"
+  ],
+  "KPS 8.1|EP b": [
+    "D",
+    "S"
+  ],
+  "KPS 8.1|EP c": [
+    "D"
+  ],
+  "KPS 9|EP a": [
+    "R"
+  ],
+  "KPS 9|EP b": [
+    "D",
+    "W"
+  ],
+  "KPS 9|EP c": [
+    "D",
+    "W"
+  ],
+  "KPS 9|EP d": [
+    "D"
+  ],
+  "KPS 10|EP d": [
+    "D"
+  ],
+  "KPS 10.1|EP a": [
+    "R"
+  ],
+  "KPS 10.1|EP b": [
+    "D"
+  ],
+  "KPS 10.1|EP c": [
+    "D"
+  ],
+  "KPS 11|EP a": [
+    "R"
+  ],
+  "KPS 11|EP b": [
+    "D"
+  ],
+  "KPS 11|EP c": [
+    "D"
+  ],
+  "KPS 11|EP d": [
+    "D"
+  ],
+  "KPS 11|EP e": [
+    "D",
+    "W"
+  ],
+  "KPS 12|EP a": [
+    "D"
+  ],
+  "KPS 12|EP b": [
+    "D"
+  ],
+  "KPS 12|EP c": [
+    "D"
+  ],
+  "KPS 12|EP d": [
+    "D"
+  ],
+  "KPS 14|EP a": [
+    "R",
+    "D"
+  ],
+  "KPS 14|EP b": [
+    "D"
+  ],
+  "KPS 14|EP c": [
+    "D"
+  ],
+  "KPS 14|EP d": [
+    "D"
+  ],
+  "KPS 14|EP e": [
+    "D"
+  ],
+  "KPS 15|EP a": [
+    "R"
+  ],
+  "KPS 15|EP b": [
+    "R"
+  ],
+  "KPS 16|EP b": [
+    "D"
+  ],
+  "KPS 17|EP a": [
+    "R"
+  ],
+  "KPS 17|EP c": [
+    "D"
+  ],
+  "KPS 17|EP b": [
+    "D"
+  ],
+  "KPS 17|EP d": [
+    "D"
+  ],
+  "MFK 1|EP a": [
+    "R"
+  ],
+  "MFK 1|EP b": [
+    "D",
+    "W"
+  ],
+  "MFK 1|EP c": [
+    "D"
+  ],
+  "MFK 2|EP a": [
+    "O",
+    "W"
+  ],
+  "MFK 2|EP b": [
+    "R"
+  ],
+  "MFK 2|EP d": [
+    "D"
+  ],
+  "MFK 3|EP a": [
+    "D",
+    "O",
+    "W"
+  ],
+  "MFK 3|EP b": [
+    "R"
+  ],
+  "MFK 3|EP c": [
+    "D",
+    "W"
+  ],
+  "MFK 3|EP d": [
+    "D",
+    "W"
+  ],
+  "MFK 4|EP a": [
+    "D",
+    "O",
+    "W"
+  ],
+  "MFK 4|EP b": [
+    "D"
+  ],
+  "MFK 4|EP c": [
+    "D"
+  ],
+  "MFK 4|EP d": [
+    "D",
+    "W"
+  ],
+  "MFK 5|EP a": [
+    "D",
+    "W"
+  ],
+  "MFK 5|EP b": [
+    "D",
+    "W"
+  ],
+  "MFK 5|EP c": [
+    "D",
+    "O",
+    "W"
+  ],
+  "MFK 5|EP d": [
+    "W"
+  ],
+  "MFK 5|EP e": [
+    "W",
+    "O",
+    "S"
+  ],
+  "MFK 5.1|EP a": [
+    "W"
+  ],
+  "MFK 5.1|EP b": [
+    "D",
+    "O"
+  ],
+  "MFK 5.1|EP c": [
+    "D",
+    "O",
+    "W"
+  ],
+  "MFK 6|EP a": [
+    "W"
+  ],
+  "MFK 6|EP b": [
+    "D",
+    "O"
+  ],
+  "MFK 6|EP e": [
+    "D",
+    "S",
+    "W"
+  ],
+  "MFK 6|EP f": [
+    "D",
+    "O"
+  ],
+  "MFK 7|EP a": [
+    "D",
+    "O",
+    "W"
+  ],
+  "MFK 7|EP b": [
+    "R"
+  ],
+  "MFK 7|EP c": [
+    "D"
+  ],
+  "MFK 7|EP d": [
+    "D"
+  ],
+  "MFK 7|EP e": [
+    "D",
+    "W"
+  ],
+  "MFK 7|EP f": [
+    "D",
+    "W"
+  ],
+  "MFK 8|EP a": [
+    "D",
+    "O",
+    "W"
+  ],
+  "MFK 8|EP b": [
+    "D",
+    "W"
+  ],
+  "MFK 8.1|EP a": [
+    "D",
+    "W"
+  ],
+  "MFK 8.1|EP b": [
+    "D",
+    "W"
+  ],
+  "MFK 8.1|EP c": [
+    "D",
+    "W"
+  ],
+  "MFK 8.1|EP d": [
+    "D",
+    "W"
+  ],
+  "MFK 8.1|EP e": [
+    "D",
+    "W"
+  ],
+  "MFK 8.2|EP a": [
+    "R"
+  ],
+  "MFK 8.2|EP b": [
+    "O",
+    "W"
+  ],
+  "MFK 8.2|EP c": [
+    "O",
+    "W"
+  ],
+  "MFK 8.2|EP d": [
+    "D",
+    "W"
+  ],
+  "MFK 8.2.1|EP a": [
+    "D",
+    "O",
+    "W",
+    "S"
+  ],
+  "MFK 8.2.1|EP b": [
+    "D"
+  ],
+  "MFK 8.2.1|EP c": [
+    "D"
+  ],
+  "MFK 8.2.1|EP d": [
+    "O",
+    "W"
+  ],
+  "MFK 8.3|EP a": [
+    "D"
+  ],
+  "MFK 8.3|EP b": [
+    "D"
+  ],
+  "MFK 8.3|EP c": [
+    "D"
+  ],
+  "MFK 9|EP a": [
+    "D",
+    "W"
+  ],
+  "MFK 9|EP b": [
+    "D"
+  ],
+  "MFK 9|EP c": [
+    "R"
+  ],
+  "MFK 9|EP d": [
+    "D"
+  ],
+  "MFK 9|EP e": [
+    "W",
+    "S"
+  ],
+  "MFK 9|EP f": [
+    "O"
+  ],
+  "MFK 10|EP a": [
+    "D"
+  ],
+  "MFK 10|EP b": [
+    "D",
+    "W"
+  ],
+  "MFK 10|EP c": [
+    "D"
+  ],
+  "MFK 10|EP d": [
+    "D"
+  ],
+  "MFK 11|EP a": [
+    "D",
+    "W"
+  ],
+  "MFK 11|EP b": [
+    "D",
+    "W"
+  ],
+  "MFK 11|EP c": [
+    "D",
+    "W",
+    "S"
+  ],
+  "MFK 11|EP d": [
+    "D",
+    "W",
+    "S"
+  ],
+  "MFK 11|EP e": [
+    "D",
+    "W"
+  ],
+  "MFK 11|EP f": [
+    "D",
+    "W"
+  ],
+  "MFK 11|EP g": [
+    "D",
+    "W"
+  ],
+  "MFK 11|EP h": [
+    "D",
+    "W"
+  ],
+  "PMKP 1|EP a": [
+    "R"
+  ],
+  "PMKP 1|EP b": [
+    "R"
+  ],
+  "PMKP 1|EP c": [
+    "R"
+  ],
+  "PMKP 1|EP d": [
+    "D",
+    "W"
+  ],
+  "PMKP 3|EP a": [
+    "D",
+    "W"
+  ],
+  "PMKP 3|EP b": [
+    "R"
+  ],
+  "PMKP 4|EP a": [
+    "D",
+    "W"
+  ],
+  "PMKP 4|EP b": [
+    "D",
+    "W"
+  ],
+  "PMKP 4|EP c": [
+    "D",
+    "W"
+  ],
+  "PMKP 4|EP d": [
+    "D"
+  ],
+  "PMKP 4.1|EP a": [
+    "D",
+    "W"
+  ],
+  "PMKP 4.1|EP b": [
+    "D",
+    "W"
+  ],
+  "PMKP 4.1|EP c": [
+    "D",
+    "W"
+  ],
+  "PMKP 7|EP a": [
+    "D",
+    "W"
+  ],
+  "PMKP 7|EP b": [
+    "D",
+    "W"
+  ],
+  "PMKP 7|EP c": [
+    "D",
+    "W"
+  ],
+  "PMKP 8|EP a": [
+    "R"
+  ],
+  "PMKP 8|EP b": [
+    "R"
+  ],
+  "PMKP 8|EP c": [
+    "D",
+    "W"
+  ],
+  "PMKP 11|EP c": [
+    "D"
+  ],
+  "MRMIK 1|EP a": [
+    "R"
+  ],
+  "MRMIK 1|EP b": [
+    "D",
+    "O"
+  ],
+  "MRMIK 1|EP c": [
+    "D",
+    "O"
+  ],
+  "MRMIK 2|EP a": [
+    "D",
+    "W"
+  ],
+  "MRMIK 2|EP b": [
+    "D",
+    "O"
+  ],
+  "MRMIK 2.1|EP a": [
+    "O",
+    "W"
+  ],
+  "MRMIK 2.1|EP b": [
+    "O",
+    "W"
+  ],
+  "MRMIK 2.1|EP c": [
+    "D"
+  ],
+  "MRMIK 2.2|EP a": [
+    "O"
+  ],
+  "MRMIK 2.2|EP b": [
+    "D"
+  ],
+  "MRMIK 2.2|EP c": [
+    "D"
+  ],
+  "MRMIK 3|EP a": [
+    "R"
+  ],
+  "MRMIK 3|EP b": [
+    "D"
+  ],
+  "MRMIK 3|EP c": [
+    "D",
+    "W"
+  ],
+  "MRMIK 4|EP a": [
+    "D"
+  ],
+  "MRMIK 4|EP b": [
+    "D"
+  ],
+  "MRMIK 5|EP a": [
+    "R"
+  ],
+  "MRMIK 5|EP b": [
+    "R"
+  ],
+  "MRMIK 8|EP a": [
+    "D"
+  ],
+  "MRMIK 8|EP c": [
+    "R"
+  ],
+  "MRMIK 10|EP a": [
+    "R"
+  ],
+  "MRMIK 10|EP b": [
+    "R"
+  ],
+  "MRMIK 10|EP c": [
+    "D"
+  ],
+  "MRMIK 11|EP c": [
+    "D"
+  ],
+  "MRMIK 12|EP a": [
+    "R"
+  ],
+  "MRMIK 12|EP c": [
+    "D"
+  ],
+  "MRMIK 13|EP a": [
+    "R"
+  ],
+  "MRMIK 13|EP b": [
+    "D"
+  ],
+  "MRMIK 13|EP c": [
+    "R",
+    "W"
+  ],
+  "MRMIK 13|EP d": [
+    "D"
+  ],
+  "MRMIK 13.1|EP a": [
+    "R"
+  ],
+  "PPI 1|EP c": [
+    "D",
+    "W"
+  ],
+  "PPI 1|EP d": [
+    "D",
+    "O",
+    "W"
+  ],
+  "PPI 1.1|EP a": [
+    "R"
+  ],
+  "PPI 2|EP a": [
+    "R"
+  ],
+  "PPI 2|EP b": [
+    "D",
+    "W"
+  ],
+  "PPI 3|EP a": [
+    "D",
+    "W"
+  ],
+  "PPI 4|EP a": [
+    "D",
+    "O",
+    "W"
+  ],
+  "PPI 4|EP b": [
+    "D",
+    "W"
+  ],
+  "PPI 4|EP c": [
+    "D",
+    "O",
+    "W"
+  ],
+  "PPI 4.1|EP a": [
+    "R"
+  ],
+  "PPI 4.1|EP b": [
+    "R"
+  ],
+  "PPI 4.1|EP c": [
+    "D",
+    "W"
+  ],
+  "PPI 7|EP e": [
+    "D",
+    "O",
+    "W"
+  ],
+  "PPI 7|EP d": [
+    "W"
+  ],
+  "PPI 7.1|EP a": [
+    "D"
+  ],
+  "PPI 7.1|EP b": [
+    "O",
+    "W"
+  ],
+  "PPI 7.1|EP c": [
+    "D"
+  ],
+  "PPI 7.2|EP a": [
+    "O",
+    "W"
+  ],
+  "PPI 7.2|EP b": [
+    "D",
+    "W"
+  ],
+  "PPI 7.2|EP c": [
+    "D"
+  ],
+  "PPI 8|EP a": [
+    "R",
+    "D"
+  ],
+  "PPI 8|EP b": [
+    "O",
+    "W"
+  ],
+  "PPI 8|EP c": [
+    "D",
+    "W"
+  ],
+  "PPI 9|EP a": [
+    "O",
+    "W",
+    "D"
+  ],
+  "PPI 9|EP b": [
+    "W"
+  ],
+  "PPI 9|EP c": [
+    "D",
+    "W"
+  ],
+  "PPI 10|EP d": [
+    "D",
+    "W"
+  ],
+  "PPI 10.1|EP a": [
+    "R",
+    "D",
+    "W"
+  ],
+  "PPI 10.1|EP b": [
+    "O",
+    "W"
+  ],
+  "PPI 10.1|EP c": [
+    "D",
+    "W"
+  ],
+  "PPI 11.1|EP a": [
+    "D",
+    "W"
+  ],
+  "PPI 11.1|EP b": [
+    "O",
+    "W",
+    "S"
+  ],
+  "PPI 11.1|EP c": [
+    "O"
+  ],
+  "PPI 11.1|EP d": [
+    "D",
+    "W"
+  ],
+  "PPI 13|EP a": [
+    "R"
+  ],
+  "PPI 13|EP b": [
+    "D"
+  ],
+  "PPI 13|EP c": [
+    "D",
+    "W"
+  ],
+  "PPK 1|EP a": [
+    "R"
+  ],
+  "PPK 1|EP b": [
+    "D"
+  ],
+  "PPK 1|EP c": [
+    "R",
+    "D",
+    "W"
+  ],
+  "PPK 1|EP d": [
+    "D",
+    "W"
+  ],
+  "PPK 2|EP a": [
+    "R"
+  ],
+  "PPK 2|EP b": [
+    "D",
+    "W"
+  ],
+  "PPK 2|EP c": [
+    "D"
+  ],
+  "PPK 4|EP a": [
+    "R"
+  ],
+  "PPK 5|EP a": [
+    "R"
+  ],
+  "PPK 6|EP a": [
+    "R"
+  ],
+  "PPK 6|EP b": [
+    "R"
+  ],
+  "AKP 1|EP a": [
+    "R"
+  ],
+  "AKP 1.2|EP a": [
+    "D"
+  ],
+  "AKP 1.2|EP b": [
+    "R"
+  ],
+  "AKP 1.2|EP c": [
+    "D",
+    "W"
+  ],
+  "AKP 1.2|EP d": [
+    "D",
+    "W"
+  ],
+  "AKP 2|EP a": [
+    "D",
+    "O",
+    "W"
+  ],
+  "AKP 2|EP b": [
+    "D",
+    "W"
+  ],
+  "AKP 2|EP c": [
+    "D",
+    "W"
+  ],
+  "AKP 2|EP d": [
+    "D",
+    "W"
+  ],
+  "AKP 2.1|EP a": [
+    "O",
+    "W"
+  ],
+  "AKP 2.1|EP b": [
+    "D",
+    "W"
+  ],
+  "AKP 2.1|EP c": [
+    "D",
+    "W"
+  ],
+  "AKP 2.1|EP d": [
+    "D"
+  ],
+  "AKP 3|EP a": [
+    "D",
+    "W"
+  ],
+  "AKP 3|EP b": [
+    "R"
+  ],
+  "AKP 3|EP c": [
+    "O",
+    "W"
+  ],
+  "AKP 3|EP d": [
+    "D"
+  ],
+  "AKP 3.1|EP c": [
+    "R"
+  ],
+  "AKP 4|EP a": [
+    "D"
+  ],
+  "AKP 4|EP b": [
+    "D"
+  ],
+  "AKP 5|EP a": [
+    "R"
+  ],
+  "AKP 5|EP b": [
+    "R"
+  ],
+  "AKP 5.1|EP f": [
+    "R"
+  ],
+  "AKP 5.1|EP b": [
+    "D"
+  ],
+  "AKP 5.2|EP a": [
+    "R",
+    "D"
+  ],
+  "AKP 5.2|EP b": [
+    "D",
+    "W"
+  ],
+  "AKP 5.3|EP a": [
+    "R"
+  ],
+  "AKP 5.3|EP b": [
+    "D"
+  ],
+  "AKP 5.3|EP c": [
+    "D",
+    "W"
+  ],
+  "AKP 5.4|EP a": [
+    "R"
+  ],
+  "AKP 5.6|EP a": [
+    "D"
+  ],
+  "AKP 5.6|EP b": [
+    "D"
+  ],
+  "AKP 5.6|EP c": [
+    "D"
+  ],
+  "AKP 5.6|EP d": [
+    "D",
+    "W"
+  ],
+  "AKP 5.7|EP a": [
+    "R"
+  ],
+  "AKP 5.7|EP b": [
+    "D",
+    "W"
+  ],
+  "AKP 5.7|EP c": [
+    "D",
+    "W"
+  ],
+  "HPK 1.1|EP d": [
+    "D",
+    "W"
+  ],
+  "HPK 1.4|EP a": [
+    "R"
+  ],
+  "HPK 1.5|EP b": [
+    "R"
+  ],
+  "HPK 2|EP a": [
+    "D",
+    "W"
+  ],
+  "HPK 2|EP b": [
+    "D",
+    "W"
+  ],
+  "HPK 2|EP c": [
+    "D",
+    "W"
+  ],
+  "PP 1|EP b": [
+    "R"
+  ],
+  "PP 1.1|EP b": [
+    "D"
+  ],
+  "PP 1.1|EP d": [
+    "D"
+  ],
+  "PP 1.1|EP e": [
+    "D"
+  ],
+  "PP 1.2|EP a": [
+    "D"
+  ],
+  "PP 1.2|EP b": [
+    "D"
+  ],
+  "PP 1.2|EP c": [
+    "R",
+    "D"
+  ],
+  "PP 1.3|EP a": [
+    "R"
+  ],
+  "PP 1.3|EP b": [
+    "D"
+  ],
+  "PP 2|EP a": [
+    "D"
+  ],
+  "PP 2|EP b": [
+    "D"
+  ],
+  "PP 2|EP c": [
+    "D"
+  ],
+  "PP 2|EP d": [
+    "D"
+  ],
+  "PP 3|EP a": [
+    "R"
+  ],
+  "PP 3|EP b": [
+    "R",
+    "D"
+  ],
+  "PP 3.1|EP a": [
+    "R",
+    "D"
+  ],
+  "PP 3.1|EP b": [
+    "D"
+  ],
+  "PP 3.2|EP a": [
+    "D"
+  ],
+  "PP 3.3|EP b": [
+    "D"
+  ],
+  "PP 3.3|EP c": [
+    "D"
+  ],
+  "PP 3.3|EP d": [
+    "D"
+  ],
+  "PP 3.4|EP b": [
+    "D"
+  ],
+  "PP 3.5|EP a": [
+    "D"
+  ],
+  "PP 3.5|EP b": [
+    "D"
+  ],
+  "PP 3.6|EP b": [
+    "D"
+  ],
+  "PP 3.7|EP a": [
+    "D"
+  ],
+  "PP 3.7|EP b": [
+    "D"
+  ],
+  "PP 3.8|EP a": [
+    "R",
+    "D"
+  ],
+  "PP 3.8|EP b": [
+    "R",
+    "D"
+  ],
+  "PP 3.8|EP c": [
+    "D"
+  ],
+  "PP 3.8|EP d": [
+    "D"
+  ],
+  "PP 4.1|EP a": [
+    "R",
+    "D"
+  ],
+  "PP 4.1|EP b": [
+    "D"
+  ],
+  "PP 4.2|EP a": [
+    "D"
+  ],
+  "PP 4.3|EP a": [
+    "R"
+  ],
+  "PP 4.3|EP b": [
+    "D"
+  ],
+  "PP 4.3|EP c": [
+    "D"
+  ],
+  "PP 4.3|EP d": [
+    "D"
+  ],
+  "PP 4.4|EP a": [
+    "D"
+  ],
+  "PP 4.4|EP b": [
+    "D"
+  ],
+  "PP 4.5|EP a": [
+    "D"
+  ],
+  "PP 4.5|EP b": [
+    "D"
+  ],
+  "PAP 1|EP a": [
+    "W"
+  ],
+  "PAP 1|EP b": [
+    "D"
+  ],
+  "PAP 1.1|EP a": [
+    "D",
+    "W"
+  ],
+  "PAP 1.1|EP b": [
+    "R"
+  ],
+  "PAP 1.1|EP c": [
+    "D"
+  ],
+  "PAP 1.1|EP d": [
+    "D",
+    "W"
+  ],
+  "PAP 1.1|EP e": [
+    "D"
+  ],
+  "PAP 1.2|EP a": [
+    "D",
+    "W"
+  ],
+  "PAP 1.2|EP b": [
+    "D",
+    "W"
+  ],
+  "PAP 1.2|EP c": [
+    "D",
+    "W"
+  ],
+  "PAP 1.2|EP d": [
+    "D",
+    "W"
+  ],
+  "PAP 1.2|EP e": [
+    "D",
+    "W"
+  ],
+  "PAP 2|EP a": [
+    "D"
+  ],
+  "PAP 2|EP b": [
+    "D",
+    "O",
+    "W"
+  ],
+  "PAP 2|EP c": [
+    "D",
+    "W"
+  ],
+  "PAP 2.1|EP a": [
+    "R"
+  ],
+  "PAP 2.1|EP d": [
+    "D"
+  ],
+  "PAP 2.2|EP a": [
+    "R"
+  ],
+  "PAP 2.2|EP b": [
+    "D",
+    "W"
+  ],
+  "PAP 2.2|EP c": [
+    "D"
+  ],
+  "PAP 2.2|EP d": [
+    "D"
+  ],
+  "PAP 2.3|EP a": [
+    "R"
+  ],
+  "PAP 2.3|EP b": [
+    "D"
+  ],
+  "PAP 2.3|EP c": [
+    "R"
+  ],
+  "PAP 2.3|EP d": [
+    "D",
+    "W"
+  ],
+  "PAP 2.3|EP e": [
+    "D",
+    "W"
+  ],
+  "PAP 2.3|EP f": [
+    "D"
+  ],
+  "PAP 2.5|EP a": [
+    "D",
+    "W"
+  ],
+  "PAP 2.5|EP b": [
+    "D"
+  ],
+  "PAP 2.6|EP a": [
+    "D",
+    "W"
+  ],
+  "PAP 2.6|EP b": [
+    "D",
+    "W"
+  ],
+  "PAP 2.6|EP c": [
+    "S",
+    "W"
+  ],
+  "PAP 2.6|EP d": [
+    "D",
+    "W"
+  ],
+  "PAP 2.7|EP b": [
+    "R"
+  ],
+  "PAP 3|EP a": [
+    "D"
+  ],
+  "PAP 3|EP b": [
+    "D",
+    "W"
+  ],
+  "PAP 3|EP c": [
+    "D",
+    "W"
+  ],
+  "PAP 3|EP e": [
+    "D"
+  ],
+  "PAP 4|EP a": [
+    "R"
+  ],
+  "PAP 5|EP a": [
+    "D",
+    "W"
+  ],
+  "PAP 5|EP b": [
+    "D"
+  ],
+  "PAB 1|EP a": [
+    "R"
+  ],
+  "PAB 1|EP b": [
+    "D"
+  ],
+  "PAB 3.1|EP a": [
+    "R"
+  ],
+  "PAB 3.1|EP b": [
+    "D"
+  ],
+  "PAB 3.1|EP c": [
+    "D"
+  ],
+  "PAB 4|EP a": [
+    "D"
+  ],
+  "PAB 4|EP b": [
+    "D"
+  ],
+  "PAB 4|EP c": [
+    "D"
+  ],
+  "PAB 6.1|EP a": [
+    "D",
+    "W"
+  ],
+  "PAB 6.1|EP b": [
+    "D",
+    "W"
+  ],
+  "PAB 6.1|EP c": [
+    "D",
+    "W"
+  ],
+  "PAB 7.4|EP a": [
+    "R"
+  ],
+  "PAB 7.4|EP b": [
+    "R"
+  ],
+  "PAB 7.4|EP c": [
+    "D",
+    "W"
+  ],
+  "PAB 7.4|EP d": [
+    "D",
+    "W"
+  ],
+  "PKPO 3.1|EP c": [
+    "O"
+  ],
+  "PKPO 3.1|EP d": [
+    "O"
+  ],
+  "PKPO 3.1|EP e": [
+    "O"
+  ],
+  "PKPO 3.3|EP a": [
+    "D",
+    "O"
+  ],
+  "PKPO 3.3|EP b": [
+    "D",
+    "W"
+  ],
+  "PKPO 3.3|EP c": [
+    "D",
+    "W"
+  ],
+  "PKPO 3.3|EP d": [
+    "D",
+    "W"
+  ],
+  "PKPO 4|EP a": [
+    "D",
+    "W"
+  ],
+  "PKPO 4|EP b": [
+    "D"
+  ],
+  "PKPO 4.1|EP a": [
+    "D"
+  ],
+  "PKPO 4.1|EP b": [
+    "D",
+    "W"
+  ],
+  "PKPO 4.1|EP c": [
+    "D",
+    "W"
+  ],
+  "PKPO 4.1|EP d": [
+    "D"
+  ],
+  "PKPO 4.1|EP e": [
+    "D",
+    "W"
+  ],
+  "PKPO 5|EP c": [
+    "D"
+  ],
+  "PKPO 5|EP d": [
+    "D"
+  ],
+  "PKPO 5|EP f": [
+    "O"
+  ],
+  "PKPO 5.1|EP a": [
+    "D",
+    "O",
+    "W",
+    "S"
+  ],
+  "PKPO 5.1|EP b": [
+    "D",
+    "O",
+    "W",
+    "S"
+  ],
+  "PKPO 7|EP a": [
+    "D"
+  ],
+  "PKPO 7|EP b": [
+    "D"
+  ],
+  "PKPO 7.1|EP c": [
+    "D"
+  ],
+  "PKPO 7.1|EP d": [
+    "D"
+  ],
+  "KE 1|EP a": [
+    "R"
+  ],
+  "KE 3|EP a": [
+    "D"
+  ],
+  "KE 3|EP b": [
+    "D"
+  ],
+  "KE 3|EP c": [
+    "D"
+  ],
+  "KE 5|EP a": [
+    "D"
+  ],
+  "KE 5|EP b": [
+    "D"
+  ],
+  "KE 6|EP b": [
+    "D"
+  ],
+  "KE 6|EP d": [
+    "D"
+  ],
+  "KE 7|EP a": [
+    "D"
+  ],
+  "KE 7|EP b": [
+    "D"
+  ],
+  "SKP 1|EP a": [
+    "R"
+  ],
+  "SKP 1|EP b": [
+    "O",
+    "W",
+    "S"
+  ],
+  "SKP 1|EP c": [
+    "O",
+    "S",
+    "W"
+  ],
+  "SKP 1|EP d": [
+    "D",
+    "W"
+  ],
+  "SKP 2|EP a": [
+    "R"
+  ],
+  "SKP 2|EP b": [
+    "O",
+    "W"
+  ],
+  "SKP 2|EP c": [
+    "R",
+    "D",
+    "W"
+  ],
+  "SKP 4|EP a": [
+    "D",
+    "W"
+  ],
+  "SKP 4|EP b": [
+    "R"
+  ],
+  "SKP 4|EP c": [
+    "D",
+    "O",
+    "W"
+  ],
+  "SKP 4|EP d": [
+    "D"
+  ],
+  "SKP 5|EP a": [
+    "O",
+    "W",
+    "S"
+  ],
+  "SKP 6.1|EP a": [
+    "D",
+    "O",
+    "W"
+  ],
+  "SKP 6.1|EP b": [
+    "D",
+    "W"
+  ],
+  "SKP 6.1|EP c": [
+    "D",
+    "W"
+  ],
+  "PROGNAS 1|EP a": [
+    "R"
+  ],
+  "PROGNAS 1|EP b": [
+    "D"
+  ],
+  "PROGNAS 1|EP c": [
+    "R"
+  ],
+  "PROGNAS 1|EP d": [
+    "D",
+    "W"
+  ],
+  "PROGNAS 1|EP e": [
+    "D",
+    "W"
+  ],
+  "PROGNAS 1.1|EP a": [
+    "R"
+  ],
+  "PROGNAS 1.1|EP b": [
+    "D"
+  ],
+  "PROGNAS 1.1|EP c": [
+    "D"
+  ],
+  "PROGNAS 2|EP a": [
+    "R"
+  ],
+  "PROGNAS 2|EP b": [
+    "D"
+  ],
+  "PROGNAS 2|EP c": [
+    "D"
+  ],
+  "PROGNAS 2|EP d": [
+    "D"
+  ],
+  "PROGNAS 2.1|EP a": [
+    "O"
+  ],
+  "PROGNAS 2.1|EP b": [
+    "O"
+  ],
+  "PROGNAS 2.1|EP c": [
+    "O"
+  ],
+  "PROGNAS 2.2|EP a": [
+    "D"
+  ],
+  "PROGNAS 2.2|EP b": [
+    "D"
+  ],
+  "PROGNAS 2.2|EP c": [
+    "D"
+  ],
+  "PROGNAS 2.2|EP d": [
+    "D"
+  ],
+  "PROGNAS 3|EP a": [
+    "R",
+    "D"
+  ],
+  "PROGNAS 3|EP b": [
+    "D"
+  ],
+  "PROGNAS 3|EP c": [
+    "D"
+  ],
+  "PROGNAS 3|EP d": [
+    "D"
+  ],
+  "PROGNAS 3|EP e": [
+    "D"
+  ],
+  "PROGNAS 3|EP f": [
+    "D"
+  ],
+  "PROGNAS 4|EP b": [
+    "R"
+  ],
+  "PROGNAS 4|EP c": [
+    "R"
+  ],
+  "PROGNAS 5|EP a": [
+    "R"
+  ],
+  "PROGNAS 5|EP b": [
+    "R"
+  ],
+  "PROGNAS 5|EP c": [
+    "D"
+  ],
+  "PROGNAS 5|EP d": [
+    "D"
+  ],
+  "PROGNAS 5.1|EP a": [
+    "D",
+    "O"
+  ],
+  "PROGNAS 5.1|EP b": [
+    "D"
+  ],
+  "PROGNAS 5.1|EP c": [
+    "O"
+  ],
+  "PPI 12|EP a": [
+    "R"
+  ],
+  "PPI 12|EP d": [
+    "D",
+    "W"
+  ],
+  "PKPO 1|EP a": [
+    "R"
+  ],
+  "PKPO 1|EP b": [
+    "D"
+  ],
+  "PKPO 1|EP c": [
+    "D",
+    "W"
+  ],
+  "PKPO 1|EP d": [
+    "D",
+    "O",
+    "W"
+  ]
+}

@@ -1,0 +1,5558 @@
+{
+  "AKP": {
+    "AKP 1": {
+      "judul": "-- 4 of 58 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "AKP 1.1": {
+      "judul": "-- 6 of 58 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        }
+      ]
+    },
+    "AKP 1.2": {
+      "judul": "-- 8 of 58 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "AKP 1.3": {
+      "judul": "-- 11 of 58 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": "Pendaftaran pasien gawat darurat;"
+        },
+        {
+          "kode": "EP b",
+          "teks": "Penerimaan langsung pasien dari IGD ke rawat inap;"
+        },
+        {
+          "kode": "EP c",
+          "teks": "Admisi pasien rawat inap;"
+        },
+        {
+          "kode": "EP d",
+          "teks": "Pendaftaran pasien rawat jalan;"
+        },
+        {
+          "kode": "EP e",
+          "teks": "Observasi pasien; dan"
+        },
+        {
+          "kode": "EP f",
+          "teks": "Mengelola pasien bila tidak tersedia tempat tidur."
+        }
+      ]
+    },
+    "AKP 2": {
+      "judul": "-- 14 of 58 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": "Ketersediaan tempat tidur di tempat sementara/transit/intermediate sebelum mendapatkan tempat tidur di rawat"
+        },
+        {
+          "kode": "EP b",
+          "teks": "Perencanaan fasilitas, peralatan, utilitas, teknologi medis, dan kebutuhan lain untuk mendukung penempatan"
+        },
+        {
+          "kode": "EP c",
+          "teks": "Perencanaan tenaga untuk memberikan asuhan pasien di tempat sementara/transit termasuk pasien yang"
+        },
+        {
+          "kode": "EP d",
+          "teks": "Alur pelayanan pasien di tempat sementara/transit meliputi pemberian asuhan, tindakan, pemeriksaan laboratorium,"
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        },
+        {
+          "kode": "EP g",
+          "teks": ""
+        },
+        {
+          "kode": "EP h",
+          "teks": ""
+        }
+      ]
+    },
+    "AKP 2.1": {
+      "judul": "-- 17 of 58 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        },
+        {
+          "kode": "EP g",
+          "teks": ""
+        },
+        {
+          "kode": "EP h",
+          "teks": ""
+        }
+      ]
+    },
+    "AKP 3": {
+      "judul": "-- 21 of 58 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        }
+      ]
+    },
+    "AKP 3.1": {
+      "judul": "-- 27 of 58 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        },
+        {
+          "kode": "EP g",
+          "teks": ""
+        }
+      ]
+    },
+    "AKP 4": {
+      "judul": "-- 30 of 58 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        }
+      ]
+    },
+    "AKP 5": {
+      "judul": "-- 34 of 58 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": "Indikasi pasien masuk dirawat, diagnosis, dan komorbiditas lain;"
+        },
+        {
+          "kode": "EP b",
+          "teks": "Temuan fisik penting dan temuan-temuan lain;"
+        },
+        {
+          "kode": "EP c",
+          "teks": "Tindakan diagnostik dan prosedur terapi yang telah dikerjakan;"
+        },
+        {
+          "kode": "EP d",
+          "teks": "Obat yang diberikan selama dirawat inap dengan potensi akibat efek residual setelah obat tidak"
+        },
+        {
+          "kode": "EP e",
+          "teks": "Kondisi pasien (status present); dan"
+        },
+        {
+          "kode": "EP f",
+          "teks": "Instruksi tindak lanjut."
+        }
+      ]
+    },
+    "AKP 5.1": {
+      "judul": "-- 36 of 58 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        }
+      ]
+    },
+    "AKP 5.2": {
+      "judul": "-- 39 of 58 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        }
+      ]
+    },
+    "AKP 5.3": {
+      "judul": "-- 39 of 58 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        }
+      ]
+    },
+    "AKP 5.4": {
+      "judul": "-- 44 of 58 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": "Ada staf yang bertanggung jawab dalam pengelolaan rujukan termasuk untuk memastikan pasien diterima di"
+        },
+        {
+          "kode": "EP b",
+          "teks": "Selama dalam proses rujukan ada staf yang kompeten sesuai dengan kondisi pasien yang selalu memonitor dan"
+        },
+        {
+          "kode": "EP c",
+          "teks": "Dilakukan identifikasi kebutuhan obat, bahan medis habis pakai, alat kesehatan dan peralatan medis yang"
+        },
+        {
+          "kode": "EP d",
+          "teks": "Dalam proses pelaksanaan rujukan, ada proses serah terima pasien antara staf pengantar dan yang menerima."
+        }
+      ]
+    },
+    "AKP 5.5": {
+      "judul": "-- 46 of 58 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": "Identitas pasien;"
+        },
+        {
+          "kode": "EP b",
+          "teks": "Hasil pemeriksaan (anamnesis, pemeriksaan fisis, dan pemeriksaan penunjang) yang telah"
+        },
+        {
+          "kode": "EP c",
+          "teks": "Diagnosis kerja;"
+        },
+        {
+          "kode": "EP d",
+          "teks": "Terapi dan/atau tindakan yang telah diberikan;"
+        },
+        {
+          "kode": "EP e",
+          "teks": "Tujuan rujukan; dan"
+        },
+        {
+          "kode": "EP f",
+          "teks": "Nama dan tanda tangan tenaga medis dan tenaga kesehatan yang memberikan pelayanan rujukan."
+        }
+      ]
+    },
+    "AKP 5.6": {
+      "judul": "-- 49 of 58 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "AKP 5.7": {
+      "judul": "-- 52 of 58 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        }
+      ]
+    },
+    "AKP 6": {
+      "judul": "-- 56 of 58 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    }
+  },
+  "HPK": {
+    "HPK 1": {
+      "judul": "-- 5 of 34 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "HPK 1.1": {
+      "judul": "-- 7 of 34 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "HPK 1.2": {
+      "judul": "-- 9 of 34 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        }
+      ]
+    },
+    "HPK 1.3": {
+      "judul": "-- 11 of 34 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "HPK 1.4": {
+      "judul": "-- 13 of 34 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        }
+      ]
+    },
+    "HPK 1.5": {
+      "judul": "-- 15 of 34 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        }
+      ]
+    },
+    "HPK 2": {
+      "judul": "-- 17 of 34 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        }
+      ]
+    },
+    "HPK 2.1": {
+      "judul": "-- 21 of 34 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        }
+      ]
+    },
+    "HPK 2.2": {
+      "judul": "-- 23 of 34 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        }
+      ]
+    },
+    "HPK 3": {
+      "judul": "-- 25 of 34 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        }
+      ]
+    },
+    "HPK 4": {
+      "judul": "-- 28 of 34 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        }
+      ]
+    },
+    "HPK 4.1": {
+      "judul": "-- 30 of 34 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        }
+      ]
+    },
+    "HPK 4.2": {
+      "judul": "-- 32 of 34 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        },
+        {
+          "kode": "EP g",
+          "teks": ""
+        },
+        {
+          "kode": "EP h",
+          "teks": ""
+        },
+        {
+          "kode": "EP i",
+          "teks": ""
+        },
+        {
+          "kode": "EP j",
+          "teks": ""
+        },
+        {
+          "kode": "EP k",
+          "teks": ""
+        },
+        {
+          "kode": "EP l",
+          "teks": ""
+        },
+        {
+          "kode": "EP m",
+          "teks": ""
+        }
+      ]
+    }
+  },
+  "KE": {
+    "KE 1": {
+      "judul": "-- 5 of 21 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "KE 2": {
+      "judul": "-- 8 of 21 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        }
+      ]
+    },
+    "KE 3": {
+      "judul": "-- 10 of 21 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        }
+      ]
+    },
+    "KE 4": {
+      "judul": "-- 13 of 21 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        }
+      ]
+    },
+    "KE 5": {
+      "judul": "-- 15 of 21 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        }
+      ]
+    },
+    "KE 6": {
+      "judul": "-- 17 of 21 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "KE 7": {
+      "judul": "-- 19 of 21 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        }
+      ]
+    }
+  },
+  "KPS": {
+    "KPS 1": {
+      "judul": "Maksud dan Tujuan KPS 1",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        }
+      ]
+    },
+    "KPS 2": {
+      "judul": "Maksud dan Tujuan KPS 2",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "KPS 3": {
+      "judul": "Maksud dan Tujuan KPS 3",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        }
+      ]
+    },
+    "KPS 4": {
+      "judul": "Maksud dan Tujuan KPS 4",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        }
+      ]
+    },
+    "KPS 5": {
+      "judul": "Maksud dan Tujuan KPS 5",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        },
+        {
+          "kode": "EP g",
+          "teks": ""
+        }
+      ]
+    },
+    "KPS 6": {
+      "judul": "Maksud dan Tujuan KPS 6",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        }
+      ]
+    },
+    "KPS 7": {
+      "judul": "Maksud dan Tujuan KPS 7",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        },
+        {
+          "kode": "EP g",
+          "teks": ""
+        },
+        {
+          "kode": "EP h",
+          "teks": ""
+        }
+      ]
+    },
+    "KPS 8": {
+      "judul": "Maksud dan Tujuan KPS 8",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "KPS 8.1": {
+      "judul": "Maksud dan Tujuan KPS 8.1",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        },
+        {
+          "kode": "EP g",
+          "teks": ""
+        },
+        {
+          "kode": "EP h",
+          "teks": ""
+        }
+      ]
+    },
+    "KPS 9": {
+      "judul": "Maksud dan Tujuan KPS 9",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        },
+        {
+          "kode": "EP g",
+          "teks": ""
+        }
+      ]
+    },
+    "KPS 10": {
+      "judul": "Rumah sakit melaksanakan verifikasi terkini terhadap pendidikan, registrasi/izin, pengalaman, dan",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": "Verifikasi STR dan SIP."
+        },
+        {
+          "kode": "EP b",
+          "teks": "SPK dan RKK tenaga medis dengan kewenangan dibawah"
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        }
+      ]
+    },
+    "KPS 10.1": {
+      "judul": "Rumah sakit melaksanakan verifikasi terkini terhadap pendidikan, registrasi/izin, pengalaman, dan",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        },
+        {
+          "kode": "EP g",
+          "teks": ""
+        },
+        {
+          "kode": "EP h",
+          "teks": ""
+        },
+        {
+          "kode": "EP i",
+          "teks": ""
+        },
+        {
+          "kode": "EP j",
+          "teks": ""
+        }
+      ]
+    },
+    "KPS 11": {
+      "judul": "Maksud dan Tujuan KPS 11",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        }
+      ]
+    },
+    "KPS 12": {
+      "judul": "Maksud dan Tujuan KPS 12",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        },
+        {
+          "kode": "EP g",
+          "teks": ""
+        }
+      ]
+    },
+    "KPS 13": {
+      "judul": "Maksud dan Tujuan KPS 13",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        }
+      ]
+    },
+    "KPS 14": {
+      "judul": "Maksud dan Tujuan KPS 14",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        }
+      ]
+    },
+    "KPS 15": {
+      "judul": "Maksud dan Tujuan KPS 15",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        }
+      ]
+    },
+    "KPS 16": {
+      "judul": "Maksud dan Tujuan KPS 16",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "KPS 17": {
+      "judul": "Maksud dan Tujuan KPS 17",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "KPS 18": {
+      "judul": "Maksud dan Tujuan KPS 18",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        }
+      ]
+    },
+    "KPS 19": {
+      "judul": "Maksud dan Tujuan KPS 19",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    }
+  },
+  "MFK": {
+    "MFK 1": {
+      "judul": "-- 5 of 113 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": "Rumah Sakit telah"
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        },
+        {
+          "kode": "EP g",
+          "teks": ""
+        },
+        {
+          "kode": "EP h",
+          "teks": ""
+        },
+        {
+          "kode": "EP i",
+          "teks": ""
+        },
+        {
+          "kode": "EP j",
+          "teks": ""
+        }
+      ]
+    },
+    "MFK 2": {
+      "judul": "-- 10 of 113 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": "- e) dalam maksud dan"
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": "Penanggungjawab MFK telah"
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "MFK 3": {
+      "judul": "-- 20 of 113 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        }
+      ]
+    },
+    "MFK 4": {
+      "judul": "-- 27 of 113 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        },
+        {
+          "kode": "EP g",
+          "teks": ""
+        },
+        {
+          "kode": "EP h",
+          "teks": ""
+        },
+        {
+          "kode": "EP i",
+          "teks": ""
+        }
+      ]
+    },
+    "MFK 5": {
+      "judul": "-- 38 of 113 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        },
+        {
+          "kode": "EP g",
+          "teks": ""
+        },
+        {
+          "kode": "EP h",
+          "teks": ""
+        },
+        {
+          "kode": "EP i",
+          "teks": ""
+        },
+        {
+          "kode": "EP j",
+          "teks": ""
+        },
+        {
+          "kode": "EP k",
+          "teks": ""
+        }
+      ]
+    },
+    "MFK 6": {
+      "judul": "-- 44 of 113 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": "- f) dalam maksud dan"
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        }
+      ]
+    },
+    "MFK 7": {
+      "judul": "-- 54 of 113 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        }
+      ]
+    },
+    "MFK 8": {
+      "judul": "-- 63 of 113 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        }
+      ]
+    },
+    "MFK 8.1": {
+      "judul": "-- 68 of 113 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        }
+      ]
+    },
+    "MFK 8.2": {
+      "judul": "-- 74 of 113 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        }
+      ]
+    },
+    "MFK 8.2.1": {
+      "judul": "-- 81 of 113 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "MFK 8.3": {
+      "judul": "-- 84 of 113 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        },
+        {
+          "kode": "EP g",
+          "teks": ""
+        },
+        {
+          "kode": "EP h",
+          "teks": ""
+        }
+      ]
+    },
+    "MFK 9": {
+      "judul": "-- 88 of 113 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        },
+        {
+          "kode": "EP g",
+          "teks": ""
+        },
+        {
+          "kode": "EP h",
+          "teks": ""
+        },
+        {
+          "kode": "EP i",
+          "teks": ""
+        },
+        {
+          "kode": "EP j",
+          "teks": ""
+        }
+      ]
+    },
+    "MFK 10": {
+      "judul": "-- 96 of 113 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "MFK 11": {
+      "judul": "-- 104 of 113 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        },
+        {
+          "kode": "EP g",
+          "teks": ""
+        },
+        {
+          "kode": "EP h",
+          "teks": ""
+        },
+        {
+          "kode": "EP i",
+          "teks": ""
+        }
+      ]
+    },
+    "MFK 5.1": {
+      "judul": "",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        },
+        {
+          "kode": "EP g",
+          "teks": ""
+        },
+        {
+          "kode": "EP h",
+          "teks": ""
+        },
+        {
+          "kode": "EP i",
+          "teks": ""
+        }
+      ]
+    }
+  },
+  "MRMIK": {
+    "MRMIK 1": {
+      "judul": "-- 6 of 49 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": "penggunaan sistem informasi, termasuk penggunaan rekam medis elektronik, untuk melaksanakan tanggung"
+        },
+        {
+          "kode": "EP b",
+          "teks": "Pemahaman terhadap kebijakan dan prosedur untuk memastikan keamanan dan kerahasiaan data dan informasi;"
+        },
+        {
+          "kode": "EP c",
+          "teks": "Pemahaman dan penerapan strategi untuk pengelolaan data, informasi, dan dokumentasi selama waktu henti"
+        },
+        {
+          "kode": "EP d",
+          "teks": "Penggunaan data dan informasi untuk membantu pengambilan keputusan;"
+        },
+        {
+          "kode": "EP e",
+          "teks": "Komunikasi yang mendukung partisipasi pasien dan keluarga dalam proses perawatan; dan"
+        },
+        {
+          "kode": "EP f",
+          "teks": "Pemantauan dan evaluasi untuk mengkaji dan meningkatkan proses kerja serta perawatan."
+        },
+        {
+          "kode": "EP g",
+          "teks": ""
+        }
+      ]
+    },
+    "MRMIK 2": {
+      "judul": "-- 10 of 49 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        }
+      ]
+    },
+    "MRMIK 2.1": {
+      "judul": "Rumah sakit menjaga kerahasiaan, keamanan, privasi, integritas data dan informasi melalui proses",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        }
+      ]
+    },
+    "MRMIK 2.2": {
+      "judul": "Rumah sakit menjaga kerahasiaan, keamanan, privasi, integritas data dan informasi melalui proses",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": "Peninjauan dan persetujuan semua dokumen oleh pihak yang berwenang sebelum diterbitkan"
+        },
+        {
+          "kode": "EP b",
+          "teks": "Proses dan frekuensi peninjauan dokumen serta persetujuan berkelanjutan"
+        },
+        {
+          "kode": "EP c",
+          "teks": "Pengendalian untuk memastikan bahwa hanya dokumen versi terbaru/terkini dan relevan yang tersedia"
+        },
+        {
+          "kode": "EP d",
+          "teks": "Bagaimana mengidentifikasi adanya perubahan dalam dokumen"
+        },
+        {
+          "kode": "EP e",
+          "teks": "Pemeliharaan identitas dan keterbacaan dokumen"
+        },
+        {
+          "kode": "EP f",
+          "teks": "Proses pengelolaan dokumen yang berasal dari luar rumah sakit"
+        },
+        {
+          "kode": "EP g",
+          "teks": "Penyimpanan dokumen lama yang sudah tidak terpakai (obsolete) setidaknya selama waktu yang ditentukan oleh peraturan"
+        },
+        {
+          "kode": "EP h",
+          "teks": "Identifikasi dan pelacakan semua dokumen yang beredar (misalnya, diidentifikasi berdasarkan judul, tanggal terbit, edisi dan/atau"
+        }
+      ]
+    },
+    "MRMIK 3": {
+      "judul": "-- 18 of 49 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        },
+        {
+          "kode": "EP g",
+          "teks": ""
+        }
+      ]
+    },
+    "MRMIK 4": {
+      "judul": "-- 21 of 49 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        }
+      ]
+    },
+    "MRMIK 5": {
+      "judul": "-- 25 of 49 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "MRMIK 6": {
+      "judul": "-- 27 of 49 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": "Mengidentifikasi pasien;"
+        },
+        {
+          "kode": "EP b",
+          "teks": "Mendukung diagnosis;"
+        },
+        {
+          "kode": "EP c",
+          "teks": "Justifikasi/dasar pemberian pengobatan;"
+        },
+        {
+          "kode": "EP d",
+          "teks": "Mendokumentasikan hasil pemeriksaan dan hasil pengobatan;"
+        },
+        {
+          "kode": "EP e",
+          "teks": "Memuat ringkasan pasien pulang (discharge summary); dan"
+        },
+        {
+          "kode": "EP f",
+          "teks": "Meningkatkan kesinambungan pelayanan diantara Profesional Pemberi Asuhan (PPA)."
+        }
+      ]
+    },
+    "MRMIK 7": {
+      "judul": "-- 29 of 49 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        }
+      ]
+    },
+    "MRMIK 8": {
+      "judul": "-- 31 of 49 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "MRMIK 9": {
+      "judul": "-- 33 of 49 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        }
+      ]
+    },
+    "MRMIK 10": {
+      "judul": "-- 35 of 49 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        }
+      ]
+    },
+    "MRMIK 11": {
+      "judul": "-- 37 of 49 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        }
+      ]
+    },
+    "MRMIK 12": {
+      "judul": "-- 39 of 49 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "MRMIK 13": {
+      "judul": "-- 42 of 49 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        }
+      ]
+    },
+    "MRMIK 13.1": {
+      "judul": "-- 47 of 49 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        }
+      ]
+    }
+  },
+  "PAB": {
+    "PAB 1": {
+      "judul": "-- 5 of 41 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": "Mengembangkan, menerapkan, dan menjaga regulasi;"
+        },
+        {
+          "kode": "EP b",
+          "teks": "Melakukan pengawasan administratif;"
+        },
+        {
+          "kode": "EP c",
+          "teks": "Melaksanakan program pengendalian mutu yang dibutuhkan; dan"
+        },
+        {
+          "kode": "EP d",
+          "teks": "Memantau dan mengevaluasi pelayanan sedasi dan anestesi."
+        }
+      ]
+    },
+    "PAB 2": {
+      "judul": "-- 7 of 41 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": "Area-area di dalam rumah sakit tempat sedasi moderat dan dalam dapat dilakukan;"
+        },
+        {
+          "kode": "EP b",
+          "teks": "Kualifikasi staf yang memberikan sedasi;"
+        },
+        {
+          "kode": "EP c",
+          "teks": "Persetujuan medis (informed consent) untuk prosedur maupun sedasinya;"
+        },
+        {
+          "kode": "EP d",
+          "teks": "Perbedaan populasi anak, dewasa, dan geriatri ataupun pertimbangan khusus lainnya;"
+        },
+        {
+          "kode": "EP e",
+          "teks": "Peralatan medis dan bahan yang digunakan sesuai dengan populasi yang diberikan sedasi moderat atau dalam;"
+        },
+        {
+          "kode": "EP f",
+          "teks": "Cara memantau."
+        }
+      ]
+    },
+    "PAB 3": {
+      "judul": "-- 10 of 41 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": "Teknik dan berbagai cara sedasi;"
+        },
+        {
+          "kode": "EP b",
+          "teks": "Farmakologi obat sedasi dan penggunaaan zat reversal (antidot);"
+        },
+        {
+          "kode": "EP c",
+          "teks": "Persyaratan pemantauan pasien; dan"
+        },
+        {
+          "kode": "EP d",
+          "teks": "Bertindak jika ada komplikasi."
+        }
+      ]
+    },
+    "PAB 3.1": {
+      "judul": "-- 12 of 41 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        }
+      ]
+    },
+    "PAB 3.2": {
+      "judul": "-- 15 of 41 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        }
+      ]
+    },
+    "PAB 4": {
+      "judul": "-- 20 of 41 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        }
+      ]
+    },
+    "PAB 5": {
+      "judul": "-- 23 of 41 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        }
+      ]
+    },
+    "PAB 6": {
+      "judul": "-- 25 of 41 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        }
+      ]
+    },
+    "PAB 6.1": {
+      "judul": "-- 27 of 41 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": "Tindakan bedah yang sesuai dan waktu pelaksanaannya;"
+        },
+        {
+          "kode": "EP b",
+          "teks": "Melakukan tindakan dengan aman; dan"
+        },
+        {
+          "kode": "EP c",
+          "teks": "Menyimpulkan temuan selama pemantauan."
+        },
+        {
+          "kode": "EP d",
+          "teks": "Pemilihan teknik operasi bergantung pada riwayat pasien, status fisik, data diagnostik, serta manfaat dan risiko tindakan"
+        }
+      ]
+    },
+    "PAB 7": {
+      "judul": "-- 31 of 41 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": "Risiko dari rencana tindakan operasi;"
+        },
+        {
+          "kode": "EP b",
+          "teks": "Manfaat dari rencana tindakan operasi;"
+        },
+        {
+          "kode": "EP c",
+          "teks": "Memungkinan komplikasi dan dampak; dan"
+        },
+        {
+          "kode": "EP d",
+          "teks": "Pilihan operasi atau nonoperasi (alternatif) yang tersedia untuk menangani pasien;"
+        }
+      ]
+    },
+    "PAB 7.1": {
+      "judul": "-- 33 of 41 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": "Diagnosis pascaoperasi;"
+        },
+        {
+          "kode": "EP b",
+          "teks": "Nama dokter bedah dan asistennya;"
+        },
+        {
+          "kode": "EP c",
+          "teks": "Prosedur operasi yang dilakukan dan rincian temuan;"
+        },
+        {
+          "kode": "EP d",
+          "teks": "Ada dan tidak ada komplikasi;"
+        },
+        {
+          "kode": "EP e",
+          "teks": "Spesimen operasi yang dikirim untuk diperiksa;"
+        },
+        {
+          "kode": "EP f",
+          "teks": "Jumlah darah yang hilang dan jumlah yang masuk lewat transfusi;"
+        },
+        {
+          "kode": "EP g",
+          "teks": "Nomor pendaftaran alat yang dipasang (implan), (bila mempergunakan)"
+        },
+        {
+          "kode": "EP h",
+          "teks": "Tanggal, waktu, dan tanda tangan dokter yang"
+        },
+        {
+          "kode": "EP i",
+          "teks": ""
+        },
+        {
+          "kode": "EP j",
+          "teks": ""
+        },
+        {
+          "kode": "EP k",
+          "teks": ""
+        },
+        {
+          "kode": "EP l",
+          "teks": ""
+        }
+      ]
+    },
+    "PAB 7.2": {
+      "judul": "-- 35 of 41 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        }
+      ]
+    },
+    "PAB 7.3": {
+      "judul": "-- 37 of 41 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        },
+        {
+          "kode": "EP g",
+          "teks": ""
+        },
+        {
+          "kode": "EP h",
+          "teks": ""
+        }
+      ]
+    },
+    "PAB 7.4": {
+      "judul": "a) \tPemilihan \timplan \tberdasarkan \tperaturan",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        },
+        {
+          "kode": "EP g",
+          "teks": ""
+        },
+        {
+          "kode": "EP h",
+          "teks": ""
+        },
+        {
+          "kode": "EP i",
+          "teks": ""
+        },
+        {
+          "kode": "EP j",
+          "teks": ""
+        },
+        {
+          "kode": "EP k",
+          "teks": ""
+        }
+      ]
+    }
+  },
+  "PAP": {
+    "PAP 1": {
+      "judul": "Maksud dan Tujuan PAP 1",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "PAP 1.1": {
+      "judul": "Proses pelayanan dan asuhan pasien bersifat dinamis dan melibatkan banyak PPA dan berbagai unit",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        }
+      ]
+    },
+    "PAP 1.2": {
+      "judul": "Rencana asuhan merangkum asuhan dan pengobatan/tindakan yang akan diberikan kepada seorang",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        },
+        {
+          "kode": "EP g",
+          "teks": ""
+        },
+        {
+          "kode": "EP h",
+          "teks": ""
+        },
+        {
+          "kode": "EP i",
+          "teks": ""
+        },
+        {
+          "kode": "EP j",
+          "teks": ""
+        },
+        {
+          "kode": "EP k",
+          "teks": ""
+        },
+        {
+          "kode": "EP l",
+          "teks": ""
+        },
+        {
+          "kode": "EP m",
+          "teks": ""
+        },
+        {
+          "kode": "EP n",
+          "teks": ""
+        }
+      ]
+    },
+    "PAP 2": {
+      "judul": "Rumah sakit memberikan pelayanan untuk pasien dengan berbagai keperluan. Pelayanan pada pasien",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "PAP 2.1": {
+      "judul": "Rumah sakit melakukan promosi dan edukasi sebagai bagian dari pelayanan kesehatan warga lanjut",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "PAP 2.2": {
+      "judul": "Rumah sakit melakukan promosi dan edukasi sebagai bagian dari pelayanan kesehatan warga lanjut",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "PAP 2.3": {
+      "judul": "Kesehatan jiwa merupakan kondisi dimana seorang individu dapat berkembang secara fisik, mental,",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        },
+        {
+          "kode": "EP g",
+          "teks": ""
+        },
+        {
+          "kode": "EP h",
+          "teks": ""
+        },
+        {
+          "kode": "EP i",
+          "teks": ""
+        },
+        {
+          "kode": "EP j",
+          "teks": ""
+        }
+      ]
+    },
+    "PAP 2.4": {
+      "judul": "Bunuh diri merupakan upaya yang dilakukan seseorang dengan sengaja untuk mengakhiri kehidupan.",
+      "epList": []
+    },
+    "PAP 2.5": {
+      "judul": "Staf yang tidak bekerja di daerah pelayanan kritis/intensif mungkin tidak mempunyai pengetahuan dan",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        }
+      ]
+    },
+    "PAP 2.6": {
+      "judul": "Pelayanan resusitasi diartikan sebagai intervensi klinis pada pasien yang mengalami kejadian mengancam",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        },
+        {
+          "kode": "EP g",
+          "teks": ""
+        },
+        {
+          "kode": "EP h",
+          "teks": ""
+        }
+      ]
+    },
+    "PAP 2.7": {
+      "judul": "Pelayanan darah dan produk darah harus diberikan sesuai peraturan perundangan meliputi antara lain:",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        }
+      ]
+    },
+    "PAP 3": {
+      "judul": "Makanan dan terapi nutrisi yang sesuai sangat penting bagi kesehatan pasien dan penyembuhannya.",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        }
+      ]
+    },
+    "PAP 4": {
+      "judul": "Pasien berhak mendapatkan pengkajian dan pengelolaan nyeri yang tepat. Rumah sakit harus",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "PAP 5": {
+      "judul": "Skrining dilakukan untuk menetapkan bahwa kondisi pasien masuk dalam fase menjelang ajal.",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        }
+      ]
+    }
+  },
+  "PKPO": {
+    "PKPO 1": {
+      "judul": "-- 5 of 46 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "PKPO 2": {
+      "judul": "-- 9 of 46 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        }
+      ]
+    },
+    "PKPO 3.1": {
+      "judul": "Rumah sakit menetapkan dan menerapkan",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        }
+      ]
+    },
+    "PKPO 3": {
+      "judul": "Rumah sakit menetapkan dan menerapkan",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "PKPO 3.2": {
+      "judul": "Rumah sakit menetapkan dan menerapkan",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        }
+      ]
+    },
+    "PKPO 3.3": {
+      "judul": "Rumah sakit menetapkan dan menerapkan",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "PKPO 4": {
+      "judul": "-- 22 of 46 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        }
+      ]
+    },
+    "PKPO 4.1": {
+      "judul": "Di banyak hasil penelitian, kesalahan obat (medication error) yang tersering terjadi di tahap peresepan. Jenis",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        }
+      ]
+    },
+    "PKPO 5": {
+      "judul": "-- 30 of 46 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        },
+        {
+          "kode": "EP g",
+          "teks": ""
+        }
+      ]
+    },
+    "PKPO 5.1": {
+      "judul": "-- 33 of 46 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": "Identitas pasien."
+        },
+        {
+          "kode": "EP b",
+          "teks": "Nama obat."
+        },
+        {
+          "kode": "EP c",
+          "teks": "Dosis."
+        },
+        {
+          "kode": "EP d",
+          "teks": "Rute pemberian"
+        },
+        {
+          "kode": "EP e",
+          "teks": "Waktu pemberian."
+        }
+      ]
+    },
+    "PKPO 6": {
+      "judul": "-- 37 of 46 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "PKPO 6.1": {
+      "judul": "-- 39 of 46 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        }
+      ]
+    },
+    "PKPO 7": {
+      "judul": "-- 42 of 46 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        }
+      ]
+    },
+    "PKPO 7.1": {
+      "judul": "-- 44 of 46 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    }
+  },
+  "PMKP": {
+    "PMKP 1": {
+      "judul": "-- 4 of 44 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "PMKP 2": {
+      "judul": "-- 10 of 44 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": "Indikator nasional mutu (INM) yaitu indikator mutu nasional yang wajib dilakukan pengukuran dan digunakan sebagai informasi"
+        },
+        {
+          "kode": "EP b",
+          "teks": "Indikator mutu prioritas rumah sakit (IMP-RS) (TKRS 5) mencakup:"
+        },
+        {
+          "kode": "EP c",
+          "teks": "Indikator mutu prioritas unit (IMP-Unit) adalah indikator prioritas yang khusus dipilih kepala unit terdiri dari minimal 1 indikator."
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        },
+        {
+          "kode": "EP g",
+          "teks": ""
+        },
+        {
+          "kode": "EP h",
+          "teks": ""
+        },
+        {
+          "kode": "EP i",
+          "teks": ""
+        },
+        {
+          "kode": "EP j",
+          "teks": ""
+        },
+        {
+          "kode": "EP k",
+          "teks": ""
+        },
+        {
+          "kode": "EP l",
+          "teks": ""
+        },
+        {
+          "kode": "EP m",
+          "teks": ""
+        },
+        {
+          "kode": "EP n",
+          "teks": ""
+        },
+        {
+          "kode": "EP o",
+          "teks": ""
+        },
+        {
+          "kode": "EP p",
+          "teks": ""
+        },
+        {
+          "kode": "EP q",
+          "teks": ""
+        },
+        {
+          "kode": "EP r",
+          "teks": ""
+        },
+        {
+          "kode": "EP s",
+          "teks": ""
+        },
+        {
+          "kode": "EP t",
+          "teks": ""
+        }
+      ]
+    },
+    "PMKP 3": {
+      "judul": "-- 12 of 44 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": "Pelaporan indikator nasional mutu (INM) ke Kementrian Kesehatan melalui aplikasi mutu fasilitas"
+        },
+        {
+          "kode": "EP b",
+          "teks": "Pelaporan insiden keselamatan pasien (IKP) ke Komite Nasional Mutu melalui aplikasi e-report."
+        }
+      ]
+    },
+    "PMKP 4": {
+      "judul": "-- 16 of 44 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": "Pengukuran Indikator mutu baru;"
+        },
+        {
+          "kode": "EP b",
+          "teks": "Bila data akan dipublikasi ke masyarakat baik melalui website rumah sakit atau media lain"
+        },
+        {
+          "kode": "EP c",
+          "teks": "Ada perubahan pada pengukuran yang selama ini sudah dilakukan, misalnya perubahan profil indikator, instrumen"
+        },
+        {
+          "kode": "EP d",
+          "teks": "Bila terdapat perubahan hasil pengukuran tanpa diketahui sebabnya"
+        },
+        {
+          "kode": "EP e",
+          "teks": "Bila terdapat perubahan sumber data, misalnya terdapat perubahan sistem pencatatan pasien dari manual ke elektronik;"
+        },
+        {
+          "kode": "EP f",
+          "teks": "Bila terdapat perubahan subyek data seperti perubahan umur rata rata pasien, perubahan protokol riset, panduan praktik klinik"
+        },
+        {
+          "kode": "EP g",
+          "teks": ""
+        }
+      ]
+    },
+    "PMKP 5": {
+      "judul": "-- 20 of 44 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        }
+      ]
+    },
+    "PMKP 6": {
+      "judul": "-- 23 of 44 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        }
+      ]
+    },
+    "PMKP 7": {
+      "judul": "-- 26 of 44 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        },
+        {
+          "kode": "EP g",
+          "teks": ""
+        },
+        {
+          "kode": "EP h",
+          "teks": ""
+        },
+        {
+          "kode": "EP i",
+          "teks": ""
+        },
+        {
+          "kode": "EP j",
+          "teks": ""
+        },
+        {
+          "kode": "EP k",
+          "teks": ""
+        },
+        {
+          "kode": "EP l",
+          "teks": ""
+        },
+        {
+          "kode": "EP m",
+          "teks": ""
+        },
+        {
+          "kode": "EP n",
+          "teks": ""
+        },
+        {
+          "kode": "EP o",
+          "teks": ""
+        }
+      ]
+    },
+    "PMKP 8": {
+      "judul": "-- 31 of 44 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": "Semua reaksi transfusi yang sudah dikonfirmasi,"
+        },
+        {
+          "kode": "EP b",
+          "teks": "Semua kejadian serius akibat reaksi obat (adverse drug reaction) yang serius sesuai yang ditetapkan oleh rumah sakit"
+        },
+        {
+          "kode": "EP c",
+          "teks": "Semua kesalahan pengobatan (medication error) yang signifikan sesuai yang ditetapkan oleh rumah sakit"
+        },
+        {
+          "kode": "EP d",
+          "teks": "Semua perbedaan besar antara diagnosis pra- dan diagnosis pascaoperasi; misalnya diagnosis praoperasi adalah"
+        },
+        {
+          "kode": "EP e",
+          "teks": "Kejadian tidsk diharapkan atau pola kejadian tidak diharapkan selama sedasi prosedural tanpa memandang cara"
+        },
+        {
+          "kode": "EP f",
+          "teks": "Kejadian tidak diharapkan atau pola kejadian tidak diharapkan selama anestesi tanpa memandang cara pemberian"
+        },
+        {
+          "kode": "EP g",
+          "teks": "Kejadian tidak diharapkan yang berkaitan dengan identifikasi pasien"
+        },
+        {
+          "kode": "EP h",
+          "teks": "Kejadian-kejadian lain, misalnya infeksi yang berkaitan dengan perawatan kesehatan atau wabah penyakit menular."
+        },
+        {
+          "kode": "EP o",
+          "teks": ""
+        }
+      ]
+    },
+    "PMKP 9": {
+      "judul": "-- 36 of 44 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        }
+      ]
+    },
+    "PMKP 10": {
+      "judul": "-- 38 of 44 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        }
+      ]
+    },
+    "PMKP 11": {
+      "judul": "-- 41 of 44 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        }
+      ]
+    },
+    "PMKP 4.1": {
+      "judul": "",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        }
+      ]
+    }
+  },
+  "PP": {
+    "PP 1": {
+      "judul": "Kebutuhan medis dan keperawatan pasien diidentifikasi berdasarkan pengkajian awal.",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "PP 1.1": {
+      "judul": "Kebutuhan medis dan keperawatan pasien diidentifikasi berdasarkan pengkajian awal.",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        }
+      ]
+    },
+    "PP 1.2": {
+      "judul": "Kebutuhan medis dan keperawatan pasien diidentifikasi berdasarkan pengkajian awal.",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        },
+        {
+          "kode": "EP g",
+          "teks": ""
+        },
+        {
+          "kode": "EP h",
+          "teks": ""
+        },
+        {
+          "kode": "EP i",
+          "teks": ""
+        },
+        {
+          "kode": "EP j",
+          "teks": ""
+        },
+        {
+          "kode": "EP k",
+          "teks": ""
+        },
+        {
+          "kode": "EP l",
+          "teks": ""
+        },
+        {
+          "kode": "EP m",
+          "teks": ""
+        }
+      ]
+    },
+    "PP 1.3": {
+      "judul": "-- 12 of 56 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        }
+      ]
+    },
+    "PP 2": {
+      "judul": "-- 16 of 56 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "PP 3": {
+      "judul": "-- 20 of 56 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        }
+      ]
+    },
+    "PP 3.1": {
+      "judul": "-- 23 of 56 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        }
+      ]
+    },
+    "PP 3.2": {
+      "judul": "-- 26 of 56 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        }
+      ]
+    },
+    "PP 3.3": {
+      "judul": "-- 28 of 56 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "PP 3.4": {
+      "judul": "-- 30 of 56 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": "Permintaan pemeriksaan."
+        },
+        {
+          "kode": "EP b",
+          "teks": "Pengambilan, pengumpulan dan identifikasi spesimen."
+        },
+        {
+          "kode": "EP c",
+          "teks": "Pengiriman, pembuangan, penyimpanan dan pengawetan"
+        },
+        {
+          "kode": "EP d",
+          "teks": "Penerimaan, penyimpanan, telusur spesimen (tracking)"
+        }
+      ]
+    },
+    "PP 3.5": {
+      "judul": "-- 32 of 56 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        }
+      ]
+    },
+    "PP 3.6": {
+      "judul": "-- 34 of 56 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": "Validasi tes yang digunakan untuk tes akurasi, presisi, hasil rentang nilai;"
+        },
+        {
+          "kode": "EP b",
+          "teks": "Dilakukan surveilans hasil pemeriksaan oleh staf yang kompeten;"
+        },
+        {
+          "kode": "EP c",
+          "teks": "Reagensia di tes;"
+        },
+        {
+          "kode": "EP d",
+          "teks": "Koreksi cepat jika ditemukan kekurangan;"
+        },
+        {
+          "kode": "EP e",
+          "teks": "Dokumentasi hasil dan tindakan koreksi; dan"
+        },
+        {
+          "kode": "EP f",
+          "teks": "Pemantapan Mutu Eksternal."
+        }
+      ]
+    },
+    "PP 3.7": {
+      "judul": "-- 36 of 56 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        }
+      ]
+    },
+    "PP 3.8": {
+      "judul": "-- 38 of 56 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "PP 3.9": {
+      "judul": "-- 40 of 56 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": "Pelayanan radiodiagnostik;"
+        },
+        {
+          "kode": "EP b",
+          "teks": "Pelayanan diagnostik Imajing;"
+        },
+        {
+          "kode": "EP c",
+          "teks": "Pelayanan radiologi intervensional."
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "PP 4": {
+      "judul": "-- 43 of 56 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        }
+      ]
+    },
+    "PP 4.1": {
+      "judul": "-- 45 of 56 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        }
+      ]
+    },
+    "PP 4.2": {
+      "judul": "-- 48 of 56 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        }
+      ]
+    },
+    "PP 4.3": {
+      "judul": "-- 50 of 56 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "PP 4.4": {
+      "judul": "-- 52 of 56 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        }
+      ]
+    },
+    "PP 4.5": {
+      "judul": "-- 54 of 56 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        }
+      ]
+    }
+  },
+  "PPI": {
+    "PPI 1": {
+      "judul": "-- 5 of 70 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "PPI 1.1": {
+      "judul": "-- 5 of 70 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": "Kesebelas kewaspadaan standar tersebut yang harus di terapkan di rumah sakit adalah:"
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        }
+      ]
+    },
+    "PPI 2": {
+      "judul": "Maksud dan Tujuan PPI 2",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        },
+        {
+          "kode": "EP g",
+          "teks": ""
+        },
+        {
+          "kode": "EP h",
+          "teks": ""
+        },
+        {
+          "kode": "EP i",
+          "teks": ""
+        },
+        {
+          "kode": "EP j",
+          "teks": ""
+        },
+        {
+          "kode": "EP k",
+          "teks": ""
+        },
+        {
+          "kode": "EP l",
+          "teks": ""
+        }
+      ]
+    },
+    "PPI 3": {
+      "judul": "Maksud dan Tujuan PPI 3",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": "Tingkat 1 - Kritikal: Benda yang dimasukkan ke jaringan yang normal steril atau ke sistem vaskular dan"
+        },
+        {
+          "kode": "EP b",
+          "teks": "Tingkat 2 - Semi-kritikal: Benda yang menyentuh selaput lendir atau kulit yang tidak intak dan"
+        },
+        {
+          "kode": "EP c",
+          "teks": "Tingkat 3 - Non-kritikal: Benda yang menyentuh kulit intak tetapi tidak menyentuh selaput lendir, dan"
+        }
+      ]
+    },
+    "PPI 4": {
+      "judul": "Maksud dan Tujuan PPI 4",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        },
+        {
+          "kode": "EP g",
+          "teks": ""
+        }
+      ]
+    },
+    "PPI 4.1": {
+      "judul": "Maksud dan Tujuan PPI 4.1",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        }
+      ]
+    },
+    "PPI 5": {
+      "judul": "Maksud dan Tujuan PPI 5",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        }
+      ]
+    },
+    "PPI 6": {
+      "judul": "Maksud dan Tujuan PPI 6",
+      "epList": []
+    },
+    "PPI 7": {
+      "judul": "Rumah sakit menetapkan pengelolaan kamar mayat dan kamar bedah mayat sesuai dengan peraturan",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        }
+      ]
+    },
+    "PPI 7.1": {
+      "judul": "Rumah sakit menetapkan pengelolaan kamar mayat dan kamar bedah mayat sesuai dengan peraturan",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        }
+      ]
+    },
+    "PPI 7.2": {
+      "judul": "Rumah sakit menetapkan pengelolaan kamar mayat dan kamar bedah mayat sesuai dengan peraturan",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        }
+      ]
+    },
+    "PPI 8": {
+      "judul": "Maksud dan Tujuan PPI 8",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        }
+      ]
+    },
+    "PPI 9": {
+      "judul": "Maksud dan Tujuan PPI 9",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        }
+      ]
+    },
+    "PPI 10": {
+      "judul": "Rumah sakit mengembangkan dan menerapkan sebuah proses untuk menangani lonjakan",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "PPI 10.1": {
+      "judul": "Rumah sakit mengembangkan dan menerapkan sebuah proses untuk menangani lonjakan",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        }
+      ]
+    },
+    "PPI 11": {
+      "judul": "Sarung tangan, masker, pelindung mata, serta alat pelindung diri lainnya tersedia dan",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        }
+      ]
+    },
+    "PPI 11.1": {
+      "judul": "Sarung tangan, masker, pelindung mata, serta alat pelindung diri lainnya tersedia dan",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        }
+      ]
+    },
+    "PPI 12": {
+      "judul": "Maksud dan Tujuan PPI 12",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        }
+      ]
+    },
+    "PPI 13": {
+      "judul": "Maksud dan Tujuan PPI 13",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        }
+      ]
+    }
+  },
+  "PPK": {
+    "PPK 1": {
+      "judul": "-- 4 of 20 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": "Kapasitas penerimaan peserta didik sesuai dengan kapasitas rumah sakit yang dicantumkan dalam"
+        },
+        {
+          "kode": "EP b",
+          "teks": "Persyaratan kualifikasi pendidik/dosen klinis; dan"
+        },
+        {
+          "kode": "EP c",
+          "teks": "Peserta pendidikan klinis di rumah sakit yang dipertimbangkan berdasarkan masa pendidikan dan level"
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        }
+      ]
+    },
+    "PPK 2": {
+      "judul": "-- 7 of 20 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": "Variasi dan jumlah pasien harus selaras dengan kebutuhan untuk berjalannya program, demikian juga"
+        },
+        {
+          "kode": "EP b",
+          "teks": "Jumlah peserta pendidikan klinis di rumah sakit harus memperhatikan jumlah staf pendidik klinis serta"
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        }
+      ]
+    },
+    "PPK 3": {
+      "judul": "-- 10 of 20 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        }
+      ]
+    },
+    "PPK 4": {
+      "judul": "-- 13 of 20 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        }
+      ]
+    },
+    "PPK 5": {
+      "judul": "-- 15 of 20 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": "Program rumah sakit tentang mutu dan keselamatan pasien;"
+        },
+        {
+          "kode": "EP b",
+          "teks": "Program pengendalian infeksi;"
+        },
+        {
+          "kode": "EP c",
+          "teks": "Program keselamatan penggunaan obat; dan"
+        },
+        {
+          "kode": "EP d",
+          "teks": "Sasaran keselamatan pasien."
+        }
+      ]
+    },
+    "PPK 6": {
+      "judul": "-- 18 of 20 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        }
+      ]
+    }
+  },
+  "PROGNAS": {
+    "PROGNAS 1": {
+      "judul": "-- 4 of 44 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        }
+      ]
+    },
+    "PROGNAS 1.1": {
+      "judul": "-- 7 of 44 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        }
+      ]
+    },
+    "PROGNAS 2": {
+      "judul": "-- 10 of 44 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "PROGNAS 2.1": {
+      "judul": "-- 13 of 44 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        }
+      ]
+    },
+    "PROGNAS 2.2": {
+      "judul": "-- 15 of 44 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        }
+      ]
+    },
+    "PROGNAS 3": {
+      "judul": "-- 18 of 44 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        }
+      ]
+    },
+    "PROGNAS 4": {
+      "judul": "Rumah Sakit melakukan edukasi, pendampingan intervensi dan pengelolaan gizi serta penguatan",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        }
+      ]
+    },
+    "PROGNAS 4.1": {
+      "judul": "Rumah Sakit melakukan edukasi, pendampingan intervensi dan pengelolaan gizi serta penguatan",
+      "epList": [
+        {
+          "kode": "EP 11",
+          "teks": ""
+        },
+        {
+          "kode": "EP 12",
+          "teks": ""
+        },
+        {
+          "kode": "EP 13",
+          "teks": ""
+        },
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        },
+        {
+          "kode": "EP g",
+          "teks": ""
+        },
+        {
+          "kode": "EP h",
+          "teks": ""
+        },
+        {
+          "kode": "EP i",
+          "teks": ""
+        },
+        {
+          "kode": "EP j",
+          "teks": ""
+        }
+      ]
+    },
+    "PROGNAS 5": {
+      "judul": "Rumah sakit menyiapkan sumber daya untuk penyelenggaraan pelayanan keluarga dan kesehatan",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "PROGNAS 5.1": {
+      "judul": "Rumah sakit menyiapkan sumber daya untuk penyelenggaraan pelayanan keluarga dan kesehatan",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        },
+        {
+          "kode": "EP g",
+          "teks": ""
+        },
+        {
+          "kode": "EP h",
+          "teks": ""
+        },
+        {
+          "kode": "EP i",
+          "teks": ""
+        },
+        {
+          "kode": "EP j",
+          "teks": ""
+        }
+      ]
+    },
+    "PROGNAS 6": {
+      "judul": "-- 35 of 44 --",
+      "epList": []
+    },
+    "PROGNAS 6.1": {
+      "judul": "-- 41 of 44 --",
+      "epList": []
+    }
+  },
+  "SKP": {
+    "SKP 1": {
+      "judul": "-- 4 of 34 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "SKP 2": {
+      "judul": "-- 8 of 34 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "SKP 3": {
+      "judul": "Rumah sakit menerapkan proses untuk meningkatkan keamanan penggunaan elektrolit konsentrat",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        }
+      ]
+    },
+    "SKP 3.1": {
+      "judul": "Rumah sakit menerapkan proses untuk meningkatkan keamanan penggunaan elektrolit konsentrat",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        }
+      ]
+    },
+    "SKP 4": {
+      "judul": "-- 19 of 34 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "SKP 5": {
+      "judul": "-- 26 of 34 --",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "SKP 6.1": {
+      "judul": "Rumah sakit menerapkan proses untuk mengurangi risiko cedera pasien",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        },
+        {
+          "kode": "EP g",
+          "teks": ""
+        },
+        {
+          "kode": "EP h",
+          "teks": ""
+        }
+      ]
+    },
+    "SKP 6": {
+      "judul": "Rumah sakit menerapkan proses untuk mengurangi risiko cedera pasien",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        }
+      ]
+    }
+  },
+  "TKRS": {
+    "TKRS 1": {
+      "judul": "MAKSUD DAN TUJUAN TKRS 1",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        },
+        {
+          "kode": "EP g",
+          "teks": ""
+        },
+        {
+          "kode": "EP h",
+          "teks": ""
+        },
+        {
+          "kode": "EP i",
+          "teks": ""
+        }
+      ]
+    },
+    "TKRS 2": {
+      "judul": "MAKSUD DAN TUJUAN TKRS 2",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        }
+      ]
+    },
+    "TKRS 3": {
+      "judul": "MAKSUD DAN TUJUAN TKRS 3",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "TKRS 3.1": {
+      "judul": "MAKSUD DAN TUJUAN TKRS 3.1",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        }
+      ]
+    },
+    "TKRS 4": {
+      "judul": "MAKSUD DAN TUJUAN TKRS 4",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        },
+        {
+          "kode": "EP g",
+          "teks": ""
+        },
+        {
+          "kode": "EP h",
+          "teks": ""
+        },
+        {
+          "kode": "EP i",
+          "teks": ""
+        }
+      ]
+    },
+    "TKRS 5": {
+      "judul": "MAKSUD DAN TUJUAN TKRS 5",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        }
+      ]
+    },
+    "TKRS 6": {
+      "judul": "MAKSUD DAN TUJUAN TKRS 6",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        }
+      ]
+    },
+    "TKRS 7": {
+      "judul": "MAKSUD DAN TUJUAN TKRS 7",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        }
+      ]
+    },
+    "TKRS 7.1": {
+      "judul": "MAKSUD DAN TUJUAN TKRS 7.1",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "TKRS 8": {
+      "judul": "MAKSUD DAN TUJUAN TKRS 8",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        }
+      ]
+    },
+    "TKRS 9": {
+      "judul": "MAKSUD DAN TUJUAN TKRS 9",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        }
+      ]
+    },
+    "TKRS 10": {
+      "judul": "MAKSUD DAN TUJUAN TKRS 10",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        }
+      ]
+    },
+    "TKRS 11": {
+      "judul": "MAKSUD DAN TUJUAN TKRS 11",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        }
+      ]
+    },
+    "TKRS 12": {
+      "judul": "MAKSUD DAN TUJUAN TKRS 12",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        },
+        {
+          "kode": "EP g",
+          "teks": ""
+        },
+        {
+          "kode": "EP h",
+          "teks": ""
+        }
+      ]
+    },
+    "TKRS 13": {
+      "judul": "MAKSUD DAN TUJUAN TKRS 13",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        },
+        {
+          "kode": "EP g",
+          "teks": ""
+        }
+      ]
+    },
+    "TKRS 14": {
+      "judul": "MAKSUD DAN TUJUAN TKRS 14",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        }
+      ]
+    },
+    "TKRS 15": {
+      "judul": "MAKSUD DAN TUJUAN TKRS 15",
+      "epList": [
+        {
+          "kode": "EP a",
+          "teks": ""
+        },
+        {
+          "kode": "EP b",
+          "teks": ""
+        },
+        {
+          "kode": "EP c",
+          "teks": ""
+        },
+        {
+          "kode": "EP d",
+          "teks": ""
+        },
+        {
+          "kode": "EP e",
+          "teks": ""
+        },
+        {
+          "kode": "EP f",
+          "teks": ""
+        },
+        {
+          "kode": "EP g",
+          "teks": ""
+        }
+      ]
+    }
+  }
+}
