@@ -7,7 +7,7 @@ import {
     ChevronDown, ChevronRight, Save, RotateCcw,
     CheckCircle2, AlertCircle, XCircle, Download,
     Search, Loader2, MessageSquare, MoreHorizontal,
-    ExternalLink, FileText, Cloud, CloudOff, Check, LogOut, UserCircle
+    ExternalLink, FileText, Cloud, CloudOff, Check, LogOut, UserCircle, Menu
 } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 
@@ -77,6 +77,7 @@ export function AsesmenClient() {
     const [showMenu, setShowMenu] = useState(false)
     const [editingCatatan, setEditingCatatan] = useState<string | null>(null)
     const [surveyor, setSurveyor] = useState<{name: string, pokja: string[]} | null>(null)
+    const [showMobileMenu, setShowMobileMenu] = useState(false)
     const router = useRouter()
 
     const sessionId = useMemo(() => getOrCreateSessionId(), [])
@@ -313,9 +314,20 @@ export function AsesmenClient() {
     }
 
     return (
-        <div className="flex h-screen bg-slate-50 overflow-hidden">
+        <div className="flex h-screen bg-slate-50 overflow-hidden relative">
+            
+            {/* Mobile Sidebar Overlay */}
+            {showMobileMenu && (
+                <div 
+                    className="fixed inset-0 bg-black/50 z-30 md:hidden" 
+                    onClick={() => setShowMobileMenu(false)}
+                />
+            )}
+
             {/* ====== SIDEBAR ====== */}
-            <aside className="w-64 bg-indigo-700 flex flex-col shadow-xl z-20 shrink-0">
+            <aside className={`fixed inset-y-0 left-0 z-40 w-64 bg-indigo-700 flex flex-col shadow-xl transform transition-transform duration-300 md:relative md:translate-x-0 shrink-0 ${
+                showMobileMenu ? 'translate-x-0' : '-translate-x-full'
+            }`}>
                 <div className="p-5 bg-indigo-800">
                     <h1 className="text-xl font-bold text-white">Asesmen Internal</h1>
                     <p className="text-xs text-indigo-200 mt-1">Penilaian Kelengkapan Dokumen</p>
@@ -331,6 +343,7 @@ export function AsesmenClient() {
                                     setExpandedStandar(new Set())
                                     setSearchQuery('')
                                     setFilterNilai('semua')
+                                    setShowMobileMenu(false) // Hide menu on mobile after selection
                                 }}
                                 className={`w-full text-left px-4 py-3 rounded-lg font-medium transition-colors
                                     ${isActive
@@ -358,10 +371,16 @@ export function AsesmenClient() {
             {/* ====== MAIN CONTENT ====== */}
             <main className="flex-1 flex flex-col h-screen overflow-hidden">
                 {/* Header (Sync Status & Actions) */}
-                <header className="bg-white shadow-sm border-b border-gray-100 px-6 py-4 flex items-center justify-between shrink-0 z-10">
-                    <div>
+                <header className="bg-white shadow-sm border-b border-gray-100 px-4 md:px-6 py-4 flex items-center justify-between shrink-0 z-10">
+                    <div className="flex items-center gap-3">
+                        <button 
+                            className="p-2 -ml-2 rounded-lg text-gray-600 hover:bg-gray-100 md:hidden"
+                            onClick={() => setShowMobileMenu(true)}
+                        >
+                            <Menu className="w-6 h-6" />
+                        </button>
                         {activePokja && (
-                            <h2 className="text-lg font-bold text-gray-800">{activePokja.pokjaName}</h2>
+                            <h2 className="text-lg font-bold text-gray-800 truncate">{activePokja.pokjaName}</h2>
                         )}
                     </div>
                     
@@ -417,7 +436,7 @@ export function AsesmenClient() {
                     </div>
                 </header>
 
-                <div className="flex-1 overflow-y-auto p-6 md:p-8">
+                <div className="flex-1 overflow-y-auto p-4 md:p-8">
                     <div className="max-w-5xl mx-auto space-y-6">
                         
                         {/* ====== TOOLS: Search & Filter ====== */}
