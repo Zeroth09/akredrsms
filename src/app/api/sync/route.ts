@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { syncService } from '@/lib/sync-service'
 
+export const maxDuration = 60 // 60 seconds (max for Hobby plan)
+
 // GET /api/sync - Get sync status
 export async function GET() {
     const status = syncService.getStatus()

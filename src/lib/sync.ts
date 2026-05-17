@@ -44,19 +44,19 @@ export async function syncDriveDocuments() {
             }))
         )
 
-        // Upsert to Supabase
-        // created_at di-set dari metadata Google Drive (createdTime), bukan dari waktu sinkronisasi
-        for (const item of allItems) {
+        // Bulk fetch existing records
+        const { data: existingDocs } = await supabase
+            .from('documents')
+            .select('gdrive_id, created_at, status')
+            
+        const existingMap = new Map((existingDocs || []).map(d => [d.gdrive_id, d]))
+
+        const upsertDataArray = allItems.map(item => {
             const driveCreatedAt = item.createdTime
                 ? new Date(item.createdTime).toISOString()
                 : new Date().toISOString()
-
-            // Cek apakah dokumen sudah ada di database (untuk menghindari overwrite created_at)
-            const { data: existing } = await supabase
-                .from('documents')
-                .select('id, created_at')
-                .eq('gdrive_id', item.id)
-                .maybeSingle()
+                
+            const existing = existingMap.get(item.id)
 
             const { standar, ep } = extractStandarEPFromHierarchy(
                 {
@@ -68,32 +68,30 @@ export async function syncDriveDocuments() {
                 hierarchyMap
             )
 
-            const upsertData: any = {
+            return {
                 gdrive_id: item.id,
                 name: item.name,
                 mime_type: item.mimeType,
                 parent_id: item.parent_id,
                 web_view_link: item.webViewLink,
                 last_synced_at: new Date().toISOString(),
-                // Selalu update standar & ep dari struktur folder terkini
                 standar,
                 ep,
+                created_at: existing ? existing.created_at : driveCreatedAt,
+                status: existing ? existing.status : 'Pending'
             }
+        })
 
-            // Hanya set created_at dari metadata Drive jika dokumen belum pernah ada
-            if (!existing) {
-                upsertData.created_at = driveCreatedAt
-                upsertData.status = 'Pending'
-            }
-
+        // Chunk bulk upsert
+        const CHUNK_SIZE = 500;
+        for (let i = 0; i < upsertDataArray.length; i += CHUNK_SIZE) {
+            const chunk = upsertDataArray.slice(i, i + CHUNK_SIZE);
             const { error } = await supabase
                 .from('documents')
-                .upsert(upsertData, {
-                    onConflict: 'gdrive_id'
-                })
-
+                .upsert(chunk, { onConflict: 'gdrive_id' })
+                
             if (error) {
-                console.error(`[Sync] Error upserting ${item.name}:`, error)
+                console.error(`[Sync] Error upserting chunk ${i}:`, error)
             }
         }
 
@@ -132,16 +130,28 @@ async function fetchFolderContents(
 
     let pageToken: string | undefined
     do {
-        const response = await drive.files.list({
-            q: query,
-            fields: 'nextPageToken, files(id, name, mimeType, webViewLink, createdTime, modifiedTime)',
-            pageSize: 1000,
-            pageToken,
-            supportsAllDrives: true,
-            includeItemsFromAllDrives: true,
-        })
+        let response;
+        let retries = 3;
+        while (retries > 0) {
+            try {
+                response = await drive.files.list({
+                    q: query,
+                    fields: 'nextPageToken, files(id, name, mimeType, webViewLink, createdTime, modifiedTime)',
+                    pageSize: 1000,
+                    pageToken,
+                    supportsAllDrives: true,
+                    includeItemsFromAllDrives: true,
+                })
+                break;
+            } catch (err: any) {
+                retries--;
+                console.warn(`[Sync] Drive fetch retry (${3-retries}/3) for folder ${folderId} due to:`, err.message);
+                if (retries === 0) throw err;
+                await new Promise(r => setTimeout(r, 1000));
+            }
+        }
 
-        const files = response.data.files || []
+        const files = response?.data?.files || []
 
         for (const file of files) {
             allItems.push({
@@ -155,6 +165,6 @@ async function fetchFolderContents(
             }
         }
 
-        pageToken = response.data.nextPageToken
+        pageToken = response?.data?.nextPageToken
     } while (pageToken)
 }
