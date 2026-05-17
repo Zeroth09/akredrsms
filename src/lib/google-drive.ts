@@ -5,7 +5,20 @@ const SCOPES = ['https://www.googleapis.com/auth/drive.readonly', 'https://www.g
 
 export const getGoogleDriveClient = async () => {
     const clientEmail = process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL
-    const privateKey = process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, '\n')
+    let privateKey = process.env.GOOGLE_PRIVATE_KEY
+
+    if (privateKey) {
+        // Tangani jika ada literal string "\n" (biasanya akibat copy-paste dari JSON)
+        privateKey = privateKey.replace(/\\n/g, '\n')
+        
+        // Hapus tanda kutip jika ikut tertulis di awal/akhir string
+        if (privateKey.startsWith('"') && privateKey.endsWith('"')) {
+            privateKey = privateKey.slice(1, -1)
+        }
+        
+        // Bersihkan whitespace tambahan
+        privateKey = privateKey.trim()
+    }
 
     if (!clientEmail || !privateKey) {
         throw new Error('Missing Google Service Account credentials')
