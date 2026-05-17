@@ -1,10 +1,10 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, Suspense } from 'react'
 import { useRouter, useSearchParams } from 'next/navigation'
 import { Lock, ArrowRight, ShieldCheck, AlertCircle } from 'lucide-react'
 
-export default function AdminLoginPage() {
+function AdminLoginContent() {
     const [passkey, setPasskey] = useState('')
     const [error, setError] = useState(false)
     const [loading, setLoading] = useState(false)
@@ -110,5 +110,17 @@ export default function AdminLoginPage() {
                 </p>
             </div>
         </div>
+    )
+}
+
+export default function AdminLoginPage() {
+    return (
+        <Suspense fallback={
+            <div className="min-h-screen bg-slate-50 flex items-center justify-center">
+                <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-indigo-600"></div>
+            </div>
+        }>
+            <AdminLoginContent />
+        </Suspense>
     )
 }
