@@ -710,17 +710,6 @@ function EPRow({
                             Tidak
                         </button>
 
-                        {/* Toggle catatan */}
-                        <button
-                            onClick={(e) => { e.stopPropagation(); onSetEditingCatatan(isEditingNote ? null : key) }}
-                            className={`p-2 rounded-xl transition-all ml-auto
-                                ${hasNotes || isEditingNote
-                                    ? 'text-blue-600 bg-blue-100'
-                                    : 'text-gray-400 hover:text-blue-500 hover:bg-blue-50 border border-gray-200'
-                                }`}
-                            title="Catatan">
-                            <MessageSquare className="w-5 h-5" />
-                        </button>
                     </div>
 
                     {/* Dokumen terkait EP */}
@@ -749,33 +738,31 @@ function EPRow({
                         </div>
                     )}
 
-                    {/* Catatan input */}
-                    {(isEditingNote || hasNotes) && (
-                        <div className="mt-3 grid grid-cols-1 lg:grid-cols-2 gap-4">
-                            <div>
-                                <span className="text-xs font-semibold text-slate-500 mb-1 block">Fakta dan Analisis:</span>
-                                <textarea
-                                    value={fakta_analisis}
-                                    onClick={e => e.stopPropagation()}
-                                    onChange={e => onUpdateFaktaAnalisis(pokjaCode, standarKode, ep.kode, e.target.value)}
-                                    placeholder="Tulis fakta dan analisis..."
-                                    rows={3}
-                                    className="w-full text-sm bg-blue-50/50 border-2 border-blue-100 rounded-xl px-4 py-2.5 outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-100 text-gray-700 placeholder-gray-400 resize-none transition-all"
-                                />
-                            </div>
-                            <div>
-                                <span className="text-xs font-semibold text-slate-500 mb-1 block">Rekomendasi:</span>
-                                <textarea
-                                    value={rekomendasi}
-                                    onClick={e => e.stopPropagation()}
-                                    onChange={e => onUpdateRekomendasi(pokjaCode, standarKode, ep.kode, e.target.value)}
-                                    placeholder="Tulis rekomendasi..."
-                                    rows={3}
-                                    className="w-full text-sm bg-blue-50/50 border-2 border-blue-100 rounded-xl px-4 py-2.5 outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-100 text-gray-700 placeholder-gray-400 resize-none transition-all"
-                                />
-                            </div>
+                    {/* Catatan input selalu tampil */}
+                    <div className="mt-3 grid grid-cols-1 lg:grid-cols-2 gap-4">
+                        <div>
+                            <span className="text-xs font-semibold text-slate-500 mb-1 block">Fakta dan Analisis:</span>
+                            <textarea
+                                value={fakta_analisis}
+                                onClick={e => e.stopPropagation()}
+                                onChange={e => onUpdateFaktaAnalisis(pokjaCode, standarKode, ep.kode, e.target.value)}
+                                placeholder="Tulis fakta dan analisis..."
+                                rows={3}
+                                className="w-full text-sm bg-blue-50/50 border-2 border-blue-100 rounded-xl px-4 py-2.5 outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-100 text-gray-700 placeholder-gray-400 resize-none transition-all"
+                            />
                         </div>
-                    )}
+                        <div>
+                            <span className="text-xs font-semibold text-slate-500 mb-1 block">Rekomendasi:</span>
+                            <textarea
+                                value={rekomendasi}
+                                onClick={e => e.stopPropagation()}
+                                onChange={e => onUpdateRekomendasi(pokjaCode, standarKode, ep.kode, e.target.value)}
+                                placeholder="Tulis rekomendasi..."
+                                rows={3}
+                                className="w-full text-sm bg-blue-50/50 border-2 border-blue-100 rounded-xl px-4 py-2.5 outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-100 text-gray-700 placeholder-gray-400 resize-none transition-all"
+                            />
+                        </div>
+                    </div>
                 </div>
             )}
         </div>
