@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panduan PIC – Rekaman Rekomendasi EP</title>
+    <style>
+        :root {
+            --blue: #0056b3;
+            --indigo: #4338ca;
+            --slate: #475569;
+            --line: #dbe3ef;
+            --soft: #f8fafc;
+            --green: #10b981;
+            --amber: #f59e0b;
+            --red: #ef4444;
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #f9fbfd;
+        }
+        .header { text-align: center; border-bottom: 2px solid var(--blue); padding-bottom: 20px; margin-bottom: 30px; }
+        .header h1 { color: var(--blue); margin-bottom: 5px; line-height: 1.25; }
+        .header p { font-size: 1.1em; color: #64748b; margin-top: 0; }
+        .card { background: white; border-radius: 8px; padding: 25px; box-shadow: 0 4px 6px rgba(15,23,42,0.06); margin-bottom: 30px; border-left: 5px solid var(--blue); }
+        h2 { color: var(--blue); border-bottom: 1px solid #e5e7eb; padding-bottom: 10px; }
+        .note { background: #eff6ff; border: 1px solid #bfdbfe; color: #1e3a8a; border-radius: 8px; padding: 12px 14px; margin: 14px 0; font-size: 0.95em; }
+        .recommendation-table {
+            width: 100%; border-collapse: collapse; margin: 20px 0; background: white; box-shadow: 0 2px 5px rgba(15,23,42,0.05);
+        }
+        .recommendation-table th, .recommendation-table td { border: 1px solid #ddd; padding: 12px 15px; text-align: left; vertical-align: top; }
+        .recommendation-table th { background-color: var(--blue); color: white; }
+        .print-btn { display: block; width: 200px; margin: 40px auto; padding: 12px 20px; background-color: var(--blue); color: white; text-align: center; text-decoration: none; border-radius: 5px; font-weight: bold; cursor: pointer; border: none; }
+        .print-btn:hover { background-color: #004494; }
+        @media (max-width: 720px) {
+            body { padding: 24px 12px; }
+            .card { padding: 18px; }
+            .recommendation-table { font-size: 0.88em; }
+            .recommendation-table th, .recommendation-table td { padding: 9px; }
+        }
+        @media print {
+            body { background: white; padding: 0; }
+            .card, .mockup { box-shadow: none; }
+            .print-btn { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Panduan PIC – Rekaman Rekomendasi EP</h1>
+        <p>Aplikasi Monitoring Akreditasi Internal</p>
+    </div>
+    <button class="print-btn" onclick="window.print()">Cetak sebagai PDF</button>
+    <div class="card">
+        <h2>1. Daftar Rekomendasi EP</h2>
+        <p>PIC dapat mencatat rekomendasi untuk setiap Elemen Penilaian (EP) yang telah dinilai oleh Assesor.</p>
+        <table class="recommendation-table">
+            <thead>
+                <tr>
+                    <th>Standar</th>
+                    <th>EP</th>
+                    <th>Rekomendasi PIC</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Contoh baris, akan diisi secara dinamis oleh aplikasi -->
+                <tr>
+                    <td>PP 1</td>
+                    <td>EP 1.1</td>
+                    <td><em>Belum ada rekomendasi</em></td>
+                    <td>Pending</td>
+                </tr>
+                <tr>
+                    <td>PP 2</td>
+                    <td>EP 2.3</td>
+                    <td><em>Belum ada rekomendasi</em></td>
+                    <td>Pending</td>
+                </tr>
+            </tbody>
+        </table>
+        <p class="note">Gunakan tombol <strong>Tambah Rekomendasi</strong> pada setiap baris EP untuk memasukkan catatan PIC. Status dapat diubah menjadi <strong>Completed</strong> setelah rekomendasi disetujui.</p>
+    </div>
+</body>
+</html>

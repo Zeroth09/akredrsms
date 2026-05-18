@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buku Panduan Assesor Akreditasi</title>
+    <style>
+        :root {
+            --blue: #0056b3;
+            --indigo: #4338ca;
+            --slate: #475569;
+            --line: #dbe3ef;
+            --soft: #f8fafc;
+            --green: #10b981;
+            --amber: #f59e0b;
+            --red: #ef4444;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #1f2937;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #f9fbfd;
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 2px solid var(--blue);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: var(--blue);
+            margin-bottom: 5px;
+            line-height: 1.25;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            color: #64748b;
+            margin-top: 0;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 4px 6px rgba(15, 23, 42, 0.06);
+            margin-bottom: 30px;
+            border-left: 5px solid var(--blue);
+        }
+
+        h2 {
+            color: var(--blue);
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: #223047;
+            margin-bottom: 10px;
+        }
+
+        .passkey-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            box-shadow: 0 2px 5px rgba(15, 23, 42, 0.05);
+        }
+
+        .passkey-table th,
+        .passkey-table td {
+            border: 1px solid #ddd;
+            padding: 12px 15px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .passkey-table th {
+            background-color: var(--blue);
+            color: white;
+        }
+
+        .code-badge {
+            background-color: #e8f4fd;
+            color: var(--blue);
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-family: Consolas, "Courier New", monospace;
+            font-weight: bold;
+            font-size: 1.05em;
+        }
+
+        .pokja-badge {
+            display: inline-block;
+            background-color: #f1f5f9;
+            color: var(--slate);
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            margin: 2px;
+            border: 1px solid #cbd5e1;
+        }
+
+        .step {
+            margin-bottom: 34px;
+            page-break-inside: avoid;
+        }
+
+        .step-number {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: var(--blue);
+            color: white;
+            text-align: center;
+            border-radius: 50%;
+            line-height: 30px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .note {
+            background: #eff6ff;
+            border: 1px solid #bfdbfe;
+            color: #1e3a8a;
+            border-radius: 8px;
+            padding: 12px 14px;
+            margin: 14px 0;
+            font-size: 0.95em;
+        }
+
+        .print-btn {
+            display: block;
+            width: 200px;
+            margin: 40px auto;
+            padding: 12px 20px;
+            background-color: var(--blue);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+        }
+
+        .print-btn:hover {
+            background-color: #004494;
+        }
+
+        .mockup {
+            margin: 16px 0;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            overflow: hidden;
+            background: white;
+            box-shadow: 0 14px 32px rgba(15, 23, 42, 0.10);
+        }
+
+        .mockup-bar {
+            height: 34px;
+            background: #eef2f7;
+            border-bottom: 1px solid var(--line);
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            padding: 0 12px;
+        }
+
+        .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #cbd5e1;
+        }
+
+        .url-chip {
+            flex: 1;
+            height: 20px;
+            border-radius: 999px;
+            background: white;
+            border: 1px solid #dbe3ef;
+            color: #64748b;
+            font-size: 11px;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            min-width: 0;
+        }
+
+        .login-screen {
+            min-height: 310px;
+            background: #f8fafc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+
+        .login-card {
+            width: 330px;
+            border-radius: 18px;
+            background: white;
+            overflow: hidden;
+            box-shadow: 0 16px 35px rgba(15, 23, 42, 0.14);
+            border: 1px solid #edf2f7;
+        }
+
+        .login-head {
+            background: linear-gradient(90deg, #4f46e5, #3b82f6);
+            color: white;
+            text-align: center;
+            padding: 26px 22px;
+        }
+
+        .key-circle {
+            width: 54px;
+            height: 54px;
+            margin: 0 auto 12px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.22);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        .login-form {
+            padding: 24px;
+        }
+
+        .label {
+            display: block;
+            color: #374151;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .passkey-input {
+            border: 2px solid #4f46e5;
+            border-radius: 12px;
+            padding: 14px 16px;
+            text-align: center;
+            font: 700 24px Consolas, "Courier New", monospace;
+            color: #111827;
+            letter-spacing: 0.18em;
+            background: #fff;
+        }
+
+        .login-button {
+            margin-top: 14px;
+            background: #111827;
+            color: white;
+            border-radius: 12px;
+            padding: 13px;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .app-screen {
+            display: grid;
+            grid-template-columns: 188px 1fr;
+            min-height: 420px;
+            background: #f8fafc;
+        }
+
+        .sidebar {
+            background: #4338ca;
+            color: white;
+            padding: 16px 12px;
+        }
+
+        .sidebar-title {
+            background: #3730a3;
+            margin: -16px -12px 14px;
+            padding: 16px;
+            font-weight: 800;
+        }
+
+        .pokja-item {
+            padding: 10px 12px;
+            border-radius: 8px;
+            margin-bottom: 5px;
+            color: #e0e7ff;
+            font-weight: 700;
+        }
+
+        .pokja-item.active {
+            background: white;
+            color: #4338ca;
+            box-shadow: 0 2px 8px rgba(15, 23, 42, 0.14);
+        }
+
+        .content {
+            padding: 18px;
+            min-width: 0;
+        }
+
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .sync {
+            color: #059669;
+            font-size: 12px;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .search-row {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 14px;
+        }
+
+        .search-box,
+        .select-box {
+            height: 34px;
+            border: 1px solid #dbe3ef;
+            border-radius: 10px;
+            background: white;
+            color: #64748b;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            font-size: 12px;
+        }
+
+        .search-box {
+            flex: 1;
+        }
+
+        .standard-card {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-left: 4px solid #818cf8;
+            border-radius: 14px;
+            overflow: hidden;
+            margin-bottom: 12px;
+        }
+
+        .standard-head {
+            padding: 13px 15px;
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+        }
+
+        .standard-code {
+            color: #3730a3;
+            font-weight: 800;
+        }
+
+        .ep-row {
+            border-top: 1px solid #edf2f7;
+            padding: 12px 15px 14px 44px;
+            background: white;
+        }
+
+        .ep-title {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            margin-bottom: 9px;
+            color: #374151;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .status-dot {
+            width: 11px;
+            height: 11px;
+            border-radius: 999px;
+            background: var(--green);
+            box-shadow: 0 0 0 4px #d1fae5;
+        }
+
+        .ep-desc {
+            color: #64748b;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        .button-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .status-btn {
+            border-radius: 12px;
+            padding: 8px 12px;
+            font-size: 12px;
+            font-weight: 800;
+            border: 1px solid transparent;
+        }
+
+        .status-btn.green {
+            background: var(--green);
+            color: white;
+        }
+
+        .status-btn.amber {
+            background: #fffbeb;
+            color: #b45309;
+            border-color: #fde68a;
+        }
+
+        .status-btn.red {
+            background: #fef2f2;
+            color: #b91c1c;
+            border-color: #fecaca;
+        }
+
+        .comment-button {
+            margin-left: auto;
+            width: 42px;
+            height: 42px;
+            border-radius: 12px;
+            border: 1px solid #bfdbfe;
+            background: #dbeafe;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .comment-icon {
+            width: 22px;
+            height: 18px;
+            border: 3px solid #2563eb;
+            border-radius: 3px;
+            position: relative;
+        }
+
+        .comment-icon::after {
+            content: "";
+            position: absolute;
+            left: 2px;
+            bottom: -7px;
+            width: 8px;
+            height: 8px;
+            background: #dbeafe;
+            border-left: 3px solid #2563eb;
+            border-bottom: 3px solid #2563eb;
+            transform: skew(-25deg);
+        }
+
+        .comment-note {
+            margin-top: 10px;
+            border: 2px solid #bfdbfe;
+            background: #eff6ff;
+            border-radius: 12px;
+            padding: 10px 12px;
+            color: #64748b;
+            font-size: 12px;
+        }
+
+        .doc-box {
+            margin-top: 10px;
+            background: #f8fafc;
+            border: 1px solid #dbe3ef;
+            border-radius: 12px;
+            padding: 10px;
+        }
+
+        .doc-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            color: #475569;
+        }
+
+        .view-button {
+            margin-left: auto;
+            background: #eef2ff;
+            color: #4f46e5;
+            border: 1px solid #c7d2fe;
+            border-radius: 8px;
+            padding: 5px 10px;
+            font-weight: 800;
+        }
+
+        .callout {
+            border: 2px solid #2563eb;
+            box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.16);
+        }
+
+        .caption {
+            color: #64748b;
+            font-size: 0.9em;
+            margin-top: -4px;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+
+        @media (max-width: 720px) {
+            body {
+                padding: 24px 12px;
+            }
+
+            .card {
+                padding: 18px;
+            }
+
+            .passkey-table {
+                font-size: 0.88em;
+            }
+
+            .passkey-table th,
+            .passkey-table td {
+                padding: 9px;
+            }
+
+            .app-screen {
+                grid-template-columns: 118px 1fr;
+            }
+
+            .sidebar {
+                padding: 12px 8px;
+            }
+
+            .sidebar-title {
+                margin: -12px -8px 12px;
+                padding: 12px 9px;
+                font-size: 12px;
+            }
+
+            .pokja-item {
+                font-size: 12px;
+                padding: 8px;
+            }
+
+            .content {
+                padding: 12px;
+            }
+
+            .topbar,
+            .search-row {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .ep-row {
+                padding-left: 15px;
+            }
+
+            .comment-button {
+                margin-left: 0;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .card,
+            .mockup {
+                box-shadow: none;
+            }
+
+            .card {
+                border: 1px solid #ddd;
+                border-left: 5px solid var(--blue);
+            }
+
+            .print-btn {
+                display: none;
+            }
+
+            .passkey-table {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Panduan Penggunaan Sistem Asesmen (Assesor)</h1>
+        <p>Aplikasi Monitoring Akreditasi Internal</p>
+    </div>
+
+    <button class="print-btn" onclick="window.print()">Cetak sebagai PDF</button>
+
+    <div class="card">
+        <h2>1. Daftar Kode Akses (Passkey) Assesor</h2>
+        <p>Gunakan passkey di bawah ini untuk masuk ke sistem asesmen. Setiap assesor hanya dapat melihat Pokja yang sesuai dengan penugasannya.</p>
+
+        <table class="passkey-table">
+            <thead>
+                <tr>
+                    <th>Nama Assesor</th>
+                    <th>Kode Akses (Passkey)</th>
+                    <th>Hak Akses Pokja</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>I Nengah Darthayasa, S.Kep.Ns., M.Kep</strong></td>
+                    <td><span class="code-badge">PERAWAT</span></td>
+                    <td>
+                        <span class="pokja-badge">SKP</span>
+                        <span class="pokja-badge">KE</span>
+                        <span class="pokja-badge">HPK</span>
+                        <span class="pokja-badge">PPI</span>
+                        <span class="pokja-badge">MRMIK</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Lindawati, S.Kep.Ns., MM</strong></td>
+                    <td><span class="code-badge">MANAJEMEN</span></td>
+                    <td>
+                        <span class="pokja-badge">PROGNAS</span>
+                        <span class="pokja-badge">PPK</span>
+                        <span class="pokja-badge">PMKP</span>
+                        <span class="pokja-badge">MFK</span>
+                        <span class="pokja-badge">KPS</span>
+                        <span class="pokja-badge">TKRS</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>dr. Dardin, Sp.PK</strong></td>
+                    <td><span class="code-badge">MEDIS</span></td>
+                    <td>
+                        <span class="pokja-badge">AKP</span>
+                        <span class="pokja-badge">PP</span>
+                        <span class="pokja-badge">PAP</span>
+                        <span class="pokja-badge">PAB</span>
+                        <span class="pokja-badge">PKPO</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <h2>2. Langkah-Langkah Melakukan Penilaian (Asesmen)</h2>
+
+    <div class="step">
+        <h3><span class="step-number">1</span> Buka URL Asesmen</h3>
+        <p>Buka browser, lalu masuk ke alamat asesmen yang diberikan admin. Format alamat halaman login adalah:</p>
+        <p><strong>https://alamat-aplikasi/asesmen/login</strong></p>
+
+        <div class="mockup">
+            <div class="mockup-bar">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <div class="url-chip">https://alamat-aplikasi/asesmen/login</div>
+            </div>
+            <div class="login-screen">
+                <div class="login-card">
+                    <div class="login-head">
+                        <div class="key-circle">K</div>
+                        <strong>Login Surveyor</strong>
+                        <div style="font-size:12px; opacity:.9;">Masukkan passkey untuk mengakses instrumen penilaian.</div>
+                    </div>
+                    <div class="login-form">
+                        <span class="label">Passkey Akses</span>
+                        <div class="passkey-input">XXXXXX</div>
+                        <div class="login-button">Masuk</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="caption">Gambar 1. Contoh halaman login assesor.</p>
+    </div>
+
+    <div class="step">
+        <h3><span class="step-number">2</span> Input Passkey di Kolom Passkey</h3>
+        <p>Ketik passkey sesuai tabel kode akses, misalnya <strong>MEDIS</strong>, <strong>PERAWAT</strong>, atau <strong>MANAJEMEN</strong>. Setelah itu klik tombol <strong>Masuk</strong>.</p>
+        <div class="note">Passkey otomatis dibaca sebagai huruf kapital. Tidak perlu mengisi nama, karena nama assesor akan terbaca dari data passkey.</div>
+
+        <div class="mockup">
+            <div class="mockup-bar">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <div class="url-chip">/asesmen/login</div>
+            </div>
+            <div class="login-screen">
+                <div class="login-card">
+                    <div class="login-head">
+                        <div class="key-circle">K</div>
+                        <strong>Login Surveyor</strong>
+                    </div>
+                    <div class="login-form">
+                        <span class="label">Passkey Akses</span>
+                        <div class="passkey-input callout">MEDIS</div>
+                        <div class="login-button">Masuk</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="caption">Gambar 2. Kolom input passkey yang harus diisi assesor.</p>
+    </div>
+
+    <div class="step">
+        <h3><span class="step-number">3</span> Gunakan Sidebar untuk Berganti Pokja</h3>
+        <p>Setelah berhasil masuk, halaman asesmen akan menampilkan daftar Pokja di sidebar sebelah kiri. Klik nama Pokja pada sidebar untuk berpindah dari satu Pokja ke Pokja lain.</p>
+        <p>Pokja yang sedang aktif ditandai dengan warna putih pada sidebar. Isi halaman akan berubah sesuai Pokja yang dipilih.</p>
+
+        <div class="mockup">
+            <div class="mockup-bar">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <div class="url-chip">/asesmen</div>
+            </div>
+            <div class="app-screen">
+                <div class="sidebar">
+                    <div class="sidebar-title">Asesmen Internal</div>
+                    <div class="pokja-item">AKP</div>
+                    <div class="pokja-item active callout">PP</div>
+                    <div class="pokja-item">PAP</div>
+                    <div class="pokja-item">PAB</div>
+                    <div class="pokja-item">PKPO</div>
+                </div>
+                <div class="content">
+                    <div class="topbar">
+                        <strong>Pelayanan Pasien</strong>
+                        <span class="sync">Tersimpan</span>
+                    </div>
+                    <div class="search-row">
+                        <div class="search-box">Cari standar atau elemen penilaian...</div>
+                        <div class="select-box">Semua Status</div>
+                    </div>
+                    <div class="standard-card">
+                        <div class="standard-head">
+                            <span>&gt;</span>
+                            <div>
+                                <div class="standard-code">PP 1</div>
+                                <div style="font-size:12px; color:#64748b;">Standar dan elemen penilaian Pokja aktif.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="standard-card">
+                        <div class="standard-head">
+                            <span>&gt;</span>
+                            <div>
+                                <div class="standard-code">PP 2</div>
+                                <div style="font-size:12px; color:#64748b;">Klik standar untuk membuka daftar EP.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="caption">Gambar 3. Sidebar Pokja untuk berpindah area penilaian.</p>
+    </div>
+
+    <div class="step">
+        <h3><span class="step-number">4</span> Klik Gambar Komentar untuk Memberikan Komentar</h3>
+        <p>Buka standar, lalu buka EP yang akan dinilai. Klik gambar komentar di sisi kanan tombol status untuk menampilkan kolom catatan.</p>
+        <p>Isi kolom komentar dengan temuan, saran perbaikan, atau alasan penilaian. Komentar akan ikut tersimpan otomatis bersama status EP.</p>
+
+        <div class="mockup">
+            <div class="mockup-bar">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <div class="url-chip">/asesmen</div>
+            </div>
+            <div class="app-screen">
+                <div class="sidebar">
+                    <div class="sidebar-title">Asesmen Internal</div>
+                    <div class="pokja-item active">AKP</div>
+                    <div class="pokja-item">PP</div>
+                    <div class="pokja-item">PAP</div>
+                </div>
+                <div class="content">
+                    <div class="topbar">
+                        <strong>Akses dan Kontinuitas Pelayanan</strong>
+                        <span class="sync">Tersimpan</span>
+                    </div>
+                    <div class="standard-card">
+                        <div class="standard-head">
+                            <span>v</span>
+                            <div>
+                                <div class="standard-code">AKP 1</div>
+                                <div style="font-size:12px; color:#64748b;">Standar terbuka dan menampilkan EP.</div>
+                            </div>
+                        </div>
+                        <div class="ep-row">
+                            <div class="ep-title"><span class="status-dot"></span> EP a</div>
+                            <div class="ep-desc">Baca deskripsi EP, lalu berikan status dan catatan bila diperlukan.</div>
+                            <div class="button-row">
+                                <span class="status-btn green">Terpenuhi</span>
+                                <span class="status-btn amber">Sebagian</span>
+                                <span class="status-btn red">Tidak</span>
+                                <span class="comment-button callout" title="Catatan">
+                                    <span class="comment-icon"></span>
+                                </span>
+                            </div>
+                            <div class="comment-note">Tulis catatan surveyor...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="caption">Gambar 4. Tombol komentar untuk membuka kolom catatan EP.</p>
+    </div>
+
+    <div class="step">
+        <h3><span class="step-number">5</span> Pilih Status EP: Terpenuhi, Sebagian, atau Tidak</h3>
+        <p>Pada setiap EP, pilih salah satu status penilaian:</p>
+        <ul>
+            <li><strong>Terpenuhi</strong>: bukti dan pelaksanaan sudah sesuai.</li>
+            <li><strong>Sebagian</strong>: bukti atau pelaksanaan ada, tetapi belum lengkap.</li>
+            <li><strong>Tidak</strong>: bukti belum tersedia atau belum sesuai.</li>
+        </ul>
+        <p>Setelah status diklik, data akan tersimpan otomatis sekitar <strong>2 detik</strong>. Perhatikan indikator di kanan atas: saat proses berjalan akan muncul status menyimpan, lalu berubah menjadi tersimpan.</p>
+
+        <div class="mockup">
+            <div class="mockup-bar">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <div class="url-chip">/asesmen</div>
+            </div>
+            <div class="app-screen">
+                <div class="sidebar">
+                    <div class="sidebar-title">Asesmen Internal</div>
+                    <div class="pokja-item active">MRMIK</div>
+                    <div class="pokja-item">SKP</div>
+                    <div class="pokja-item">HPK</div>
+                </div>
+                <div class="content">
+                    <div class="topbar">
+                        <strong>Manajemen Rekam Medis dan Informasi Kesehatan</strong>
+                        <span class="sync callout">Tersimpan 10.15.24</span>
+                    </div>
+                    <div class="standard-card">
+                        <div class="standard-head">
+                            <span>v</span>
+                            <div>
+                                <div class="standard-code">MRMIK 1</div>
+                                <div style="font-size:12px; color:#64748b;">Klik status sesuai hasil asesmen.</div>
+                            </div>
+                        </div>
+                        <div class="ep-row">
+                            <div class="ep-title"><span class="status-dot"></span> EP b</div>
+                            <div class="button-row">
+                                <span class="status-btn green callout">Terpenuhi</span>
+                                <span class="status-btn amber">Sebagian</span>
+                                <span class="status-btn red">Tidak</span>
+                                <span class="comment-button" title="Catatan">
+                                    <span class="comment-icon"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="caption">Gambar 5. Pilihan status EP dan indikator autosave.</p>
+    </div>
+
+    <div class="step">
+        <h3><span class="step-number">6</span> Klik "Lihat" untuk Melihat Dokumen</h3>
+        <p>Jika EP memiliki dokumen pendukung, daftar dokumen akan tampil di bagian bawah EP. Klik tombol <strong>Lihat</strong> pada dokumen yang ingin dibuka.</p>
+        <p>Dokumen akan terbuka di tab baru browser. Setelah selesai memeriksa dokumen, kembali ke tab asesmen untuk melanjutkan penilaian.</p>
+
+        <div class="mockup">
+            <div class="mockup-bar">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <div class="url-chip">/asesmen</div>
+            </div>
+            <div class="app-screen">
+                <div class="sidebar">
+                    <div class="sidebar-title">Asesmen Internal</div>
+                    <div class="pokja-item active">PPI</div>
+                    <div class="pokja-item">KE</div>
+                    <div class="pokja-item">HPK</div>
+                </div>
+                <div class="content">
+                    <div class="topbar">
+                        <strong>Pencegahan dan Pengendalian Infeksi</strong>
+                        <span class="sync">Tersimpan</span>
+                    </div>
+                    <div class="standard-card">
+                        <div class="standard-head">
+                            <span>v</span>
+                            <div>
+                                <div class="standard-code">PPI 1</div>
+                                <div style="font-size:12px; color:#64748b;">EP dengan dokumen pendukung.</div>
+                            </div>
+                        </div>
+                        <div class="ep-row">
+                            <div class="ep-title"><span class="status-dot"></span> EP c</div>
+                            <div class="button-row">
+                                <span class="status-btn green">Terpenuhi</span>
+                                <span class="status-btn amber">Sebagian</span>
+                                <span class="status-btn red">Tidak</span>
+                                <span class="comment-button" title="Catatan">
+                                    <span class="comment-icon"></span>
+                                </span>
+                            </div>
+                            <div class="doc-box callout">
+                                <div style="font-size:12px; font-weight:800; color:#64748b; margin-bottom:6px;">1 Dokumen</div>
+                                <div class="doc-row">
+                                    <span>Pedoman PPI Rumah Sakit.pdf</span>
+                                    <span class="view-button">Lihat</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="caption">Gambar 6. Tombol Lihat untuk membuka dokumen pendukung.</p>
+    </div>
+
+    <div class="card">
+        <h2>3. Ringkasan Alur Cepat</h2>
+        <ol>
+            <li>Buka URL <strong>/asesmen/login</strong>.</li>
+            <li>Masukkan passkey pada kolom <strong>Passkey Akses</strong>, lalu klik <strong>Masuk</strong>.</li>
+            <li>Pilih Pokja dari sidebar kiri.</li>
+            <li>Buka standar dan EP yang akan dinilai.</li>
+            <li>Klik ikon komentar jika ingin menambahkan catatan.</li>
+            <li>Pilih status EP: <strong>Terpenuhi</strong>, <strong>Sebagian</strong>, atau <strong>Tidak</strong>.</li>
+            <li>Tunggu sekitar 2 detik sampai indikator berubah menjadi <strong>Tersimpan</strong>.</li>
+            <li>Klik <strong>Lihat</strong> untuk membuka dokumen pendukung.</li>
+        </ol>
+    </div>
+
+</body>
+</html>
