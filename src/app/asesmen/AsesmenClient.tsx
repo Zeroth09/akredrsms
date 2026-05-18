@@ -20,7 +20,7 @@ interface PokjaStandarData { pokjaCode: string; pokjaName: string; standarList: 
 
 type NilaiEP = 'terpenuhi' | 'sebagian' | 'tidak' | null
 
-interface EPAssessment { nilai: NilaiEP; catatan: string }
+interface EPAssessment { nilai: NilaiEP; fakta_analisis: string; rekomendasi: string }
 
 type AssessmentStore = Record<string, EPAssessment>
 
@@ -98,7 +98,7 @@ export function AsesmenClient() {
             try {
                 const { data, error } = await supabase
                     .from('assessments')
-                    .select('pokja_code, standar_kode, ep_kode, nilai, catatan')
+                    .select('pokja_code, standar_kode, ep_kode, nilai, fakta_analisis, rekomendasi')
                     .eq('assessment_id', sessionId)
 
                 if (error) throw error
@@ -107,7 +107,7 @@ export function AsesmenClient() {
                     const loaded: AssessmentStore = {}
                     for (const row of data) {
                         const key = buildKey(row.pokja_code, row.standar_kode, row.ep_kode)
-                        loaded[key] = { nilai: row.nilai, catatan: row.catatan || '' }
+                        loaded[key] = { nilai: row.nilai, fakta_analisis: row.fakta_analisis || '', rekomendasi: row.rekomendasi || '' }
                     }
                     setStore(loaded)
                     setSyncStatus('saved')
@@ -171,7 +171,8 @@ export function AsesmenClient() {
                     standar_kode: standarKode,
                     ep_kode: epKode,
                     nilai: val.nilai,
-                    catatan: val.catatan || '',
+                    fakta_analisis: val.fakta_analisis || '',
+                    rekomendasi: val.rekomendasi || '',
                 }
             })
 
@@ -230,15 +231,23 @@ export function AsesmenClient() {
         const key = buildKey(pokjaCode, standarKode, epKode)
         setStore(prev => ({
             ...prev,
-            [key]: { ...prev[key], nilai, catatan: prev[key]?.catatan || '' }
+            [key]: { ...prev[key], nilai, fakta_analisis: prev[key]?.fakta_analisis || '', rekomendasi: prev[key]?.rekomendasi || '' }
         }))
     }
 
-    function updateCatatan(pokjaCode: string, standarKode: string, epKode: string, catatan: string) {
+    function updateFaktaAnalisis(pokjaCode: string, standarKode: string, epKode: string, fakta_analisis: string) {
         const key = buildKey(pokjaCode, standarKode, epKode)
         setStore(prev => ({
             ...prev,
-            [key]: { ...prev[key], catatan, nilai: prev[key]?.nilai || null }
+            [key]: { ...prev[key], fakta_analisis, nilai: prev[key]?.nilai || null, rekomendasi: prev[key]?.rekomendasi || '' }
+        }))
+    }
+
+    function updateRekomendasi(pokjaCode: string, standarKode: string, epKode: string, rekomendasi: string) {
+        const key = buildKey(pokjaCode, standarKode, epKode)
+        setStore(prev => ({
+            ...prev,
+            [key]: { ...prev[key], rekomendasi, nilai: prev[key]?.nilai || null, fakta_analisis: prev[key]?.fakta_analisis || '' }
         }))
     }
 
@@ -530,7 +539,8 @@ export function AsesmenClient() {
                                                     editingCatatan={editingCatatan}
                                                     onSetEditingCatatan={setEditingCatatan}
                                                     onUpdateNilai={updateNilai}
-                                                    onUpdateCatatan={updateCatatan}
+                                                    onUpdateFaktaAnalisis={updateFaktaAnalisis}
+                                                    onUpdateRekomendasi={updateRekomendasi}
                                                 />
                                             ))
                                         )}
@@ -550,7 +560,7 @@ export function AsesmenClient() {
 
 
 function EPRow({
-    ep, pokjaCode, standarKode, store, editingCatatan, onSetEditingCatatan, onUpdateNilai, onUpdateCatatan
+    ep, pokjaCode, standarKode, store, editingCatatan, onSetEditingCatatan, onUpdateNilai, onUpdateFaktaAnalisis, onUpdateRekomendasi
 }: {
     ep: EPItem
     pokjaCode: string
@@ -559,14 +569,18 @@ function EPRow({
     editingCatatan: string | null
     onSetEditingCatatan: (key: string | null) => void
     onUpdateNilai: (pokja: string, standar: string, ep: string, nilai: NilaiEP) => void
-    onUpdateCatatan: (pokja: string, standar: string, ep: string, catatan: string) => void
+    onUpdateFaktaAnalisis: (pokja: string, standar: string, ep: string, val: string) => void
+    onUpdateRekomendasi: (pokja: string, standar: string, ep: string, val: string) => void
 }) {
     const [isExpanded, setIsExpanded] = useState(false)
     const key = buildKey(pokjaCode, standarKode, ep.kode)
     const assessment = store[key]
     const nilai = assessment?.nilai ?? null
-    const catatan = assessment?.catatan ?? ''
+    const fakta_analisis = assessment?.fakta_analisis ?? ''
+    const rekomendasi = assessment?.rekomendasi ?? ''
     const isEditingNote = editingCatatan === key
+    
+    const hasNotes = !!(fakta_analisis || rekomendasi)
 
     // Toggle: klik lagi pada nilai yang sama → hapus penilaian
     function handleNilai(newNilai: NilaiEP) {
@@ -644,7 +658,7 @@ function EPRow({
                             {nilaiTag.text}
                         </span>
                     )}
-                    {catatan && !isExpanded && (
+                    {hasNotes && !isExpanded && (
                         <MessageSquare className="w-3.5 h-3.5 text-blue-400" />
                     )}
                     {dokumen.length > 0 && !isExpanded && (
@@ -700,7 +714,7 @@ function EPRow({
                         <button
                             onClick={(e) => { e.stopPropagation(); onSetEditingCatatan(isEditingNote ? null : key) }}
                             className={`p-2 rounded-xl transition-all ml-auto
-                                ${catatan || isEditingNote
+                                ${hasNotes || isEditingNote
                                     ? 'text-blue-600 bg-blue-100'
                                     : 'text-gray-400 hover:text-blue-500 hover:bg-blue-50 border border-gray-200'
                                 }`}
@@ -736,16 +750,30 @@ function EPRow({
                     )}
 
                     {/* Catatan input */}
-                    {(isEditingNote || catatan) && (
-                        <div className="mt-3">
-                            <textarea
-                                value={catatan}
-                                onClick={e => e.stopPropagation()}
-                                onChange={e => onUpdateCatatan(pokjaCode, standarKode, ep.kode, e.target.value)}
-                                placeholder="Tulis catatan surveyor..."
-                                rows={2}
-                                className="w-full text-sm bg-blue-50/50 border-2 border-blue-100 rounded-xl px-4 py-2.5 outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-100 text-gray-700 placeholder-gray-400 resize-none transition-all"
-                            />
+                    {(isEditingNote || hasNotes) && (
+                        <div className="mt-3 grid grid-cols-1 lg:grid-cols-2 gap-4">
+                            <div>
+                                <span className="text-xs font-semibold text-slate-500 mb-1 block">Fakta dan Analisis:</span>
+                                <textarea
+                                    value={fakta_analisis}
+                                    onClick={e => e.stopPropagation()}
+                                    onChange={e => onUpdateFaktaAnalisis(pokjaCode, standarKode, ep.kode, e.target.value)}
+                                    placeholder="Tulis fakta dan analisis..."
+                                    rows={3}
+                                    className="w-full text-sm bg-blue-50/50 border-2 border-blue-100 rounded-xl px-4 py-2.5 outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-100 text-gray-700 placeholder-gray-400 resize-none transition-all"
+                                />
+                            </div>
+                            <div>
+                                <span className="text-xs font-semibold text-slate-500 mb-1 block">Rekomendasi:</span>
+                                <textarea
+                                    value={rekomendasi}
+                                    onClick={e => e.stopPropagation()}
+                                    onChange={e => onUpdateRekomendasi(pokjaCode, standarKode, ep.kode, e.target.value)}
+                                    placeholder="Tulis rekomendasi..."
+                                    rows={3}
+                                    className="w-full text-sm bg-blue-50/50 border-2 border-blue-100 rounded-xl px-4 py-2.5 outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-100 text-gray-700 placeholder-gray-400 resize-none transition-all"
+                                />
+                            </div>
                         </div>
                     )}
                 </div>

@@ -22,7 +22,8 @@ type StatusPic = 'pending' | 'completed' | 'in_progress'
 
 interface EPAssessment { 
     nilai: NilaiEP; 
-    catatan: string;
+    fakta_analisis: string;
+    rekomendasi: string;
     rekomendasi_pic: string;
     status_pic: StatusPic;
 }
@@ -83,7 +84,7 @@ export function PicClient() {
             try {
                 const { data, error } = await supabase
                     .from('assessments')
-                    .select('pokja_code, standar_kode, ep_kode, nilai, catatan, rekomendasi_pic, status_pic')
+                    .select('pokja_code, standar_kode, ep_kode, nilai, fakta_analisis, rekomendasi, rekomendasi_pic, status_pic')
                     .eq('assessment_id', sessionId)
 
                 if (error) {
@@ -97,7 +98,8 @@ export function PicClient() {
                         const key = buildKey(row.pokja_code, row.standar_kode, row.ep_kode)
                         loaded[key] = { 
                             nilai: row.nilai, 
-                            catatan: row.catatan || '',
+                            fakta_analisis: row.fakta_analisis || '',
+                            rekomendasi: row.rekomendasi || '',
                             rekomendasi_pic: row.rekomendasi_pic || '',
                             status_pic: row.status_pic || 'pending'
                         }
@@ -157,7 +159,8 @@ export function PicClient() {
                     standar_kode: standarKode,
                     ep_kode: epKode,
                     nilai: val.nilai,
-                    catatan: val.catatan || '',
+                    fakta_analisis: val.fakta_analisis || '',
+                    rekomendasi: val.rekomendasi || '',
                     rekomendasi_pic: val.rekomendasi_pic || '',
                     status_pic: val.status_pic || 'pending'
                 }
@@ -216,7 +219,8 @@ export function PicClient() {
             [key]: { 
                 ...prev[key], 
                 nilai: prev[key]?.nilai || null,
-                catatan: prev[key]?.catatan || '',
+                fakta_analisis: prev[key]?.fakta_analisis || '',
+                rekomendasi: prev[key]?.rekomendasi || '',
                 rekomendasi_pic: rekomendasi,
                 status_pic: prev[key]?.status_pic || 'pending'
             }
@@ -230,7 +234,8 @@ export function PicClient() {
             [key]: { 
                 ...prev[key], 
                 nilai: prev[key]?.nilai || null,
-                catatan: prev[key]?.catatan || '',
+                fakta_analisis: prev[key]?.fakta_analisis || '',
+                rekomendasi: prev[key]?.rekomendasi || '',
                 rekomendasi_pic: prev[key]?.rekomendasi_pic || '',
                 status_pic: status
             }
@@ -492,7 +497,7 @@ function EPRowPic({
     
     // Surveyor Data (Read Only for PIC)
     const nilai = assessment?.nilai ?? null
-    const catatan = assessment?.catatan ?? ''
+
     
     // PIC Data
     const rekomendasi = assessment?.rekomendasi_pic ?? ''
