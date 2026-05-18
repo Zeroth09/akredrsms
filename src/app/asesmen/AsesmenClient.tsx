@@ -279,7 +279,7 @@ export function AsesmenClient() {
     }
 
     function exportCSV() {
-        const rows = ['Pokja,Standar,EP,Nilai,Skor,Catatan']
+        const rows = ['Pokja,Standar,EP,Nilai,Skor,Fakta & Analisis,Rekomendasi']
         for (const pokja of standarEPData) {
             for (const std of pokja.standarList) {
                 for (const ep of std.epList) {
@@ -287,8 +287,9 @@ export function AsesmenClient() {
                     const a = store[key]
                     const nilai = a?.nilai ? nilaiLabel(a.nilai) : 'Belum Dinilai'
                     const skor = a?.nilai ? skorNilai(a.nilai) : 0
-                    const catatan = (a?.catatan || '').replace(/"/g, '""')
-                    rows.push(`"${pokja.pokjaCode}","${std.kode}","${ep.kode}","${nilai}",${skor},"${catatan}"`)
+                    const fakta = (a?.fakta_analisis || '').replace(/"/g, '""')
+                    const rekomendasi = (a?.rekomendasi || '').replace(/"/g, '""')
+                    rows.push(`"${pokja.pokjaCode}","${std.kode}","${ep.kode}","${nilai}",${skor},"${fakta}","${rekomendasi}"`)
                 }
             }
         }
