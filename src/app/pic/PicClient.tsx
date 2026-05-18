@@ -431,7 +431,7 @@ export function PicClient() {
                                                         <span className="text-xs font-medium text-blue-600 bg-blue-50 px-2 py-0.5 rounded-full">{standar.epList.length} EP</span>
                                                     </div>
                                                     {standar.deskripsi && (
-                                                        <p className="text-sm text-gray-500 mt-1 leading-relaxed line-clamp-2">
+                                                        <p className="text-sm text-gray-500 mt-1 leading-relaxed">
                                                             {standar.deskripsi}
                                                         </p>
                                                     )}
@@ -517,7 +517,7 @@ function EPRowPic({
                 </div>
 
                 {!isExpanded && ep.deskripsi && (
-                    <span className="text-sm text-gray-500 truncate flex-1 min-w-0 pr-4">
+                    <span className="text-sm text-gray-500 flex-1 pr-4">
                         {ep.deskripsi}
                     </span>
                 )}
