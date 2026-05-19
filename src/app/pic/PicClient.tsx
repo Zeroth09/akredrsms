@@ -6,8 +6,9 @@ import { supabase } from '@/lib/supabase'
 import {
     ChevronDown, ChevronRight, CheckCircle2, Cloud, CloudOff, Check,
     Search, Loader2, MessageSquare, ExternalLink, FileText, Menu,
-    LogOut, UserCircle, AlertCircle, XCircle
+    LogOut, UserCircle, AlertCircle, XCircle, Download
 } from 'lucide-react'
+import * as XLSX from 'xlsx'
 import { useRouter } from 'next/navigation'
 
 // ============ TYPES ============
@@ -256,6 +257,38 @@ export function PicClient() {
         router.push('/')
     }
 
+    function exportExcel() {
+        if (!activePokja) return
+        const data = []
+        let no = 1
+        for (const std of activePokja.standarList) {
+            for (const ep of std.epList) {
+                const key = buildKey(activePokja.pokjaCode, std.kode, ep.kode)
+                const a = store[key]
+                const rekPic = a?.rekomendasi_pic || ''
+                data.push({
+                    'No': no++,
+                    'Standar': std.kode,
+                    'Element Penilaian': ep.kode,
+                    'Rekomendasi/ Bukti Perbaikan': rekPic
+                })
+            }
+        }
+        
+        const ws = XLSX.utils.json_to_sheet(data)
+        // Mengatur lebar kolom agar rapi
+        ws['!cols'] = [
+            { wch: 5 },   // No
+            { wch: 15 },  // Standar
+            { wch: 20 },  // Element Penilaian
+            { wch: 60 }   // Rekomendasi/ Bukti Perbaikan
+        ]
+
+        const wb = XLSX.utils.book_new()
+        XLSX.utils.book_append_sheet(wb, ws, "Rekomendasi")
+        XLSX.writeFile(wb, `Rekomendasi_PIC_${activePokja.pokjaCode}_${new Date().toISOString().slice(0, 10)}.xlsx`)
+    }
+
     if (isLoadingData) {
         return (
             <div className="min-h-screen bg-slate-50 flex items-center justify-center">
@@ -362,6 +395,11 @@ export function PicClient() {
                                 </span>
                             )}
                         </div>
+
+                        <button onClick={exportExcel}
+                            className="p-2 rounded-lg hover:bg-emerald-50 text-gray-500 hover:text-emerald-600 transition-colors border border-gray-200" title="Export Excel">
+                            <Download className="w-5 h-5" />
+                        </button>
 
                         <button onClick={handleLogout}
                             className="p-2 rounded-lg hover:bg-red-50 text-gray-500 hover:text-red-600 transition-colors border border-gray-200" title="Keluar">
