@@ -595,24 +595,13 @@ function EPRowPic({
                                 <div className="flex justify-between items-center mb-1">
                                     <span className="text-xs text-slate-600 font-semibold">Rekomendasi / Bukti Perbaikan:</span>
                                 </div>
-                                {(isEditing || !rekomendasi) ? (
-                                    <textarea
-                                        autoFocus={isEditing}
-                                        value={rekomendasi}
-                                        onChange={e => onUpdateRekomendasi(pokjaCode, standarKode, ep.kode, e.target.value)}
-                                        onBlur={() => onSetEditingRekomendasi(null)}
-                                        placeholder="Ketik langkah perbaikan atau link bukti perbaikan di sini..."
-                                        rows={3}
-                                        className="w-full text-sm bg-white border border-blue-200 rounded-lg px-3 py-2 outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-100 text-slate-700 resize-y transition-all"
-                                    />
-                                ) : (
-                                    <div 
-                                        onClick={() => onSetEditingRekomendasi(key)}
-                                        className="w-full text-sm bg-white border border-transparent hover:border-blue-200 rounded-lg px-3 py-2 text-slate-700 whitespace-pre-wrap cursor-text min-h-[3rem] transition-colors">
-                                        {rekomendasi}
-                                    </div>
-                                )}
-                                <p className="text-[10px] text-slate-400 mt-1">Klik teks untuk mengedit rekomendasi.</p>
+                                <textarea
+                                    value={rekomendasi}
+                                    onChange={e => onUpdateRekomendasi(pokjaCode, standarKode, ep.kode, e.target.value)}
+                                    placeholder="Ketik langkah perbaikan atau link bukti perbaikan di sini..."
+                                    rows={3}
+                                    className="w-full text-sm bg-white border border-blue-200 rounded-lg px-3 py-2 outline-none focus:border-blue-400 focus:ring-2 focus:ring-blue-100 text-slate-700 resize-y transition-all"
+                                />
                             </div>
                         </div>
                 </div>
