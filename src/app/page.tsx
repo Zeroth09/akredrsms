@@ -2,6 +2,7 @@
 import { getDocuments, getCategories, syncDocuments } from './actions'
 import { RefreshCw, LayoutDashboard, FileText, CheckCircle, AlertTriangle } from 'lucide-react'
 import { FileSystemView } from '@/components/documents/FileSystemView'
+import Link from 'next/link'
 
 export const dynamic = 'force-dynamic'
 
@@ -35,18 +36,28 @@ export default async function Home() {
               </div>
             </div>
 
-            <form action={async () => {
-              'use server'
-              await syncDocuments()
-            }}>
-              <button
-                className="group flex items-center gap-2 bg-white text-red-700 hover:bg-red-50 px-5 py-2.5 rounded-full font-semibold shadow-md transition-all active:scale-95"
-                type="submit"
+            <div className="flex items-center gap-3">
+              <Link 
+                href="/telusur-lapangan"
+                className="flex items-center gap-2 bg-white/10 hover:bg-white/20 text-white border border-white/20 px-5 py-2.5 rounded-full font-semibold shadow-md transition-all active:scale-95 text-sm"
               >
-                <RefreshCw className="w-4 h-4 group-hover:rotate-180 transition-transform duration-500" />
-                Sync Drive
-              </button>
-            </form>
+                <FileText className="w-4 h-4" />
+                Telusur Lapangan
+              </Link>
+
+              <form action={async () => {
+                'use server'
+                await syncDocuments()
+              }}>
+                <button
+                  className="group flex items-center gap-2 bg-white text-red-700 hover:bg-red-50 px-5 py-2.5 rounded-full font-semibold shadow-md transition-all active:scale-95 text-sm"
+                  type="submit"
+                >
+                  <RefreshCw className="w-4 h-4 group-hover:rotate-180 transition-transform duration-500" />
+                  Sync Drive
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>

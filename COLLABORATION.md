@@ -9,8 +9,8 @@ File ini adalah "shared memory" untuk kolaborasi antar AI Agent (Antigravity, Co
 ---
 
 ## 🚀 Status Proyek Saat Ini
-- **Status:** Halaman Asesmen Surveyor — Redesign UI Colorful Step-by-Step + High Contrast.
-- **Terakhir Diperbarui:** 2026-05-17
+- **Status:** Halaman Asesmen Surveyor + Telusur Lapangan (Simplifikasi Login).
+- **Terakhir Diperbarui:** 2026-05-20
 - **Agent Terakhir:** Antigravity
 
 ## 🛠️ Tech Stack & Arsitektur
@@ -34,6 +34,8 @@ File ini adalah "shared memory" untuk kolaborasi antar AI Agent (Antigravity, Co
 - [x] **RDOW Badges:** Badge bukti R(egulasi)/D(okumen)/O(bservasi)/W(awancara)/S(imulasi) tampil di samping kode EP. Data dari field `bukti` di `MASTER_STANDAR_EP`.
 - [x] **Fix Deskripsi EP:** Rewrite pipeline extraction dari KEPMENKES + Instrumen Survei PDF. Coverage naik dari 19% → **97% (1085/1117)** EP terisi deskripsi. 10 pokja 100%.
 - [x] **Lengkapi RDOW:** **788 EP (70%)** punya RDOW otomatis dari Instrumen Survei Akreditasi (Kepdirjen 47104/2024). Semua 16 pokja tercover.
+- [x] **Telusur Lapangan (/telusur-lapangan):** Implementasi penuh halaman pencatatan hasil inspeksi lapangan (Nama Ruang, Temuan, Rekomendasi, Penanggung Jawab) dengan isolated-typing (anti-focus loss), dynamic autosave ke Supabase, localStorage fallback, dan export Excel premium.
+- [x] **Simplifikasi Login Telusur Lapangan:** Menghapus input kata kunci manual, pembatas "atau ketik manual", dan tombol "Masuk Sesi" manual. Menyisakan 3 tombol klik instan kelompok untuk mempercepat akses pengguna.
 
 ## ⏳ Tasks Pending / In Progress
 - [x] **Persist ke Supabase:** Tabel `assessments` dan `assessment_sessions` sudah dibuat di Supabase. Asesmen sekarang sync otomatis ke server via upsert per EP. localStorage tetap jadi fallback.
@@ -45,6 +47,8 @@ File ini adalah "shared memory" untuk kolaborasi antar AI Agent (Antigravity, Co
 - **Decision:** Standar dan EP sekarang **strictly folder-based**. Jika file berada di folder "EP a", maka `ep = "EP a"`. Jika parent dari "EP a" adalah "TKRS 1", maka `standar = "TKRS 1"`.
 - **Decision:** UI Asesmen menggunakan **colorful light theme** — gradient header `indigo-600 → blue-600 → cyan-500`, standar cards dengan `border-l-4 border-l-indigo-400`, tombol EP solid fill saat aktif (emerald/amber/red-500 text-white).
 - **Decision:** Deskripsi diambil dari `MASTER_STANDAR_EP` di `masterStandarEP.ts`, di-match berdasarkan `pokjaCode` + `standar.kode` + `ep.kode` (case-insensitive).
+- **Decision:** Halaman Telusur Lapangan menggunakan isolated input state per baris (`TableRowItem`) agar pengetikan dinamis 100% responsif dan terbebas dari bug kehilangan fokus kursor.
+- **Decision (Simplifikasi Login):** Berdasarkan feedback user, kolom kata kunci manual, pembatas divider, dan tombol submit manual di login Telusur Lapangan telah dihapus sepenuhnya. Hanya menyisakan tombol quick-access instan sekali klik demi alur kerja yang jauh lebih cepat dan ramah pengguna (user-friendly).
 - **Constraint:** Hindari mencatat kode Pokja (KPS, TKRS, dll) sebagai nama Standar. Sudah ada filter `POKJA_CODES` di `actions.ts`.
 - **Resolved:** Deskripsi EP sekarang **97% terisi** (1085/1117). RDOW **70%** (788/1117). Dua sumber data: (1) KEPMENKES 1596/2024 untuk deskripsi, (2) Instrumen Survei Kepdirjen 47104/2024 untuk RDOW bukti. SKP pakai mapping nomor→huruf. PROGNAS case-insensitive.
 - **Scripts Pipeline:** `extract-descriptions-v5.mjs` (deskripsi dari KEPMENKES) + `extract-instrumen-rdow.mjs` (RDOW dari Instrumen Survei) → `ep_descriptions.json` + `ep_bukti.json` → `regenerate-master-with-desc.mjs` → `masterStandarEP.ts`.
@@ -52,4 +56,4 @@ File ini adalah "shared memory" untuk kolaborasi antar AI Agent (Antigravity, Co
 ---
 
 ## 🤝 Handover untuk Agent Berikutnya
-> "97% EP punya deskripsi (1085/1117), 70% RDOW (788/1117). Dua pipeline extraction: KEPMENKES untuk deskripsi, Instrumen Survei untuk RDOW bukti. Halaman asesmen: pokja tabs, standar accordion, penilaian EP, dokumen per EP, RDOW badges (R/D/O/W/S), deskripsi EP. Data penilaian masih di localStorage. Langkah selanjutnya: (1) persist asesmen ke Supabase, (2) isi sisa 3% deskripsi & 30% RDOW."
+> "Fitur Telusur Lapangan (/telusur-lapangan) telah disederhanakan dengan sangat baik. Sistem login manual kata kunci sudah dihapus dan sekarang sepenuhnya berjalan menggunakan one-click quick access login. Verifikasi kompilasi TypeScript (`npx tsc --noEmit`) berjalan sukses tanpa error."
