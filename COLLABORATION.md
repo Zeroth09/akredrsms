@@ -36,6 +36,7 @@ File ini adalah "shared memory" untuk kolaborasi antar AI Agent (Antigravity, Co
 - [x] **Lengkapi RDOW:** **788 EP (70%)** punya RDOW otomatis dari Instrumen Survei Akreditasi (Kepdirjen 47104/2024). Semua 16 pokja tercover.
 - [x] **Telusur Lapangan (/telusur-lapangan):** Implementasi penuh halaman pencatatan hasil inspeksi lapangan (Nama Ruang, Temuan, Rekomendasi, Penanggung Jawab) dengan isolated-typing (anti-focus loss), dynamic autosave ke Supabase, localStorage fallback, dan export Excel premium.
 - [x] **Simplifikasi Login Telusur Lapangan:** Menghapus input kata kunci manual, pembatas "atau ketik manual", dan tombol "Masuk Sesi" manual. Menyisakan 3 tombol klik instan kelompok untuk mempercepat akses pengguna.
+- [x] **Redesign Layout & Floating Action Button (FAB):** Menghapus footer untuk kebersihan visual maksimal, serta merancang Tombol Tambah Baris melayang (FAB) di kanan bawah agar selalu tampil bagi kemudahan pengisian data oleh PIC.
 
 ## ⏳ Tasks Pending / In Progress
 - [x] **Persist ke Supabase:** Tabel `assessments` dan `assessment_sessions` sudah dibuat di Supabase. Asesmen sekarang sync otomatis ke server via upsert per EP. localStorage tetap jadi fallback.
@@ -49,6 +50,7 @@ File ini adalah "shared memory" untuk kolaborasi antar AI Agent (Antigravity, Co
 - **Decision:** Deskripsi diambil dari `MASTER_STANDAR_EP` di `masterStandarEP.ts`, di-match berdasarkan `pokjaCode` + `standar.kode` + `ep.kode` (case-insensitive).
 - **Decision:** Halaman Telusur Lapangan menggunakan isolated input state per baris (`TableRowItem`) agar pengetikan dinamis 100% responsif dan terbebas dari bug kehilangan fokus kursor.
 - **Decision (Simplifikasi Login):** Berdasarkan feedback user, kolom kata kunci manual, pembatas divider, dan tombol submit manual di login Telusur Lapangan telah dihapus sepenuhnya. Hanya menyisakan tombol quick-access instan sekali klik demi alur kerja yang jauh lebih cepat dan ramah pengguna (user-friendly).
+- **Decision (Layout & FAB):** Menghapus footer di halaman login dan halaman utama untuk kenyamanan visual. Merancang Floating Action Button (FAB) melayang di sudut kanan bawah yang selalu tampil (berbentuk lingkaran di mobile, oval di desktop) agar mempermudah PIC menginput baris baru secara instan tanpa perlu scroll ke atas.
 - **Constraint:** Hindari mencatat kode Pokja (KPS, TKRS, dll) sebagai nama Standar. Sudah ada filter `POKJA_CODES` di `actions.ts`.
 - **Resolved:** Deskripsi EP sekarang **97% terisi** (1085/1117). RDOW **70%** (788/1117). Dua sumber data: (1) KEPMENKES 1596/2024 untuk deskripsi, (2) Instrumen Survei Kepdirjen 47104/2024 untuk RDOW bukti. SKP pakai mapping nomor→huruf. PROGNAS case-insensitive.
 - **Scripts Pipeline:** `extract-descriptions-v5.mjs` (deskripsi dari KEPMENKES) + `extract-instrumen-rdow.mjs` (RDOW dari Instrumen Survei) → `ep_descriptions.json` + `ep_bukti.json` → `regenerate-master-with-desc.mjs` → `masterStandarEP.ts`.
@@ -56,4 +58,4 @@ File ini adalah "shared memory" untuk kolaborasi antar AI Agent (Antigravity, Co
 ---
 
 ## 🤝 Handover untuk Agent Berikutnya
-> "Fitur Telusur Lapangan (/telusur-lapangan) telah disederhanakan dengan sangat baik. Sistem login manual kata kunci sudah dihapus dan sekarang sepenuhnya berjalan menggunakan one-click quick access login. Verifikasi kompilasi TypeScript (`npx tsc --noEmit`) berjalan sukses tanpa error."
+> "Fitur Telusur Lapangan (/telusur-lapangan) telah disederhanakan dan ditingkatkan kemudahan penggunaannya secara maksimal. Footer telah dibersihkan sepenuhnya, dan Tombol Tambah Baris melayang (FAB) kini terintegrasi dengan sempurna. Verifikasi TypeScript (`npx tsc --noEmit`) berjalan mulus tanpa error."

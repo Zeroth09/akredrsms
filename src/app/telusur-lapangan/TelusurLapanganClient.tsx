@@ -552,10 +552,6 @@ export function TelusurLapanganClient() {
                     </div>
                 </div>
 
-                {/* Premium Credit Footer - Brand Webinstant.id */}
-                <footer className="mt-auto text-center text-slate-500 text-[10px] md:text-xs space-y-1 py-4">
-                    <p>Sistem Akreditasi RS &copy; {new Date().getFullYear()} dikembangkan oleh <a href="https://webinstant.id" className="text-slate-400 hover:text-red-400 transition-colors">webinstant.id</a></p>
-                </footer>
             </main>
         )
     }
@@ -732,29 +728,15 @@ export function TelusurLapanganClient() {
                 </div>
             </div>
 
-            {/* Premium Credit Footer - Brand Webinstant.id */}
-            <footer className="mt-12 bg-slate-900 text-slate-400 border-t border-slate-800 text-sm">
-                <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center gap-6">
-                    <div className="space-y-2 text-center md:text-left">
-                        <div className="flex items-center justify-center md:justify-start gap-2">
-                            <span className="w-2.5 h-2.5 bg-red-500 rounded-full inline-block animate-pulse"></span>
-                            <span className="text-white font-semibold">Akreditasi Monitor</span>
-                        </div>
-                        <p className="text-xs text-slate-500">&copy; {new Date().getFullYear()} Hak Cipta Dilindungi. Sistem Manajemen Akreditasi RS.</p>
-                    </div>
-
-                    <div className="text-center md:text-right space-y-1">
-                        <p className="text-xs text-slate-500">Dikembangkan secara profesional oleh:</p>
-                        <p className="text-slate-200 font-semibold hover:text-red-400 transition-colors">
-                            <a href="https://webinstant.id" target="_blank" rel="noopener noreferrer">webinstant.id</a>
-                        </p>
-                        <p className="text-xs text-slate-500">Nusa Tenggara Barat, Kec. Mataram, Kab. Mataram, Nusa Tenggara Barat 83112</p>
-                        <p className="text-xs text-slate-400">
-                            WhatsApp: <a href="https://wa.me/6287765315859" className="hover:text-emerald-400 underline transition-colors">087765315859</a>
-                        </p>
-                    </div>
-                </div>
-            </footer>
+            {/* Floating Action Button (FAB) - Tambah Baris (Selalu Tampil) */}
+            <button
+                onClick={handleAddRow}
+                className="fixed bottom-6 right-6 md:bottom-8 md:right-8 z-40 flex items-center justify-center gap-2 bg-[#cc0000] hover:bg-red-700 text-white p-4 md:px-5 md:py-3.5 rounded-full shadow-2xl active:scale-95 hover:scale-105 transition-all duration-200 cursor-pointer border border-red-500/20"
+                title="Tambah Baris Telusur"
+            >
+                <Plus className="w-6 h-6 md:w-5 md:h-5 text-white" />
+                <span className="hidden md:inline font-bold text-sm">Tambah Baris</span>
+            </button>
         </main>
     )
 }
