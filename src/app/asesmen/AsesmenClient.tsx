@@ -41,14 +41,6 @@ function parseKey(key: string) {
     return { pokjaCode, standarKode, epKode }
 }
 
-function getOrCreateSessionId(): string {
-    // Saat ini kita gunakan ID sesi default agar semua browser/device 
-    // membaca dan menulis ke dokumen asesmen yang sama.
-    // Ke depan, ini bisa diganti dengan membaca dari parameter URL (?session=xxx)
-    // atau state manajemen sesi (dropdown pilih sesi RS).
-    return 'ASESMEN_RS_DEFAULT_2024'
-}
-
 function skorNilai(nilai: NilaiEP): number {
     if (nilai === 'terpenuhi') return 10
     if (nilai === 'sebagian') return 5
@@ -80,7 +72,32 @@ export function AsesmenClient() {
     const [showMobileMenu, setShowMobileMenu] = useState(false)
     const router = useRouter()
 
-    const sessionId = useMemo(() => getOrCreateSessionId(), [])
+    const [sessionId, setSessionId] = useState<string>('ASESMEN_RS_DEFAULT_2024')
+    const [sessionName, setSessionName] = useState<string>('RS Default (2024)')
+    const [isSessionLoaded, setIsSessionLoaded] = useState<boolean>(false)
+
+    // Fetch active session from Supabase
+    useEffect(() => {
+        async function fetchActiveSession() {
+            try {
+                const { data, error } = await supabase
+                    .from('assessment_sessions')
+                    .select('assessment_id, rumah_sakit, tahun_akreditasi')
+                    .eq('is_aktif', true)
+                    .maybeSingle()
+                
+                if (!error && data) {
+                    setSessionId(data.assessment_id)
+                    setSessionName(`${data.rumah_sakit} (${data.tahun_akreditasi})`)
+                }
+            } catch (e) {
+                console.error('Gagal memuat sesi aktif:', e)
+            } finally {
+                setIsSessionLoaded(true)
+            }
+        }
+        fetchActiveSession()
+    }, [])
 
     // Auth Check
     useEffect(() => {
@@ -94,6 +111,8 @@ export function AsesmenClient() {
 
     // Load dari Supabase + localStorage fallback
     useEffect(() => {
+        if (!isSessionLoaded) return
+
         async function loadFromSupabase() {
             try {
                 const { data, error } = await supabase
@@ -113,22 +132,29 @@ export function AsesmenClient() {
                     setSyncStatus('saved')
                     setLastSaved(new Date().toLocaleTimeString('id-ID'))
                 } else {
-                    // Fallback: coba load dari localStorage
-                    const saved = localStorage.getItem(STORAGE_KEY)
-                    if (saved) setStore(JSON.parse(saved))
+                    // Fallback: coba load dari localStorage hanya jika menggunakan sesi default
+                    if (sessionId === 'ASESMEN_RS_DEFAULT_2024') {
+                        const saved = localStorage.getItem(STORAGE_KEY)
+                        if (saved) setStore(JSON.parse(saved))
+                    } else {
+                        // Untuk sesi baru, jika belum ada data di Supabase, set store kosong
+                        setStore({})
+                    }
                     setSyncStatus('idle')
                 }
             } catch {
-                // Supabase gagal → fallback ke localStorage
-                try {
-                    const saved = localStorage.getItem(STORAGE_KEY)
-                    if (saved) setStore(JSON.parse(saved))
-                } catch { /* ignore */ }
+                // Supabase gagal → fallback ke localStorage jika menggunakan sesi default
+                if (sessionId === 'ASESMEN_RS_DEFAULT_2024') {
+                    try {
+                        const saved = localStorage.getItem(STORAGE_KEY)
+                        if (saved) setStore(JSON.parse(saved))
+                    } catch { /* ignore */ }
+                }
                 setSyncStatus('idle')
             }
         }
         loadFromSupabase()
-    }, [sessionId])
+    }, [sessionId, isSessionLoaded])
 
     // Load data standar dari server
     useEffect(() => {
@@ -151,8 +177,12 @@ export function AsesmenClient() {
 
     // Sync ke Supabase (upsert per EP) + localStorage fallback
     const syncToSupabase = useCallback(async (currentStore: AssessmentStore) => {
-        // Always save to localStorage as backup
-        try { localStorage.setItem(STORAGE_KEY, JSON.stringify(currentStore)) } catch { /* ignore */ }
+        if (!isSessionLoaded) return // Jangan sync sebelum session dimuat
+
+        // Always save to localStorage as backup if default session
+        if (sessionId === 'ASESMEN_RS_DEFAULT_2024') {
+            try { localStorage.setItem(STORAGE_KEY, JSON.stringify(currentStore)) } catch { /* ignore */ }
+        }
 
         // Sync ke Supabase
         if (Object.keys(currentStore).length === 0) {
@@ -188,7 +218,7 @@ export function AsesmenClient() {
             console.error('Sync failed:', e)
             setSyncStatus('error')
         }
-    }, [sessionId])
+    }, [sessionId, isSessionLoaded])
 
     // Debounce sync
     useEffect(() => {
@@ -341,6 +371,10 @@ export function AsesmenClient() {
                 <div className="p-5 bg-indigo-800">
                     <h1 className="text-xl font-bold text-white">Asesmen Internal</h1>
                     <p className="text-xs text-indigo-200 mt-1">Penilaian Kelengkapan Dokumen</p>
+                    <div className="mt-3 bg-indigo-900/40 rounded-lg p-2.5 border border-indigo-500/20">
+                        <p className="text-[10px] uppercase font-bold text-indigo-300 tracking-wider">Sesi Aktif</p>
+                        <p className="text-xs font-semibold text-white truncate mt-0.5" title={sessionName}>{sessionName}</p>
+                    </div>
                 </div>
                 
                 <div className="flex-1 overflow-y-auto p-3 space-y-1">
@@ -595,9 +629,9 @@ function EPRow({
         : 'bg-gray-300'
 
     // Penilaian label ringkas untuk collapsed view
-    const nilaiTag = nilai === 'terpenuhi' ? { text: 'Terpenuhi', cls: 'bg-emerald-100 text-emerald-700' }
-        : nilai === 'sebagian' ? { text: 'Sebagian', cls: 'bg-amber-100 text-amber-700' }
-        : nilai === 'tidak' ? { text: 'Tidak', cls: 'bg-red-100 text-red-700' }
+    const nilaiTag = nilai === 'terpenuhi' ? { text: '10 - Terpenuhi', cls: 'bg-emerald-100 text-emerald-700' }
+        : nilai === 'sebagian' ? { text: '5 - Sebagian', cls: 'bg-amber-100 text-amber-700' }
+        : nilai === 'tidak' ? { text: '0 - Tidak', cls: 'bg-red-100 text-red-700' }
         : null
 
     // RDOW badge styling
@@ -682,32 +716,38 @@ function EPRow({
                     <div className="flex flex-wrap items-center gap-2">
                         <button
                             onClick={(e) => { e.stopPropagation(); handleNilai('terpenuhi') }}
-                            className={`inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold transition-all
+                            aria-label="Pilih skor 10 terpenuhi"
+                            className={`inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold transition-all
                                 ${nilai === 'terpenuhi'
                                     ? 'bg-emerald-500 text-white shadow-md shadow-emerald-200'
                                     : 'bg-emerald-50 text-emerald-600 border border-emerald-200 hover:bg-emerald-100'
                                 }`}>
                             <CheckCircle2 className="w-4 h-4" />
+                            <span className="inline-flex items-center justify-center min-w-7 rounded-lg bg-white/20 px-1.5 font-bold">10</span>
                             Terpenuhi
                         </button>
                         <button
                             onClick={(e) => { e.stopPropagation(); handleNilai('sebagian') }}
-                            className={`inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold transition-all
+                            aria-label="Pilih skor 5 sebagian"
+                            className={`inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold transition-all
                                 ${nilai === 'sebagian'
                                     ? 'bg-amber-500 text-white shadow-md shadow-amber-200'
                                     : 'bg-amber-50 text-amber-600 border border-amber-200 hover:bg-amber-100'
                                 }`}>
                             <AlertCircle className="w-4 h-4" />
+                            <span className="inline-flex items-center justify-center min-w-7 rounded-lg bg-white/20 px-1.5 font-bold">5</span>
                             Sebagian
                         </button>
                         <button
                             onClick={(e) => { e.stopPropagation(); handleNilai('tidak') }}
-                            className={`inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold transition-all
+                            aria-label="Pilih skor 0 tidak terpenuhi"
+                            className={`inline-flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-semibold transition-all
                                 ${nilai === 'tidak'
                                     ? 'bg-red-500 text-white shadow-md shadow-red-200'
                                     : 'bg-red-50 text-red-600 border border-red-200 hover:bg-red-100'
                                 }`}>
                             <XCircle className="w-4 h-4" />
+                            <span className="inline-flex items-center justify-center min-w-7 rounded-lg bg-white/20 px-1.5 font-bold">0</span>
                             Tidak
                         </button>
 

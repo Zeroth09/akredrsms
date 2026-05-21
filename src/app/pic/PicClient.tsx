@@ -46,10 +46,6 @@ function parseKey(key: string) {
     return { pokjaCode, standarKode, epKode }
 }
 
-function getOrCreateSessionId(): string {
-    return 'ASESMEN_RS_DEFAULT_2024'
-}
-
 function nilaiLabel(nilai: NilaiEP): string {
     if (nilai === 'terpenuhi') return 'Terpenuhi'
     if (nilai === 'sebagian') return 'Terpenuhi Sebagian'
@@ -60,6 +56,32 @@ function nilaiLabel(nilai: NilaiEP): string {
 // ============ MAIN COMPONENT ============
 
 export function PicClient() {
+    const [sessionId, setSessionId] = useState<string>('ASESMEN_RS_DEFAULT_2024')
+    const [sessionName, setSessionName] = useState<string>('RS Default (2024)')
+    const [isSessionLoaded, setIsSessionLoaded] = useState<boolean>(false)
+
+    // Fetch active session from Supabase
+    useEffect(() => {
+        async function fetchActiveSession() {
+            try {
+                const { data, error } = await supabase
+                    .from('assessment_sessions')
+                    .select('assessment_id, rumah_sakit, tahun_akreditasi')
+                    .eq('is_aktif', true)
+                    .maybeSingle()
+                
+                if (!error && data) {
+                    setSessionId(data.assessment_id)
+                    setSessionName(`${data.rumah_sakit} (${data.tahun_akreditasi})`)
+                }
+            } catch (e) {
+                console.error('Gagal memuat sesi aktif:', e)
+            } finally {
+                setIsSessionLoaded(true)
+            }
+        }
+        fetchActiveSession()
+    }, [])
     const [store, setStore] = useState<AssessmentStore>({})
     const [activePokjaIdx, setActivePokjaIdx] = useState(0)
     const [expandedStandar, setExpandedStandar] = useState<Set<string>>(new Set())
@@ -73,14 +95,12 @@ export function PicClient() {
     const [showMobileMenu, setShowMobileMenu] = useState(false)
     const router = useRouter()
 
-    const sessionId = useMemo(() => getOrCreateSessionId(), [])
-
-    // Auth Check: for now, just check if they are logged in or just use a dummy PIC name
-    // The user didn't specify pic auth, so let's just make it open or use a simple state
     const picUser = { name: "Penanggung Jawab (PIC)", role: "PIC" }
 
     // Load dari Supabase
     useEffect(() => {
+        if (!isSessionLoaded) return
+
         async function loadFromSupabase() {
             try {
                 const { data, error } = await supabase
@@ -109,20 +129,27 @@ export function PicClient() {
                     setSyncStatus('saved')
                     setLastSaved(new Date().toLocaleTimeString('id-ID'))
                 } else {
-                    const saved = localStorage.getItem(PIC_STORAGE_KEY)
-                    if (saved) setStore(JSON.parse(saved))
+                    // Fallback to localStorage only for default session
+                    if (sessionId === 'ASESMEN_RS_DEFAULT_2024') {
+                        const saved = localStorage.getItem(PIC_STORAGE_KEY)
+                        if (saved) setStore(JSON.parse(saved))
+                    } else {
+                        setStore({})
+                    }
                     setSyncStatus('idle')
                 }
             } catch {
-                try {
-                    const saved = localStorage.getItem(PIC_STORAGE_KEY)
-                    if (saved) setStore(JSON.parse(saved))
-                } catch { /* ignore */ }
+                if (sessionId === 'ASESMEN_RS_DEFAULT_2024') {
+                    try {
+                        const saved = localStorage.getItem(PIC_STORAGE_KEY)
+                        if (saved) setStore(JSON.parse(saved))
+                    } catch { /* ignore */ }
+                }
                 setSyncStatus('idle')
             }
         }
         loadFromSupabase()
-    }, [sessionId])
+    }, [sessionId, isSessionLoaded])
 
     // Load data standar dari server
     useEffect(() => {
@@ -142,7 +169,12 @@ export function PicClient() {
 
     // Sync ke Supabase
     const syncToSupabase = useCallback(async (currentStore: AssessmentStore) => {
-        try { localStorage.setItem(PIC_STORAGE_KEY, JSON.stringify(currentStore)) } catch { /* ignore */ }
+        if (!isSessionLoaded) return
+
+        // Always save to localStorage as backup if default session
+        if (sessionId === 'ASESMEN_RS_DEFAULT_2024') {
+            try { localStorage.setItem(PIC_STORAGE_KEY, JSON.stringify(currentStore)) } catch { /* ignore */ }
+        }
 
         if (Object.keys(currentStore).length === 0) {
             setLastSaved(new Date().toLocaleTimeString('id-ID'))
@@ -179,7 +211,7 @@ export function PicClient() {
             console.error('Sync failed:', e)
             setSyncStatus('error')
         }
-    }, [sessionId])
+    }, [sessionId, isSessionLoaded])
 
     // Debounce sync
     useEffect(() => {
@@ -325,6 +357,10 @@ export function PicClient() {
                 <div className="p-5 bg-slate-900 border-b border-slate-700">
                     <h1 className="text-xl font-bold text-white">Tindak Lanjut PIC</h1>
                     <p className="text-xs text-slate-300 mt-1">Rekomendasi & Perbaikan EP</p>
+                    <div className="mt-3 bg-slate-800/60 rounded-lg p-2.5 border border-slate-700">
+                        <p className="text-[10px] uppercase font-bold text-blue-400 tracking-wider">Sesi Kegiatan</p>
+                        <p className="text-xs font-semibold text-white truncate mt-0.5" title={sessionName}>{sessionName}</p>
+                    </div>
                 </div>
                 
                 <div className="flex-1 overflow-y-auto p-3 space-y-1">

@@ -37,14 +37,17 @@ File ini adalah "shared memory" untuk kolaborasi antar AI Agent (Antigravity, Co
 - [x] **Telusur Lapangan (/telusur-lapangan):** Implementasi penuh halaman pencatatan hasil inspeksi lapangan (Nama Ruang, Temuan, Rekomendasi, Penanggung Jawab) dengan isolated-typing (anti-focus loss), dynamic autosave ke Supabase, localStorage fallback, dan export Excel premium.
 - [x] **Simplifikasi Login Telusur Lapangan:** Menghapus input kata kunci manual, pembatas "atau ketik manual", dan tombol "Masuk Sesi" manual. Menyisakan 3 tombol klik instan kelompok untuk mempercepat akses pengguna.
 - [x] **Redesign Layout, FAB, & Header Action:** Menghapus footer untuk kebersihan visual maksimal, merancang Tombol Tambah Baris melayang (FAB) di kanan bawah agar selalu tampil bagi kemudahan pengisian data oleh PIC, serta memindahkan tombol Export Excel ke header sebagai ikon hijau emerald minimalis (tanpa teks) untuk menyederhanakan area kerja.
+- [x] **Sesi Kegiatan Aktif Dinamis:** Menghilangkan session ID statis (`ASESMEN_RS_DEFAULT_2024`) dan menerapkan pemuatan sesi aktif dari Supabase (`assessment_sessions.is_aktif = true`) pada halaman Asesmen, PIC, dan Telusur Lapangan. Bug penempatan hooks di `PicClient.tsx` telah diperbaiki dan label sesi aktif berhasil ditambahkan pada sidebar PIC serta header & login screen Telusur Lapangan.
 
 ## ⏳ Tasks Pending / In Progress
 - [x] **Persist ke Supabase:** Tabel `assessments` dan `assessment_sessions` sudah dibuat di Supabase. Asesmen sekarang sync otomatis ke server via upsert per EP. localStorage tetap jadi fallback.
+- [x] **Kolom Sesi di Database:** Memastikan kolom `surveyor_unit` dan `tahun_akreditasi` pada tabel `assessment_sessions` di Supabase terbuat untuk memperbaiki error schema cache saat menyimpan sesi dari Halaman Admin.
 - [ ] **Data Normalization:** Pastikan nama EP seragam (misal: "EP a" bukan "Ep a").
 - [ ] **Lengkapi RDOW sisa:** 788/1117 EP sudah ada RDOW. Sisa ~329 EP (PAB, PROGNAS, PMKP) mungkin perlu verifikasi manual.
 - [ ] **Testing:** Verifikasi sinkronisasi dengan dataset folder yang lebih kompleks.
 
 ## 📝 Catatan Teknis & Keputusan
+- **Bug Fix (Admin Session Save):** Error `Could not find the 'surveyor_unit'/'tahun_akreditasi' column of 'assessment_sessions' in the schema cache` diatasi dengan menambahkan kolom-kolom yang kurang ke tabel `assessment_sessions` di Supabase. File migrasi dibuat di `migration_update_sessions_table.sql`.
 - **Decision:** Standar dan EP sekarang **strictly folder-based**. Jika file berada di folder "EP a", maka `ep = "EP a"`. Jika parent dari "EP a" adalah "TKRS 1", maka `standar = "TKRS 1"`.
 - **Decision:** UI Asesmen menggunakan **colorful light theme** — gradient header `indigo-600 → blue-600 → cyan-500`, standar cards dengan `border-l-4 border-l-indigo-400`, tombol EP solid fill saat aktif (emerald/amber/red-500 text-white).
 - **Decision:** Deskripsi diambil dari `MASTER_STANDAR_EP` di `masterStandarEP.ts`, di-match berdasarkan `pokjaCode` + `standar.kode` + `ep.kode` (case-insensitive).
@@ -58,4 +61,4 @@ File ini adalah "shared memory" untuk kolaborasi antar AI Agent (Antigravity, Co
 ---
 
 ## 🤝 Handover untuk Agent Berikutnya
-> "Fitur Telusur Lapangan (/telusur-lapangan) telah disempurnakan. Tombol Export Excel kini diletakkan di header sebagai ikon hijau emerald yang elegan, tombol aksi lama di atas tabel telah dihapus sepenuhnya karena sudah digantikan oleh Floating Action Button (FAB) melayang merah menyala yang selalu tampil di sudut kanan bawah layar. Verifikasi TypeScript (`npx tsc --noEmit`) berjalan mulus tanpa error."
+> "Mengidentifikasi dan memecahkan bug penyimpanan sesi di admin. Tabel `assessment_sessions` di Supabase kekurangan kolom `surveyor_unit` dan `tahun_akreditasi`. File SQL migrasi telah ditambahkan di `migration_update_sessions_table.sql`. User perlu menjalankan command ALTER TABLE di dashboard Supabase agar frontend dapat menyimpan sesi dengan sukses."

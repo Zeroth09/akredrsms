@@ -23,7 +23,6 @@ interface TelusurItem {
 type SyncState = 'idle' | 'syncing' | 'saved' | 'error'
 type SessionType = 'medis' | 'keperawatan' | 'manajemen'
 
-const BASE_SESSION_ID = 'ASESMEN_RS_DEFAULT_2024'
 const SESSION_STORAGE_KEY = 'akredmonit_telusur_active_session'
 
 // ============ DESKTOP ROW COMPONENT (Isolated state to avoid focus loss) ============
@@ -221,12 +220,39 @@ MobileCardItem.displayName = 'MobileCardItem'
 // ============ MAIN CLIENT COMPONENT ============
 
 export function TelusurLapanganClient() {
+    const [baseSessionId, setBaseSessionId] = useState<string>('ASESMEN_RS_DEFAULT_2024')
+    const [baseSessionName, setBaseSessionName] = useState<string>('RS Default (2024)')
+    const [isSessionLoaded, setIsSessionLoaded] = useState<boolean>(false)
+
     const [activeSession, setActiveSession] = useState<SessionType | null>(null)
     const [list, setList] = useState<TelusurItem[]>([])
     const [searchQuery, setSearchQuery] = useState('')
     const [syncStatus, setSyncStatus] = useState<SyncState>('idle')
     const [lastSaved, setLastSaved] = useState<string | null>(null)
     const [isLoading, setIsLoading] = useState(true)
+
+    // Fetch active session from Supabase
+    useEffect(() => {
+        async function fetchActiveSession() {
+            try {
+                const { data, error } = await supabase
+                    .from('assessment_sessions')
+                    .select('assessment_id, rumah_sakit, tahun_akreditasi')
+                    .eq('is_aktif', true)
+                    .maybeSingle()
+                
+                if (!error && data) {
+                    setBaseSessionId(data.assessment_id)
+                    setBaseSessionName(`${data.rumah_sakit} (${data.tahun_akreditasi})`)
+                }
+            } catch (e) {
+                console.error('Gagal memuat sesi aktif:', e)
+            } finally {
+                setIsSessionLoaded(true)
+            }
+        }
+        fetchActiveSession()
+    }, [])
 
     // Deteksi Sesi yang Aktif
     useEffect(() => {
@@ -239,9 +265,9 @@ export function TelusurLapanganClient() {
     }, [])
 
     const compoundSessionId = useMemo(() => {
-        if (!activeSession) return BASE_SESSION_ID
-        return `${BASE_SESSION_ID}|${activeSession}`
-    }, [activeSession])
+        if (!activeSession) return baseSessionId
+        return `${baseSessionId}|${activeSession}`
+    }, [activeSession, baseSessionId])
 
     const localStorageDataKey = useMemo(() => {
         if (!activeSession) return 'akredmonit_telusur_lapangan_v1'
@@ -250,7 +276,7 @@ export function TelusurLapanganClient() {
 
     // Load Data berdasarkan Sesi Aktif
     useEffect(() => {
-        if (!activeSession) return
+        if (!activeSession || !isSessionLoaded) return
 
         async function loadData() {
             setIsLoading(true)
@@ -305,11 +331,11 @@ export function TelusurLapanganClient() {
             }
         }
         loadData()
-    }, [activeSession, compoundSessionId, localStorageDataKey])
+    }, [activeSession, compoundSessionId, localStorageDataKey, isSessionLoaded])
 
     // Sinkronisasi ke Supabase + backup LocalStorage
     const syncToDatabase = useCallback(async (currentList: TelusurItem[]) => {
-        if (!activeSession) return
+        if (!activeSession || !isSessionLoaded) return
 
         // Simpan ke local storage terlebih dahulu sebagai backup cadangan
         try {
@@ -350,16 +376,16 @@ export function TelusurLapanganClient() {
             console.error('Autosave ke Supabase gagal:', err)
             setSyncStatus('error')
         }
-    }, [activeSession, compoundSessionId, localStorageDataKey])
+    }, [activeSession, compoundSessionId, localStorageDataKey, isSessionLoaded])
 
     // Debounced Autosave (1.5 detik setelah ada perubahan data list)
     useEffect(() => {
-        if (isLoading || !activeSession) return
+        if (isLoading || !activeSession || !isSessionLoaded) return
         const handler = setTimeout(() => {
             syncToDatabase(list)
         }, 1500)
         return () => clearTimeout(handler)
-    }, [list, syncToDatabase, isLoading, activeSession])
+    }, [list, syncToDatabase, isLoading, activeSession, isSessionLoaded])
 
     // CRUD: Update Item Field
     const handleUpdateField = useCallback((id: string, field: keyof TelusurItem, value: string) => {
@@ -500,6 +526,13 @@ export function TelusurLapanganClient() {
                             </div>
                             <h1 className="text-xl md:text-2xl font-bold text-white tracking-tight">Login Sesi Telusur</h1>
                             <p className="text-slate-300 text-xs md:text-sm">Silakan pilih salah satu kelompok di bawah ini untuk masuk</p>
+                            {isSessionLoaded && (
+                                <div className="inline-block mt-3 px-3 py-1 rounded-full bg-white/5 border border-white/10">
+                                    <p className="text-[11px] text-slate-300 font-medium">
+                                        Sesi Kegiatan Aktif: <span className="text-red-400 font-bold">{baseSessionName}</span>
+                                    </p>
+                                </div>
+                            )}
                         </div>
 
                         {/* Petunjuk Keyword */}
@@ -582,6 +615,9 @@ export function TelusurLapanganClient() {
                                         </span>
                                     </div>
                                     <p className="text-red-100 text-xs md:text-sm opacity-90 font-medium">Pencatatan Temuan, Rekomendasi, &amp; Penanggung Jawab Sesi {readableSession}</p>
+                                    <p className="text-[11px] text-red-200 opacity-85 mt-0.5 font-medium">
+                                        Sesi Kegiatan Aktif: <span className="text-white font-bold">{baseSessionName}</span>
+                                    </p>
                                 </div>
                             </div>
 

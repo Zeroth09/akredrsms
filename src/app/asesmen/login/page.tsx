@@ -1,99 +1,130 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { supabase } from '@/lib/supabase'
-import { KeyRound, ArrowRight, Loader2, AlertCircle } from 'lucide-react'
+import { KeyRound, Loader2, AlertCircle, UserCheck, ShieldCheck } from 'lucide-react'
+
+interface SurveyorAccess {
+    id: string
+    surveyor_name: string
+    allowed_pokja: string[]
+    is_active: boolean
+}
 
 export default function LoginAsesmenPage() {
-    const [passkey, setPasskey] = useState('')
-    const [loading, setLoading] = useState(false)
+    const [surveyors, setSurveyors] = useState<SurveyorAccess[]>([])
+    const [loading, setLoading] = useState(true)
+    const [selectedSurveyorId, setSelectedSurveyorId] = useState<string | null>(null)
     const [error, setError] = useState('')
     const router = useRouter()
 
-    async function handleLogin(e: React.FormEvent) {
-        e.preventDefault()
-        if (!passkey.trim()) return
+    useEffect(() => {
+        async function loadSurveyorAccess() {
+            setLoading(true)
+            setError('')
 
-        setLoading(true)
+            try {
+                const { data, error } = await supabase
+                    .from('surveyor_access')
+                    .select('id, surveyor_name, allowed_pokja, is_active')
+                    .eq('is_active', true)
+                    .order('surveyor_name', { ascending: true })
+
+                if (error) throw error
+                setSurveyors(data ?? [])
+            } catch (err) {
+                console.error('Gagal memuat akses surveyor:', err)
+                setError('Akses surveyor gagal dimuat. Periksa koneksi lalu coba lagi.')
+            } finally {
+                setLoading(false)
+            }
+        }
+
+        loadSurveyorAccess()
+    }, [])
+
+    function handleSelectSurveyor(surveyor: SurveyorAccess) {
+        setSelectedSurveyorId(surveyor.id)
         setError('')
 
         try {
-            const { data, error } = await supabase
-                .from('surveyor_access')
-                .select('*')
-                .eq('passkey', passkey.toUpperCase().trim())
-                .eq('is_active', true)
-                .single()
-
-            if (error || !data) {
-                setError('Passkey tidak valid atau akun dinonaktifkan.')
-                setLoading(false)
-                return
-            }
-
-            // Save to local storage
             localStorage.setItem('surveyor_auth', JSON.stringify({
-                id: data.id,
-                name: data.surveyor_name,
-                pokja: data.allowed_pokja
+                id: surveyor.id,
+                name: surveyor.surveyor_name,
+                pokja: surveyor.allowed_pokja || []
             }))
 
-            // Redirect to asesmen
             router.push('/asesmen')
         } catch (err) {
-            console.error(err)
-            setError('Terjadi kesalahan jaringan.')
-            setLoading(false)
+            console.error('Gagal menyimpan sesi surveyor:', err)
+            setError('Gagal masuk. Silakan coba lagi.')
+            setSelectedSurveyorId(null)
         }
     }
 
     return (
-        <div className="min-h-screen bg-slate-50 flex flex-col items-center justify-center p-4">
-            <div className="w-full max-w-md bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100">
-                <div className="bg-gradient-to-r from-indigo-600 to-blue-500 p-8 text-center">
-                    <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 backdrop-blur-sm">
-                        <KeyRound className="w-8 h-8 text-white" />
+        <main className="min-h-screen bg-gradient-to-tr from-slate-950 via-indigo-950 to-blue-950 flex items-center justify-center p-4">
+            <div className="w-full max-w-md bg-white/10 backdrop-blur-md rounded-3xl p-6 md:p-8 border border-white/10 shadow-2xl space-y-6">
+                <div className="text-center space-y-2">
+                    <div className="mx-auto w-14 h-14 bg-indigo-500 rounded-2xl flex items-center justify-center shadow-lg border border-indigo-300/20">
+                        <KeyRound className="w-7 h-7 text-white" />
                     </div>
-                    <h1 className="text-2xl font-bold text-white mb-1">Login Surveyor</h1>
-                    <p className="text-indigo-100 text-sm">Masukkan passkey untuk mengakses instrumen penilaian.</p>
+                    <h1 className="text-xl md:text-2xl font-bold text-white tracking-tight">Login Surveyor</h1>
+                    <p className="text-slate-300 text-xs md:text-sm">Silakan pilih nama surveyor untuk masuk ke instrumen penilaian.</p>
                 </div>
-                
-                <div className="p-8">
-                    {error && (
-                        <div className="mb-6 bg-red-50 text-red-600 p-4 rounded-xl text-sm font-medium flex items-center gap-3 border border-red-100">
-                            <AlertCircle className="w-5 h-5 shrink-0" />
-                            {error}
+
+                {error && (
+                    <div className="bg-red-500/10 text-red-100 p-4 rounded-2xl text-sm font-medium flex items-center gap-3 border border-red-400/20">
+                        <AlertCircle className="w-5 h-5 shrink-0 text-red-300" />
+                        {error}
+                    </div>
+                )}
+
+                <div className="bg-white/5 rounded-2xl p-4 border border-white/5 space-y-3">
+                    <h2 className="text-[10px] md:text-xs font-semibold text-slate-400 uppercase tracking-wider">Pilih Surveyor:</h2>
+
+                    {loading ? (
+                        <div className="py-10 flex flex-col items-center justify-center gap-3 text-slate-300">
+                            <Loader2 className="w-7 h-7 animate-spin text-indigo-300" />
+                            <span className="text-sm font-medium">Memuat daftar surveyor...</span>
+                        </div>
+                    ) : surveyors.length === 0 ? (
+                        <div className="py-8 text-center text-sm text-slate-300">
+                            Belum ada surveyor aktif. Aktifkan akses surveyor terlebih dahulu.
+                        </div>
+                    ) : (
+                        <div className="grid grid-cols-1 gap-2.5">
+                            {surveyors.map((surveyor) => {
+                                const isSelected = selectedSurveyorId === surveyor.id
+                                return (
+                                    <button
+                                        key={surveyor.id}
+                                        type="button"
+                                        onClick={() => handleSelectSurveyor(surveyor)}
+                                        disabled={!!selectedSurveyorId}
+                                        className="w-full flex items-center gap-3 bg-white/5 hover:bg-white/10 disabled:opacity-70 active:scale-98 p-3 rounded-xl transition-all text-left cursor-pointer border border-white/5 group"
+                                    >
+                                        <div className="p-2 bg-blue-500/20 text-blue-300 rounded-lg group-hover:scale-105 transition-transform">
+                                            {isSelected ? <Loader2 className="w-4 h-4 animate-spin" /> : <UserCheck className="w-4 h-4" />}
+                                        </div>
+                                        <div className="flex-1 min-w-0">
+                                            <div className="flex items-center justify-between gap-2">
+                                                <span className="text-sm font-semibold text-slate-100 truncate">{surveyor.surveyor_name}</span>
+                                                <span className="text-[10px] text-emerald-300 bg-emerald-500/10 px-2.5 py-1 rounded-full font-bold shrink-0">Aktif</span>
+                                            </div>
+                                            <div className="mt-1 flex items-center gap-1.5 text-[11px] text-slate-400">
+                                                <ShieldCheck className="w-3 h-3 text-indigo-300" />
+                                                <span className="truncate">{(surveyor.allowed_pokja || []).join(', ') || 'Belum ada pokja'}</span>
+                                            </div>
+                                        </div>
+                                    </button>
+                                )
+                            })}
                         </div>
                     )}
-
-                    <form onSubmit={handleLogin}>
-                        <div className="mb-6">
-                            <label className="block text-sm font-semibold text-gray-700 mb-2">Passkey Akses</label>
-                            <input
-                                type="text"
-                                value={passkey}
-                                onChange={e => setPasskey(e.target.value)}
-                                className="w-full text-center text-2xl tracking-[0.2em] font-mono border-2 border-gray-200 rounded-xl px-4 py-4 focus:ring-4 focus:ring-indigo-100 focus:border-indigo-500 outline-none uppercase transition-all"
-                                placeholder="XXXXXX"
-                                maxLength={10}
-                                required
-                            />
-                        </div>
-                        <button
-                            type="submit"
-                            disabled={loading || !passkey}
-                            className="w-full bg-gray-900 hover:bg-gray-800 disabled:bg-gray-300 disabled:text-gray-500 text-white font-semibold py-4 rounded-xl flex items-center justify-center gap-2 transition-colors"
-                        >
-                            {loading ? (
-                                <>Mengecek... <Loader2 className="w-5 h-5 animate-spin" /></>
-                            ) : (
-                                <>Masuk <ArrowRight className="w-5 h-5" /></>
-                            )}
-                        </button>
-                    </form>
                 </div>
             </div>
-        </div>
+        </main>
     )
 }
