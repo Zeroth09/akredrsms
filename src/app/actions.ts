@@ -387,3 +387,68 @@ export async function updateDocumentEP(id: string, ep: string | null) {
     if (error) console.error('Error updating EP:', error)
     revalidatePath('/')
 }
+
+// --- Asesor V2 ---
+
+export async function getActiveSession() {
+    const { data, error } = await supabase
+        .from('assessment_sessions')
+        .select('assessment_id, rumah_sakit, tahun_akreditasi, surveyor_name, surveyor_unit')
+        .eq('is_aktif', true)
+        .maybeSingle()
+
+    if (error) {
+        console.error('Gagal mengambil sesi aktif:', error)
+        return null
+    }
+    return data
+}
+
+export async function getAssessmentsCatatan(sessionId: string) {
+    const { data, error } = await supabase
+        .from('assessments')
+        .select('pokja_code, standar_kode, ep_kode, catatan')
+        .eq('assessment_id', sessionId)
+
+    if (error) {
+        console.error('Gagal mengambil catatan asesmen:', error)
+        return {}
+    }
+
+    const store: Record<string, string> = {}
+    for (const row of data ?? []) {
+        const key = `${row.pokja_code}|${row.standar_kode}|${row.ep_kode}`
+        store[key] = row.catatan ?? ''
+    }
+    return store
+}
+
+export async function upsertCatatan(
+    sessionId: string,
+    pokjaCode: string,
+    standarKode: string,
+    epKode: string,
+    catatan: string
+) {
+    const { error } = await supabase
+        .from('assessments')
+        .upsert(
+            {
+                assessment_id: sessionId,
+                pokja_code: pokjaCode,
+                standar_kode: standarKode,
+                ep_kode: epKode,
+                catatan,
+                nilai: null,
+                fakta_analisis: '',
+                rekomendasi: '',
+            },
+            { onConflict: 'assessment_id,pokja_code,standar_kode,ep_kode' }
+        )
+
+    if (error) {
+        console.error('Gagal menyimpan catatan:', error)
+        return false
+    }
+    return true
+}
