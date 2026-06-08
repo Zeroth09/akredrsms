@@ -451,18 +451,19 @@ export function AsesorV2Client({
                                         tabIndex={0}
                                         onClick={() => toggleStandar(standarKey)}
                                         onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') toggleStandar(standarKey) }}
-                                        className="w-full flex items-start gap-3 px-4 md:px-5 py-3.5 cursor-pointer hover:bg-gray-50/80 transition-colors"
+                                        className="w-full grid items-start gap-3 px-4 md:px-5 py-3.5 cursor-pointer hover:bg-gray-50/80 transition-colors"
+                                        style={{ gridTemplateColumns: '2rem minmax(0, 1fr) auto' }}
                                     >
-                                        <div className={`w-8 h-8 shrink-0 rounded-lg bg-gradient-to-br ${c.gradient} flex items-center justify-center`}>
+                                        <div className={`w-8 h-8 rounded-lg bg-gradient-to-br ${c.gradient} flex items-center justify-center`}>
                                             <span className="text-white text-[10px] font-bold">{docCount}/{standar.epList.length}</span>
                                         </div>
-                                        <div className="flex-1 basis-0 min-w-0">
+                                        <div className="min-w-0 overflow-hidden">
                                             <span className="text-sm font-bold text-gray-800">{standar.kode}</span>
                                             {!isExpanded && standar.deskripsi && (
                                                 <span className="text-xs text-gray-400 mt-0.5 block truncate">{standar.deskripsi}</span>
                                             )}
                                         </div>
-                                        <div className="shrink-0 pt-0.5">
+                                        <div className="pt-0.5">
                                             {isExpanded
                                                 ? <ChevronDown className="w-5 h-5 text-gray-400" />
                                                 : <ChevronRight className="w-5 h-5 text-gray-300" />
@@ -588,9 +589,10 @@ function EPRow({
                 tabIndex={0}
                 onClick={() => setExpanded(!expanded)}
                 onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') setExpanded(!expanded) }}
-                className="w-full flex items-center gap-3 px-4 md:px-5 py-2.5 cursor-pointer hover:bg-indigo-50/30 transition-colors"
+                className="w-full grid items-center gap-3 px-4 md:px-5 py-2.5 cursor-pointer hover:bg-indigo-50/30 transition-colors"
+                style={{ gridTemplateColumns: '2rem minmax(0, 1fr) auto' }}
             >
-                <div className={`w-8 h-8 shrink-0 rounded-lg flex items-center justify-center ${
+                <div className={`w-8 h-8 rounded-lg flex items-center justify-center ${
                     hasDocs ? `bg-gradient-to-br ${gradient} shadow-sm` : 'bg-gray-100'
                 }`}>
                     {hasDocs
@@ -599,22 +601,19 @@ function EPRow({
                     }
                 </div>
 
-                <div className="flex-1 basis-0 min-w-0 flex items-center gap-2 overflow-hidden">
-                    <span className="text-sm font-semibold text-gray-800 shrink-0">{ep.kode}</span>
+                <div className="min-w-0 overflow-hidden flex items-center gap-2 flex-wrap">
+                    <span className="text-sm font-semibold text-gray-800">{ep.kode}</span>
                     {bukti.map(b => (
                         <span key={b}
-                            className={`inline-flex items-center px-1.5 py-0.5 rounded text-[9px] font-bold border leading-none shrink-0 ${buktiColors[b] ?? 'bg-gray-100 text-gray-500 border-gray-200'}`}
+                            className={`inline-flex items-center px-1.5 py-0.5 rounded text-[9px] font-bold border leading-none ${buktiColors[b] ?? 'bg-gray-100 text-gray-500 border-gray-200'}`}
                             title={buktiLabels[b] ?? b}
                         >
                             {b}
                         </span>
                     ))}
-                    {!expanded && ep.deskripsi && (
-                        <span className="text-xs text-gray-400 truncate min-w-0">{ep.deskripsi}</span>
-                    )}
                 </div>
 
-                <div className="shrink-0 flex items-center gap-2">
+                <div className="flex items-center gap-2">
                     {hasDocs && !expanded && (
                         <span className="inline-flex items-center gap-1 text-[10px] text-slate-500 font-medium bg-slate-50 px-1.5 py-0.5 rounded">
                             <FileText className="w-3 h-3" /> {dokumen.length}
