@@ -8,6 +8,16 @@ export function isEPFolderName(name: string): boolean {
     return EP_FOLDER_NAME_REGEX.test(name.trim())
 }
 
+/** Ambil kode EP singkat ("EP a", "EP 1.1") dari nama folder Drive yang bisa berisi deskripsi. */
+export function parseEpKodeFromName(name: string): string {
+    const trimmed = name.trim()
+    const match = trimmed.match(EP_FOLDER_NAME_REGEX)
+    if (!match) return trimmed
+    const raw = match[0]
+    const suffix = raw.slice(2).trimStart()
+    return suffix ? `EP ${suffix}` : 'EP'
+}
+
 type MapNode = { name: string; parent_id?: string | null; parents?: string[] }
 
 function getParentId(

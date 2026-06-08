@@ -6,6 +6,7 @@ import { getGoogleDriveClient } from '@/lib/google-drive'
 import { extractStandarEPFromHierarchy, mapFromDriveFileList, type DriveLikeItem } from '@/lib/standarEpHierarchy'
 import { pruneDocumentsNotInDrive } from '@/lib/pruneStaleDocuments'
 import { enumerateEPRowsForExport, POKJA_LIST, type Doc } from '@/lib/pokjaUtils'
+import { parseEpKodeFromName } from '@/lib/standarEpHierarchy'
 import { MASTER_STANDAR_EP } from '@/lib/masterStandarEP'
 
 // --- Data Fetching ---
@@ -124,7 +125,9 @@ export async function getStandarEPHierarchy() {
 
             // Normalisasi key untuk lookup
             const standarKey = standarName.toLowerCase()
-            const epKey = epName.toLowerCase()
+            const epKode = parseEpKodeFromName(epName)
+            const epKey = epKode.toLowerCase()
+            const epDeskripsiFromName = epName.slice(epKode.length).trim()
 
             if (!standarMap.has(standarName)) {
                 // Cari deskripsi standar dari master data (case-insensitive)
@@ -137,18 +140,18 @@ export async function getStandarEPHierarchy() {
             }
 
             const standar = standarMap.get(standarName)
-            if (standar && !standar.epList.some((ep) => ep.kode === epName)) {
+            if (standar && !standar.epList.some((ep) => ep.kode === epKode)) {
                 // Cari deskripsi EP dan bukti RDOW dari master data (case-insensitive)
                 const masterStandar = masterStandarMap.get(standarKey)
                 const masterEP = masterStandar?.epList.find(e => e.kode.toLowerCase().trim() === epKey)
 
-                // Ambil dokumen yang terkait EP ini
+                // Ambil dokumen yang terkait EP ini (key pakai nama folder Drive asli)
                 const docKey = `${standarName.toLowerCase()}|${epName.toLowerCase()}`
                 const epDocs = docsByEP.get(docKey) ?? []
 
                 standar.epList.push({
-                    kode: epName,
-                    deskripsi: masterEP?.deskripsi ?? '',
+                    kode: epKode,
+                    deskripsi: masterEP?.deskripsi ?? epDeskripsiFromName,
                     bukti: masterEP?.bukti ?? [],
                     dokumen: epDocs,
                 })
