@@ -445,28 +445,33 @@ export function AsesorV2Client({
                             const docCount = standar.epList.filter(ep => (ep.dokumen ?? []).length > 0).length
 
                             return (
-                                <div key={standar.kode} className="bg-white rounded-xl border border-gray-100 shadow-sm overflow-hidden">
-                                    <button
+                                <div key={standar.kode} className="bg-white rounded-xl border border-gray-100 shadow-sm">
+                                    <div
+                                        role="button"
+                                        tabIndex={0}
                                         onClick={() => toggleStandar(standarKey)}
-                                        className="w-full flex items-center gap-3 px-4 md:px-5 py-3.5 text-left hover:bg-gray-50/80 transition-colors"
+                                        onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') toggleStandar(standarKey) }}
+                                        className="w-full grid grid-cols-[2rem_1fr_auto] items-start gap-3 px-4 md:px-5 py-3.5 cursor-pointer hover:bg-gray-50/80 transition-colors"
                                     >
-                                        <div className={`w-8 h-8 rounded-lg bg-gradient-to-br ${c.gradient} flex items-center justify-center shrink-0`}>
+                                        <div className={`w-8 h-8 rounded-lg bg-gradient-to-br ${c.gradient} flex items-center justify-center`}>
                                             <span className="text-white text-[10px] font-bold">{docCount}/{standar.epList.length}</span>
                                         </div>
-                                        <div className="flex-1 min-w-0 text-left">
-                                            <span className="text-sm font-bold text-gray-800">{standar.kode}</span>
-                                            {standar.deskripsi && (
-                                                <p className="text-xs text-gray-400 mt-0.5 line-clamp-1">{standar.deskripsi}</p>
+                                        <div className="min-w-0 overflow-hidden">
+                                            <span className="text-sm font-bold text-gray-800 block">{standar.kode}</span>
+                                            {!isExpanded && standar.deskripsi && (
+                                                <span className="text-xs text-gray-400 mt-0.5 block truncate">{standar.deskripsi}</span>
                                             )}
                                         </div>
-                                        {isExpanded
-                                            ? <ChevronDown className="w-5 h-5 text-gray-400 shrink-0" />
-                                            : <ChevronRight className="w-5 h-5 text-gray-300 shrink-0" />
-                                        }
-                                    </button>
+                                        <div className="pt-1">
+                                            {isExpanded
+                                                ? <ChevronDown className="w-5 h-5 text-gray-400" />
+                                                : <ChevronRight className="w-5 h-5 text-gray-300" />
+                                            }
+                                        </div>
+                                    </div>
 
                                     {isExpanded && (
-                                        <div className="border-t border-gray-100 divide-y divide-gray-50">
+                                        <div className="border-t border-gray-100">
                                             {standar.epList.map(ep => {
                                                 const epKey = buildKey(pokjaData.pokjaCode, standar.kode, ep.kode)
                                                 return (
@@ -572,13 +577,14 @@ function EPRow({
 
     return (
         <div className="border-b border-gray-50 last:border-b-0">
-            {/* EP Header — satu baris, deskripsi hanya saat expanded */}
-            <button
+            <div
+                role="button"
+                tabIndex={0}
                 onClick={() => setExpanded(!expanded)}
-                className="w-full flex items-start gap-3 px-4 md:px-5 py-2.5 text-left hover:bg-indigo-50/30 transition-colors"
+                onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') setExpanded(!expanded) }}
+                className="w-full grid grid-cols-[2rem_1fr_auto] items-center gap-3 px-4 md:px-5 py-2.5 cursor-pointer hover:bg-indigo-50/30 transition-colors"
             >
-                {/* Status indicator */}
-                <div className={`w-8 h-8 rounded-lg flex items-center justify-center shrink-0 mt-0.5 ${
+                <div className={`w-8 h-8 rounded-lg flex items-center justify-center ${
                     hasDocs ? `bg-gradient-to-br ${gradient} shadow-sm` : 'bg-gray-100'
                 }`}>
                     {hasDocs
@@ -587,8 +593,8 @@ function EPRow({
                     }
                 </div>
 
-                <div className="flex-1 min-w-0 py-0.5">
-                    <div className="flex items-center gap-1.5 flex-wrap">
+                <div className="min-w-0 overflow-hidden">
+                    <div className="flex items-center gap-1.5">
                         <span className="text-sm font-semibold text-gray-800 shrink-0">{ep.kode}</span>
                         {bukti.map(b => (
                             <span key={b}
@@ -599,9 +605,12 @@ function EPRow({
                             </span>
                         ))}
                     </div>
+                    {!expanded && ep.deskripsi && (
+                        <span className="text-xs text-gray-400 mt-0.5 block truncate">{ep.deskripsi}</span>
+                    )}
                 </div>
 
-                <div className="flex items-center gap-2 shrink-0 mt-1">
+                <div className="flex items-center gap-2">
                     {hasDocs && !expanded && (
                         <span className="inline-flex items-center gap-1 text-[10px] text-slate-500 font-medium bg-slate-50 px-1.5 py-0.5 rounded">
                             <FileText className="w-3 h-3" /> {dokumen.length}
@@ -617,13 +626,12 @@ function EPRow({
                         : <ChevronRight className="w-4 h-4 text-gray-300" />
                     }
                 </div>
-            </button>
+            </div>
 
-            {/* Expanded */}
             {expanded && (
-                <div className="px-4 md:px-5 pb-4 pl-12 md:pl-14 space-y-3">
+                <div className="px-4 md:px-5 pb-4 pl-[3.25rem] md:pl-14 space-y-3">
                     {ep.deskripsi && (
-                        <p className="text-xs text-gray-500 leading-relaxed">{ep.deskripsi}</p>
+                        <span className="text-xs text-gray-500 leading-relaxed block">{ep.deskripsi}</span>
                     )}
 
                     {/* Dokumen */}
