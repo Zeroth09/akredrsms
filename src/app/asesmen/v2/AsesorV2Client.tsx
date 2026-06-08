@@ -571,14 +571,14 @@ function EPRow({
     const hasDocs = dokumen.length > 0
 
     return (
-        <div className="group">
-            {/* EP Header */}
+        <div className="border-b border-gray-50 last:border-b-0">
+            {/* EP Header — satu baris, deskripsi hanya saat expanded */}
             <button
                 onClick={() => setExpanded(!expanded)}
-                className="w-full flex items-center gap-3 px-4 md:px-5 py-3 text-left hover:bg-indigo-50/30 transition-colors"
+                className="w-full flex items-start gap-3 px-4 md:px-5 py-2.5 text-left hover:bg-indigo-50/30 transition-colors"
             >
                 {/* Status indicator */}
-                <div className={`w-8 h-8 rounded-lg flex items-center justify-center transition-all shrink-0 ${
+                <div className={`w-8 h-8 rounded-lg flex items-center justify-center shrink-0 mt-0.5 ${
                     hasDocs ? `bg-gradient-to-br ${gradient} shadow-sm` : 'bg-gray-100'
                 }`}>
                     {hasDocs
@@ -587,32 +587,29 @@ function EPRow({
                     }
                 </div>
 
-                <div className="flex-1 min-w-0">
+                <div className="flex-1 min-w-0 py-0.5">
                     <div className="flex items-center gap-1.5 flex-wrap">
-                        <span className="text-sm font-semibold text-gray-800">{ep.kode}</span>
+                        <span className="text-sm font-semibold text-gray-800 shrink-0">{ep.kode}</span>
                         {bukti.map(b => (
                             <span key={b}
-                                className={`inline-flex items-center px-1.5 py-0.5 rounded text-[9px] font-bold border leading-none ${buktiColors[b] ?? 'bg-gray-100 text-gray-500 border-gray-200'}`}
+                                className={`inline-flex items-center px-1.5 py-0.5 rounded text-[9px] font-bold border leading-none shrink-0 ${buktiColors[b] ?? 'bg-gray-100 text-gray-500 border-gray-200'}`}
                                 title={buktiLabels[b] ?? b}
                             >
                                 {b}
                             </span>
                         ))}
                     </div>
-                    {!expanded && ep.deskripsi && (
-                        <p className="text-xs text-gray-400 mt-0.5 line-clamp-1">{ep.deskripsi}</p>
-                    )}
                 </div>
 
-                <div className="flex items-center gap-2 shrink-0">
+                <div className="flex items-center gap-2 shrink-0 mt-1">
                     {hasDocs && !expanded && (
-                        <span className="inline-flex items-center gap-1 text-[10px] text-slate-400 font-medium">
+                        <span className="inline-flex items-center gap-1 text-[10px] text-slate-500 font-medium bg-slate-50 px-1.5 py-0.5 rounded">
                             <FileText className="w-3 h-3" /> {dokumen.length}
                         </span>
                     )}
                     {hasCatatan && !expanded && (
                         <span className="text-[10px] text-emerald-600 font-medium bg-emerald-50 px-2 py-0.5 rounded-full">
-                            ada catatan
+                            catatan
                         </span>
                     )}
                     {expanded
