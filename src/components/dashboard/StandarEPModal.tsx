@@ -244,18 +244,30 @@ export function StandarEPModal({ pokja, documents, isOpen, onClose }: StandarEPM
             return { standar, eps }
         })
 
+        const sortGroups = (items: StandarGroup[]) =>
+            items
+                .map(g => ({
+                    ...g,
+                    eps: [...g.eps].sort((a, b) =>
+                        a.ep.name.localeCompare(b.ep.name, 'id', { numeric: true })
+                    ),
+                }))
+                .sort((a, b) =>
+                    a.standar.name.localeCompare(b.standar.name, 'id', { numeric: true })
+                )
+
         // Filter by search query
         if (searchQuery) {
-            return groups.filter(group => {
+            return sortGroups(groups.filter(group => {
                 const standarMatch = group.standar.name.toLowerCase().includes(searchQuery.toLowerCase())
                 const epMatch = group.eps.some(ep =>
                     ep.ep.name.toLowerCase().includes(searchQuery.toLowerCase())
                 )
                 return standarMatch || epMatch
-            })
+            }))
         }
 
-        return groups
+        return sortGroups(groups)
     }, [documents, pokja, searchQuery])
 
     const toggleStandar = (id: string) => {
